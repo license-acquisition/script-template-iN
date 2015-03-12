@@ -1,0 +1,6 @@
+license_number|company_flag|address1|city|state|zip|status|expiration_date|number_type|licensee_type_cd"nLL34|McKean & Associates, Architects, LLC|2315 Eastchase Lane |Montgomery|AL|36117|This license is in good standing.|January 31, 2016.|Certificate of Authorization Number|Architectural Firm
+LL156|BES Design/Build, LLC|766 Middle Street |Fairhope|AL|36532|This license is not in good standing.  Status is INACTIVE.||Certificate of Authorization Number|Architectural Firm
+C688|Nimrod Long and Associates, Inc.|2213 Morris Avenue First Floor|Birmingham|AL|35203|This license is not in good standing.  Status is INACTIVE.||Certificate of Authorization Number|Architectural Firm
+C487|PKA Architects, Inc.|2100 1st Avenue North, Suite 100 |Birmingham|AL|35203|This license is not in good standing.  Status is INACTIVE.||Certificate of Authorization Number|Architectural Firm
+C174|Crawford McWilliams Hatcher Architects|1800 International Park D Suite 300|Birmingham|AL|35243|This license is in good standing.|January 31, 2016.|Certificate of Authorization Number|Architectural Firm
+C162|Herrington Architects, PC|101 So. Richard Arrington |Birmingham|AL|35233|This license is in good standing.|January 31, 2016.|Certificate of Authorization Number|Architectural Firm
