@@ -6,11 +6,13 @@
 from script_template import create_file
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from script_template.feed_log import logger
 
 #headers = ['company_flag', 'state', 'county', 'city', 'entity_name', 'address1', 'phone', 'license_number', 'licensee_type_cd', 'licensee_type_cd', 'name']
 
 def main():
     f = create_file('led_c_KSdoh', 'w', [1,2,3,4,5,6,7,8,9,10])
+    logger(f.name, 'START')
     driver = webdriver.Chrome()
     try:
         driver.get("http://kensas.kdhe.state.ks.us/leadRegistry/getActiveLeadRegistryFirmSearchForm.kdhe")
@@ -25,8 +27,9 @@ def main():
                 print info
                 f.write('|'.join(info) + '\n')
                 info = []
+        logger(f.name, 'COMPLETE')
     except:
-        # log('Error')
+        logger(f.name, 'ERROR')
         pass
     finally:
         f.close()
