@@ -8,11 +8,9 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from script_template.feed_log import logger
 
-#headers = ['company_flag', 'state', 'county', 'city', 'entity_name', 'address1', 'phone', 'license_number', 'licensee_type_cd', 'licensee_type_cd', 'name']
-
 def main():
+    f = create_file('led_c_KSdoh', 'w', [6, 36, 8, 4, 12, 0, 33, 21, 32, 32, 'name'])
     logger(f.name, 'START')
-    f = create_file('led_c_KSdoh', 'w', [1,2,3,4,5,6,7,8,9,10])
     driver = webdriver.PhantomJS()
     try:
         driver.get("http://kensas.kdhe.state.ks.us/leadRegistry/getActiveLeadRegistryFirmSearchForm.kdhe")

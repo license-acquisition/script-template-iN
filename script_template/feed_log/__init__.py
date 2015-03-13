@@ -1,1 +1,1 @@
-from feed_log import log
+from feed_log import logger
