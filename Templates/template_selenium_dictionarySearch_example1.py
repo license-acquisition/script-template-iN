@@ -4,20 +4,20 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from itertools import product
 from selenium.webdriver.support import expected_conditions as EC
+from script_template import create_file, logger
 
 def main():
 	#standardized code
 	time_stamp = time.strftime("%Y%m%d")
 	#type = asb,hva, etc.. authority = OKepa etc. entity_type = c, i, or b
-	f = codecs.open("gen.res_c_MDllr_%s_000.txt" % time_stamp, "w","UTF-8")
-	headers = ["entity_name","address1","city","state","zip","expiration_date","license_type_cd","suffix"] #always use canonical headers
-	f.write("|".join(headers) + "\n")
+	f = create_file("gen.res_c_MDllr", "w", [12, 0, 4, 36, 44, 13, 32, "suffix"])
 	#dictionary search list. change what the repeat equals depending on the website requirements
 	keywords = [''.join(i) for i in product(ascii_lowercase, repeat=3)]
 	driver = webdriver.Chrome()
 	driver.implicitly_wait(10)
 
 	try:
+                logger(f.name, 'COMPLETE')
 		#loose script logic
 		for lictype in ['LA','LS']:
 			url = 'https://www.dllr.state.md.us/cgi-bin/ElectronicLicensing/OP_Search/OP_search.cgi?calling_app=%s::%s_business_name' %(lictype, lictype)
@@ -40,9 +40,11 @@ def main():
 				except:
 					pass
 				'''parse the page source in any way you need to, then write to file.'''
-				#driver.back() may be neccessary 
+				#driver.back() may be neccessary
+                        logger(f.name, 'COMPLETE')
 	except Exception, e:
 		print str(e)
+		logger(f.name, 'ERROR', str(keyword))
 	finally:
 		driver.close()
 		driver.quit()
