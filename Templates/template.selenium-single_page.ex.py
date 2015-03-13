@@ -6,7 +6,7 @@
 from script_template import create_file
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from script_template.feed_log import logger
+from script_template import logger
 
 def main():
     f = create_file('led_c_KSdoh', 'w', [6, 36, 8, 4, 12, 0, 33, 21, 32, 32, 'name'])
