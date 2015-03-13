@@ -1,15 +1,11 @@
-import codecs, csv, time
 from selenium import webdriver
 from bs4 import BeautifulSoup
+from script_template import create_file
+from script_template.feed_log import logger
 
 def main():
-	#### standardized code
-	time_stamp = time.strftime("%Y%m%d")
-	#type = asb,hva, etc.. authority = OKepa etc. entity_type = c, i, or b
-	f = codecs.open("wel_c_NYdec_%s_000.csv" % time_stamp, "w","UTF-8")
-	headers = ["company_flag","address1","city","state","zip","phone","license_number","number_type","license_type_cd"] 
-	#always use canonical headers
-	f.write("|".join(headers) + "\n")
+	f = create_file("wel_c_NYdec","w",[12,0,4,36,44,33,21,"number_type",32])
+	
 	browser = webdriver.Chrome()
 	try:
 		start = 2

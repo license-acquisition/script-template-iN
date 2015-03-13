@@ -1,6 +1,7 @@
 import csv, codecs, requests, time #optional: re, string
 from bs4 import BeautifulSoup
-from headers import get_heaers
+from script_template import create_file
+from script_template import log
 
 def main():
 	#### standardized code
