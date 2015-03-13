@@ -11,9 +11,9 @@ from script_template.feed_log import logger
 #headers = ['company_flag', 'state', 'county', 'city', 'entity_name', 'address1', 'phone', 'license_number', 'licensee_type_cd', 'licensee_type_cd', 'name']
 
 def main():
-    f = create_file('led_c_KSdoh', 'w', [1,2,3,4,5,6,7,8,9,10])
     logger(f.name, 'START')
-    driver = webdriver.Chrome()
+    f = create_file('led_c_KSdoh', 'w', [1,2,3,4,5,6,7,8,9,10])
+    driver = webdriver.PhantomJS()
     try:
         driver.get("http://kensas.kdhe.state.ks.us/leadRegistry/getActiveLeadRegistryFirmSearchForm.kdhe")
         driver.find_elements_by_tag_name("input")[1].click()
@@ -29,7 +29,7 @@ def main():
                 info = []
         logger(f.name, 'COMPLETE')
     except:
-        logger(f.name, 'ERROR')
+        logger(f.name, 'ERROR', str(info[0]))
         pass
     finally:
         f.close()

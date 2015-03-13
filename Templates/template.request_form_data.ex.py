@@ -5,17 +5,13 @@
 
 import codecs, re, requests, csv, time
 from bs4 import BeautifulSoup
+from script_template import create_file
+from script_template.feed_log import logger
 
-f = codecs.open("arc_c_ARbar_%s_000.txt" %(time.strftime("%Y%m%d")), "w", "utf-8")
+f = create_file('arc_c_ARbar', 'w', headers)
 headers = ["license_number", "company_flag", "address1", "city", "state", "zip", "status", "expiration_date", "number_type", "licensee_type_cd"]
-f.write("|".join(headers) + "\"n")
 
 ###################################################
-
-def log(status):
-    feed = 'arc_c_ARbar_%s_000.txt' %(time.strftime('%Y%m%d'))
-    l = codecs.open('log.csv', 'a')
-    l.write(','.join([feed, str(time.strftime('%Y/%m/%d')), str(time.strftime('%H:%M:%S')), status]) + '\n')
 
 def main():
     url = 'https://www.ark.org/asbalaid/index.php/arch/search_firm'
