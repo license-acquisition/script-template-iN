@@ -7,10 +7,11 @@ from script_template import create_file, logger
 import codecs, re, csv, time
 
 def main():
-        l.info('Starting - - - - ')
+        
         # create file and logger
         f = create_file('eng-sur_c_MSbes', 'w', [7, 'address, city, state, zip', 8, 33, 32, 21, 13, 35])
         l = logger('MSbes')
+        l.info('Starting - - - - ')
         # initialize webdriver
         driver = webdriver.PhantomJS()
         driver.get("https://www.peps.apps.its.ms.gov/PublicView/PublicCompanySearch.aspx")
@@ -50,7 +51,7 @@ def main():
                                 driver.find_element_by_partial_link_text(str(j)).click()
                         j = j + 1
                 except Exception, e:
-                        l.critical(str(e))
+                        l.error(str(e))
         f.close()
         driver.quit()
 

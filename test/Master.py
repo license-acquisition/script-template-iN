@@ -15,8 +15,7 @@ def fork(toDo):
         name = "%s"%(toDo.split('\\')[1].replace(".py",""))
         direct = os.getcwd()
         os.chdir(direct)
-        l.info("Loading files from dir")
-        l.info("Feeding to processor: %s"%(name))
+        l.info("Starting: %s"%(name))
         start = time.time()
         try:
                 call(["python", toDo])
