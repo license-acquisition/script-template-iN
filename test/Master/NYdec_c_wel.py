@@ -4,8 +4,8 @@ from script_template import create_file, logger
 
 def main():
         f = create_file("wel_c_NYdec","w",[12,0,4,36,44,33,21,"number_type",32])
-        l, h = logger('NYdec')
-        browser = webdriver.Chrome()
+        l = logger('NYdec')
+        browser = webdriver.PhantomJS()
         try:
                 start = 2
                 end = 18
@@ -24,11 +24,11 @@ def main():
                                                 info.append("Registration Number")
                                                 info.append("Water Well Contractor")
                                                 f.write("|".join(info) + "\n")
-                                                print('|'.join(info) + "\n")
+                                                l.info('|'.join(info) + "\n")
                                                 browser.find_element_by_partial_link_text("Next").click()
                                 except:
                                         #if next doesn't exist, break the while loop
-                                        h.debug('Done looking through pages')
+                                        l.debug('Done looking through pages')
                                         break
         except Exception, e:
                 l.error(str(e))

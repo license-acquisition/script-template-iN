@@ -10,7 +10,7 @@ from selenium import webdriver
 def main():
     f = create_file('led_c_KSdoh', 'w', [6, 36, 8, 4, 12, 0, 33, 21, 32, 32, 'name'])
     #logger(f.name, 'START')
-    l, h = logger('KSdoh')
+    l  = logger('KSdoh')
     l.info('starting scrape...')
     driver = webdriver.PhantomJS()
     try:
@@ -23,7 +23,7 @@ def main():
                 info.append("1")	
                 for td in tr.findAll("td"):
                         info.append(td.text.replace("\"", "").replace("_%_", "\",\"").replace("&amp;", "&").replace("\n", "").strip())
-                h.info(info)
+                l.info(info)
                 f.write('|'.join(info) + '\n')
                 info = []
         l.info('COMPLETE')

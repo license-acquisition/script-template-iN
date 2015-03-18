@@ -9,12 +9,12 @@ from script_template import create_file, logger
 
 headers = ["license_number", "company_flag", "address1", "city", "state", "zip", "status", "expiration_date", "number_type", "licensee_type_cd"]
 f = create_file('arc_c_ARbar', 'w', headers)
-l, h = logger('ARbar')
+l = logger('ARbar')
 ###################################################
 
 def main():
     try:
-        h.debug('Starting ARbar...')
+        l.debug('Starting ARbar...')
         url = 'https://www.ark.org/asbalaid/index.php/arch/search_firm'
         soup = BeautifulSoup(requests.get(url).content)
 
@@ -23,7 +23,7 @@ def main():
             soup = BeautifulSoup(requests.get(urlnext).content)
             for link in soup.find_all('a'):
                 try:
-                    h.debug('Searching links')
+                    l.debug('Searching links')
                     if 'details' in link['href']:
                         soup = BeautifulSoup(requests.get(link['href']).content)
                         info = []
@@ -34,7 +34,7 @@ def main():
                         for link in soup.find_all("a"):
                             try:
                                 if 'certificate_firm' in link['href']:
-                                    h.info('found certification')
+                                    l.info('found certification')
                                     cert = BeautifulSoup(requests.get(link['href']).content)
                                     info.append(cert.find_all("p", {"align" : "center"})[0].find("strong").text.replace("This individual registration expires on ", ""))
                             except Exception, e:
@@ -43,7 +43,7 @@ def main():
                             info.append("")
                         info.append("Certificate of Authorization Number")
                         info.append("Architectural Firm")
-                        h.info(info)
+                        l.info(info)
                         f.write("|".join(info) + "\n")
                 except Exception, e:
                     l.error(str(e))

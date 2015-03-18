@@ -3,13 +3,11 @@ from bs4 import BeautifulSoup
 from script_template import create_file, logger
 
 def main():
-	#### standardized code
         #Always use canonical headers
-	#type = asb,hva, etc.. authority = OKepa etc. entity_type = c, i, or b
         f = create_file('pes_c_TNdoa', 'w', [21,12,0,1,"ctiy,state,zip",])
-	l, h = logger('TNdoa')	
+	l = logger('TNdoa')	
 	start = 0 #change start and end
-	end = 2500
+	end = 500 #5000
 	###application logic
 	try:
 		for i in range(start, end):
@@ -29,10 +27,9 @@ def main():
 						info.append(td.text.replace(u'\xa0',u''))
 
 				f.write("|".join(info) + "\n")
-				h.info("|".join(info) + "\n")
+				l.info("|".join(info) + "\n")
 			except Exception, e:
 				l.error(str(e))
-				#optional: add other things to do when you fail
 				continue
 	except Exception, e:
 		l.critical(str(e))
