@@ -42,19 +42,19 @@ call(['pdftotext', '-layout', '-table', 'authority.pdf'])
 # a common line that ends the info array
 ##########################################################
 
-def main()
+def main():
     # iterate through lines #####################################
     for line in codecs.open("authority.txt", "r").readlines():
-        
-        nline = re.sub("   *", "_%_", line)
-            
-        nline = re.sub("\n", "", nline)
-            
-        nline = nline.split("_%_")
-            
-        if len(nline) > 4:
+        if "Address" not in line:
+            nline = re.sub("   *", "_%_", line)
                 
-            f.write('|'.join(nline)+'\n')
+            nline = re.sub("\n", "", nline)
+                
+            nline = nline.split("_%_")
+                
+            if len(nline) > 4:
+                    
+                f.write('|'.join(nline)+'\n')
 		
 
 if __name__ == '__main__':
