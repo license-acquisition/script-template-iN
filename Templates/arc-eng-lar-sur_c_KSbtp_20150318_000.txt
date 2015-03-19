@@ -1,0 +1,1 @@
+entity_name|city|state|zip|license_number|licensee_type_cd|status|issue_date|renewal_date|expiration_date|ObtainedBy

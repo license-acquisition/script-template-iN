@@ -41,7 +41,7 @@ u = codecs.open('authority_links.csv', 'w', 'utf-8')
 
 # Initialize driver and request session #########################
 
-driver = webdriver.PhantomJS()
+driver = webdriver.Chrome()
 
 s = requests.Session()
 
@@ -90,7 +90,7 @@ def scrape_links(n):
 
         except:
 
-            if len(driver.find_elements_by_link_text('...') == 1:
+            if len(driver.find_elements_by_link_text('...')) == 1:
 
                 n += 1
 
@@ -104,7 +104,7 @@ def scrape_links(n):
 
                     i = 1
 
-            elif len(driver.find_elements_by_link_text('...') == 0:
+            elif len(driver.find_elements_by_link_text('...')) == 0:
 
                 n += 1
 
@@ -118,11 +118,11 @@ def scrape_links(n):
 
                     i = 1
 
-            elif len(driver.find_elements_by_link_text('...') == 1:
+            elif len(driver.find_elements_by_link_text('...')) == 1:
 
                 driver.find_element_by_link_text('...').click()
 
-            elif len(driver.find_elements_by_link_text('...') == 2:
+            elif len(driver.find_elements_by_link_text('...')) == 2:
 
                 driver.find_elements_by_link_text('...')[1].click()
                        
