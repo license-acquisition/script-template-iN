@@ -12,12 +12,6 @@ headers = ['entity_name', 'city', 'state', 'zip', 'license_number', 'licensee_ty
 f.write('|'.join(headers) + '\n')
 
 u = codecs.open('KSbtp.links.csv', 'w',' utf-8')
-
-def log(status):
-        feed = 'arc-eng-lar-sur_c_KSbtp_%s_000.txt' %(time.strftime('%Y%m%d'))  # date in output
-        l = codecs.open('log.csv', 'a')
-        l.write(','.join([feed, str(time.strftime('%Y/%m/%d')), str(time.strftime('%H:%M:%S')), status]) + '\n')
-
 driver = webdriver.Chrome()
 s = requests.Session()
 s.get("http://licensing.ks.gov/verification/web/Search.aspx?facility=Y")
@@ -69,7 +63,7 @@ def scrape_links(n):
                                 driver.find_element_by_link_text("...").click()
                         elif len(driver.find_elements_by_link_text("...")) == 2:
                                 driver.find_elements_by_link_text("...")[1].click()
-       u.close()                         
+        u.close()
 
 def KSbtp(link):
         print link.replace('\n','')
@@ -115,4 +109,4 @@ if __name__ == '__main__':
         finally:
                 f.close()
                 driver.quit()
-        
+    
