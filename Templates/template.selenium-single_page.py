@@ -21,56 +21,35 @@ f = create_file('type_entityType_authority', 'w', [headers array])
 ############################################
 
 # Initialize driver #####################################
-
 driver = webdriver.PhantomJS()
-
 
 # Navigate to page, click form options and search ########
 
 def main():
 
-    try:
+    driver.get('www.authority_site.whatevs')
+    driver.find_elements_by_tag_name('tag')[0].click()
+    driver.find_elements_by_tag_name('search')[0].click()
 
-        logger(f.name, 'START')
+    # Soupify the page and parse
+    info = []
+    soup = BeautifulSoup(driver.page_source)
+    '''
 
-        driver.get('www.authority_site.whatevs')
+    Parse - - - -
 
-        driver.find_elements_by_tag_name('tag')[0].click()
-
-        driver.find_elements_by_tag_name('search')[0].click()
-
-
-        # Soupify the page and parse
-
-        info = []
-
-        soup = BeautifulSoup(driver.page_source)
-
-        '''
-
-        Parse - - - -
-
-        '''
-
-        print info
-
-        f.write('|'.join(info) + '\n')
-
-        logger(f.name, 'COMPLETE')
-
-    except:
-
-        logger(f.name, 'ERROR', 'explanation') # explanation is an optional thing
-
-    finally:
-
-        f.close()
-
-        driver.quit()
+    '''
+    print info
+    f.write('|'.join(info) + '\n')
 
 
 # Main logic ############################################
 
 if __name__ == '__main__':
-    
-    main()
+    try:
+        main()
+    except Exception, e:
+        print str(e)
+    finally:
+        f.close()
+        driver.quit()

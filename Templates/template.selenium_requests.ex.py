@@ -7,9 +7,8 @@ from selenium import webdriver
 import requests, re, codecs, time
 from bs4 import BeautifulSoup
 
+f = create_file('arc-eng-lar-sur_c_KSbtp','w',[12,4,36,21,32,37,19,"renewal_date",13,"obtained_by"])
 f = codecs.open('arc-eng-lar-sur_c_KSbtp_%s_000.txt'%(time.strftime("%Y%m%d")), 'w', 'utf-8')
-headers = ['entity_name', 'city', 'state', 'zip', 'license_number', 'licensee_type_cd', 'status', 'issue_date', 'renewal_date', 'expiration_date', 'ObtainedBy']
-f.write('|'.join(headers) + '\n')
 
 u = codecs.open('KSbtp.links.csv', 'w',' utf-8')
 driver = webdriver.Chrome()
@@ -98,14 +97,13 @@ def get_data():
 # - - - - - MAIN CODE - - - - - 
 
 if __name__ == '__main__':
-        log('START')
         try:
                 n = 0
                 get_page(n)
                 scrape_links(n)
                 get_data()
-                log('COMPLETE')
-        except: log('ERROR')
+        except Exception, e:
+                str(e)
         finally:
                 f.close()
                 driver.quit()
