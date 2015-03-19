@@ -7,7 +7,7 @@ import codecs, time
 from script_template import create_file, logger
 
 start = time.time()
-browser = webdriver.PhantomJS()
+driver = webdriver.PhantomJS()
 
 f = create_file('wel_b_MNdoh', 'w', [6, 8, 12, 21, 32, 1, 4, 36, 44, 33, 35, 'qualifying_individual2'])
 l = logger('MNdoh')
@@ -17,12 +17,12 @@ def main():
     for i in range(2,354):
         try:
             info = []
-            browser.get("http://www.health.state.mn.us/divs/eh/wells/lwc/lwcissuenbr.cfm")
-            browser.find_element_by_xpath("//*[@id='company_issue_nbr']/option[1]").click()
-            numbsearch = browser.find_element_by_xpath("//*[@id='company_issue_nbr']/option[%d]"%i)
+            driver.get("http://www.health.state.mn.us/divs/eh/wells/lwc/lwcissuenbr.cfm")
+            driver.find_element_by_xpath("//*[@id='company_issue_nbr']/option[1]").click()
+            numbsearch = driver.find_element_by_xpath("//*[@id='company_issue_nbr']/option[%d]"%i)
             numbsearch.click()
-            browser.find_element_by_css_selector("input[type=\"submit\"]").click()
-            c = browser.page_source
+            driver.find_element_by_css_selector("input[type=\"submit\"]").click()
+            c = driver.page_source
             soup = BeautifulSoup(c)
             td = soup.findAll("td",{"width":"372"})
             info.append("1")
@@ -47,14 +47,17 @@ def main():
             l.info(info)
             f.write("|".join(info) + "\n")
         except Exception as e:
-            l.info(browser.current_url)
-            count = count + 1
+            l.info(driver.current_url)
             l.error(str(e))
-        finally:
-            f.close()
-            browser.quit()
-    l.info('COMPLETE')
-    l.info(str(time.time() - start))
+    
 
 if __name__ == '__main__':
+    try:
         main()
+        l.info('complete')
+        l.info(str(time.time() - start))
+    except Exception as e:
+        l.critical(str(e))
+    finally:
+        f.close()
+        driver.quit()

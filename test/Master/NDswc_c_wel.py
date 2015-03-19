@@ -3,14 +3,14 @@ from bs4 import BeautifulSoup
 from datetime import date
 from script_template import create_file, logger
 
-def main():
-        start = time.time()
-        f = create_file('wel_c_NDswc', 'w', [7, 32, 12, 102, 21, 0, 4, 36, 44, 33, 11])
-        l = logger('NDswc')
+f = create_file('wel_c_NDswc', 'w', [7, 32, 12, 102, 21, 0, 4, 36, 44, 33, 11])
+l = logger('NDswc')
+start = time.time()
 
+def main():
         s = requests.session()
         page = s.post("http://www.swc.nd.gov/4dlink2/4dcgi/ContractSearch",
-        data={	"webCategory":"ND Water Well Contractors","wCertType":"All","wSEARCHTYPE":"AND", "Button":"Query"}).content
+                      data={"webCategory":"ND Water Well Contractors","wCertType":"All","wSEARCHTYPE":"AND", "Button":"Query"}).content
         soup = BeautifulSoup(page)
         Email = False
         i=1
@@ -39,8 +39,12 @@ def main():
                                 info = []
                                 Email = False
                 i+=1
-        l.info('Completed in %s seconds'%(time.time()-start))			
-        f.close()
 
 if __name__ == '__main__':
-        main()
+        try:
+                main()
+                l.info('Completed in %s seconds'%(time.time()-start))
+        except Exception, e:
+                l.critical(str(e))
+        finally:
+                f.close()

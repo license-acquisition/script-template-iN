@@ -3,22 +3,23 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from script_template import create_file, logger
 
+f = create_file('led.b_c_NCdhs', 'w', [12, 4, 8, 36, 33, 13, 21, 6, ])
+l = logger('NCdhs')
+driver = webdriver.PhantomJS()
+
 def main():
-    f = create_file('led.b_c_NCdhs', 'w', [12, 4, 8, 36, 33, 13, 21, 6, ])
-    l = logger('NCdhs')
     l.info('starting scrape of NCdhs')
-    browser = webdriver.PhantomJS()
-    browser.get('http://www.schs.state.nc.us/lead/accredited.cfm')
-    browser.find_element_by_name('FSubmit').click()
+    driver.get('http://www.schs.state.nc.us/lead/accredited.cfm')
+    driver.find_element_by_name('FSubmit').click()
     time.sleep(1)
     try:
         for i in range(0,2):
             if i == 1:
-                browser.find_element_by_xpath('//*[@id="firm_types"]/option[2]').click()
-                browser.find_element_by_name('FSubmit').click() 
+                driver.find_element_by_xpath('//*[@id="firm_types"]/option[2]').click()
+                driver.find_element_by_name('FSubmit').click() 
                 time.sleep(1)
-            bs = BeautifulSoup(browser.page_source)
-            table = bs.find_all('table',{'class','datatableWideLeft'})[1]
+            soup = BeautifulSoup(driver.page_source)
+            table = soup.find_all('table',{'class','datatableWideLeft'})[1]
             table.find('tr',{'class':'odd'}).extract()
             tds = table.find_all('td')
             for i in range(0,len(tds)/7):
@@ -34,11 +35,15 @@ def main():
                 f.write("|".join(info) + "\n")
                 l.info(info)
     except Exception as e:
-        l.critical(str(e))
-    finally:
-        f.close()
-        browser.quit()
+        l.error(str(e))
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+        l.info('complete')
+    except Exception as e:
+        l.critical(str(e))
+    finally:
+        driver.quit()
+        f.close()

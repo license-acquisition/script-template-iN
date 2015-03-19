@@ -7,12 +7,12 @@ from script_template import create_file, logger
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
+f = create_file('led_c_KSdoh', 'w', [6, 36, 8, 4, 12, 0, 33, 21, 32, 32, 'name'])
+driver = webdriver.PhantomJS()
+l = logger('KSdoh')
+
 def main():
-    f = create_file('led_c_KSdoh', 'w', [6, 36, 8, 4, 12, 0, 33, 21, 32, 32, 'name'])
-    #logger(f.name, 'START')
-    l  = logger('KSdoh')
     l.info('starting scrape...')
-    driver = webdriver.PhantomJS()
     try:
         driver.get("http://kensas.kdhe.state.ks.us/leadRegistry/getActiveLeadRegistryFirmSearchForm.kdhe")
         driver.find_elements_by_tag_name("input")[1].click()
@@ -24,12 +24,13 @@ def main():
                 for td in tr.findAll("td"):
                         info.append(td.text.replace("\"", "").replace("_%_", "\",\"").replace("&amp;", "&").replace("\n", "").strip())
                 l.info(info)
+                # mp
                 f.write('|'.join(info) + '\n')
                 info = []
         l.info('COMPLETE')
     except Exception as e:
-        l.error(str(info[4]))
-        l.error(str(e))
+        l.critical(str(info[4]))
+        l.critical(str(e))
     finally:
         f.close()
         driver.quit()
