@@ -1,5 +1,6 @@
 import codecs, time
 from headers import get_headers
+# drop module into Python > Lib > site-packages 
 
 def create_file(feed_name, permission, headers_array):
     if permission == 'a':
