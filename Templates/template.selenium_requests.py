@@ -5,17 +5,17 @@
 
 # Import modules #########################################
 
-import codecs, re, requests, time
+import codecs, requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
-       
+from script_template import create_file   
 # Write file and headers #################################
+f = create_file('type_entityType_authority','w',[header1, header2])
 
-f = codecs.open('type_entityType_authority_%s_000.txt' %(time.strftime('%Y%m%d')), 'w', 'utf-8')
 
-headers = ['canonical_header1', 'canonical_header2', 'canonical_header3', '...']
 
-f.write('|'.join(headers) + '\n') # all write code should include a new-line ('\n') character at end
+
+# all write code should include a new-line ('\n') character at end
 
 # Set up logging ########################################
 
@@ -104,14 +104,13 @@ def get_data():
 
 # Main logic ##############################################
 if __name__ == '__main__':     
-    log('START')
     try:
         n = 0
         get_page(n)
         scrape_links(n)
         get_data()
-        log('COMPLETE')
-    except: log('ERROR')
+    except Exception, e: 
+        print str(e)
     finally:               
         f.close()
         driver.quit()

@@ -4,11 +4,12 @@
 ###################################
 
 from selenium import webdriver
-import requests, re, codecs, time
+import requests, codecs
 from bs4 import BeautifulSoup
+from script_template import create_file
 
 f = create_file('arc-eng-lar-sur_c_KSbtp','w',[12,4,36,21,32,37,19,"renewal_date",13,"obtained_by"])
-f = codecs.open('arc-eng-lar-sur_c_KSbtp_%s_000.txt'%(time.strftime("%Y%m%d")), 'w', 'utf-8')
+
 
 u = codecs.open('KSbtp.links.csv', 'w',' utf-8')
 driver = webdriver.Chrome()
@@ -29,8 +30,6 @@ def grab_links():
                 if "agency_id" in link['href']:
                                 print link.text
                                 u.write(link['href'] + "\n") 
-                else:
-                        pass
 
 def scrape_links(n):
         i=1
@@ -86,8 +85,6 @@ def KSbtp(link):
                 line.append(link.split("=")[-1])
                 print line
                 f.write("|".join(line) + "\n")
-        except:
-                pass
 
 def get_data():
         for line in open('KSbtp_links.csv', 'r'):
