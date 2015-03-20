@@ -1,6 +1,22 @@
 PhantomJS is launching GhostDriver...
-[INFO  - 2015-03-17T21:37:21.871Z] GhostDriver - Main - running on port 59483
-[INFO  - 2015-03-17T21:37:22.017Z] Session [cb6b9ba0-cced-11e4-a5f0-e57ed7024766] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
-[INFO  - 2015-03-17T21:37:22.017Z] Session [cb6b9ba0-cced-11e4-a5f0-e57ed7024766] - page.customHeaders:  - {}
-[INFO  - 2015-03-17T21:37:22.017Z] Session [cb6b9ba0-cced-11e4-a5f0-e57ed7024766] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.8","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2015-03-17T21:37:22.017Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: cb6b9ba0-cced-11e4-a5f0-e57ed7024766
+[INFO  - 2015-03-19T19:50:26.974Z] GhostDriver - Main - running on port 64505
+[INFO  - 2015-03-19T19:50:27.068Z] Session [30a40780-ce71-11e4-8921-59c3e2d60147] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.8 Safari/534.34","webSecurityEnabled":true}
+[INFO  - 2015-03-19T19:50:27.068Z] Session [30a40780-ce71-11e4-8921-59c3e2d60147] - page.customHeaders:  - {}
+[INFO  - 2015-03-19T19:50:27.068Z] Session [30a40780-ce71-11e4-8921-59c3e2d60147] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"1.9.8","driverName":"ghostdriver","driverVersion":"1.1.0","platform":"windows-8-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2015-03-19T19:50:27.068Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 30a40780-ce71-11e4-8921-59c3e2d60147
+[ERROR - 2015-03-19T19:50:41.224Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 142679464118[INFO  - 2015-03-19T19:51:31.957Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T19:56:31.963Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:01:31.963Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:06:31.976Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:11:31.987Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:16:31.988Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:21:31.999Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:26:32.009Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:31:32.021Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:36:32.036Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:41:32.180Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:46:32.187Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-03-19T20:51:32.182Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+GAVE UP. Search Stop Time: 1426794798665
+[ERROR - 2015-03-19T19:53:32.917Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1426794812854
+[ERROR - 2015-03-19T19:53:49.702Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1426794829664

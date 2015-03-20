@@ -1,9 +1,12 @@
 import requests, re
 from subprocess import call # allows for doing terminal commands
-from script_template import create_file
+from script_template import create_file, logger
        
 # Write file and headers #################################
 f = create_file('pro-type_entity-type_authority','w',[header_num, header_num,...])
+
+# import logger
+l = logger('authority')
 
 #########################################################
 # PDFs are super messy. Read them line by line and look for
@@ -27,7 +30,8 @@ def main():
 if __name__ == '__main__':
     try:
         main()
+        l.info('complete')
     except Exception, e:
-    	print str(e)
+    	l.critical(str(e))
     finally:
     	f.close()

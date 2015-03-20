@@ -6,13 +6,14 @@
 from selenium import webdriver
 import requests, codecs
 from bs4 import BeautifulSoup
-from script_template import create_file
+
+from script_template import create_file, logger
 
 f = create_file('arc-eng-lar-sur_c_KSbtp','w',[12,4,36,21,32,37,19,"renewal_date",13,"obtained_by"])
-
+l = logger('KSbtp')
 
 u = codecs.open('KSbtp.links.csv', 'w',' utf-8')
-driver = webdriver.Chrome()
+driver = webdriver.PhantomJS()
 s = requests.Session()
 s.get("http://licensing.ks.gov/verification/web/Search.aspx?facility=Y")
  
@@ -23,24 +24,24 @@ def get_page(n):
         time.sleep(3)
         driver.find_element_by_xpath("//*[@id=\"sch_button\"]").click()
         time.sleep(3)
-        print '- - - - - - Getting License Type %s - - - - - -' %(n+1)
+        l.debug('- - - - - - Getting License Type %s - - - - - -' %(n+1))
                 
 def grab_links():
         for link in BeautifulSoup(driver.page_source).find_all("a"):
                 if "agency_id" in link['href']:
-                                print link.text
+                                l.info(link.text)
                                 u.write(link['href'] + "\n") 
 
 def scrape_links(n):
         i=1
         while True:
                 try:
-                        print "Grabbing links for", i
+                        l.debug("Grabbing links for", i)
                         grab_links()
                         i+=1
                         driver.find_element_by_link_text("%d"%i).click()
                         time.sleep(3)
-                        print "Clicked on", i
+                        l.debug("Clicked on", i)
                         time.sleep(3)
                 except:
                         if len(driver.find_elements_by_link_text("...")) == 1 and i>41:
@@ -64,7 +65,7 @@ def scrape_links(n):
         u.close()
 
 def KSbtp(link):
-        print link.replace('\n','')
+        l.info(link.replace('\n',''))
         try:
                 page = s.get("http://licensing.ks.gov/verification/web/" + link.replace('\n',''))
                 time.sleep(3)
@@ -85,6 +86,9 @@ def KSbtp(link):
                 line.append(link.split("=")[-1])
                 print line
                 f.write("|".join(line) + "\n")
+        except:
+                pass
+
 
 def get_data():
         for line in open('KSbtp_links.csv', 'r'):
@@ -99,8 +103,9 @@ if __name__ == '__main__':
                 get_page(n)
                 scrape_links(n)
                 get_data()
+                l.info('complete')
         except Exception, e:
-                str(e)
+                l.critical(str(e))
         finally:
                 f.close()
                 driver.quit()

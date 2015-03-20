@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 from script_template import create_file
 
 f = create_file('pro-type_entity-type_authority','w',[header_num, header_num,...])
+l = logger('authority')
+
 def main():
 	#######this should be standard
 	url = "www.example.com/licenses"
@@ -19,7 +21,8 @@ def main():
 if __name__ == "__main__":
 	try:
 		main()
+		l.info('complete')
 	except Exception, e:
-		print str(e)
+		l.critical(str(e)) # all critical logs will write to main log
 	finally:
 		f.close()
