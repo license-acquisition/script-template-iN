@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from script_template import create_file
 
 f = create_file('led_c_OKsdh','w',[12,0,4,36,44,33,66,32,102,6])
+l = logger('OKsdh')
 
 def main():
 	#######this should be standard
@@ -22,7 +23,7 @@ def main():
 	    info.append('1')
 	    if len(info) > 3:
 	        f.write("|".join(info) + "\n")
-	        print("\"" + "\",\"".join(info) + "\"\n")
+	        l.info("\"" + "\",\"".join(info) + "\"\n")
 	
 	#end of parsing logic
 
@@ -30,7 +31,8 @@ def main():
 if __name__ == "__main__":
 	try:
 		main()
+		l.info('Complete')
 	except Exception, e: 
-		print str(e)
+		l.critical(str(e))
 	finally:
 		f.close()

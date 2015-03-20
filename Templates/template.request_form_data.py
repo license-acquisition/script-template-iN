@@ -2,13 +2,13 @@
 
 import requests
 from bs4 import BeautifulSoup
-from script_template import create_file
+from script_template import create_file, logger
        
 # Write file and headers #################################
 
 f = create_file('pro-type_entity-type_authority','w',[header_num, header_num,...])
 # all write code should include a new-line ('\n') character at end
-
+l = logger('authority')
 
 
 
@@ -38,7 +38,7 @@ def main():
                 '''
                 parse the page source in any way you need to, then write to file
                 '''
-                print info
+                l.info(info)
                 f.write('|'.join(info) + '\n')
 
 # Main logic #################################################
@@ -46,7 +46,8 @@ def main():
 if __name__ == '__main__':
     try:
         main()
+        l.info('complete')
     except Exception, e:
-        print str(e) 
+        l.critical(str(e)) 
     finally: 
         f.close()

@@ -1,9 +1,9 @@
 import requests, re
 from subprocess import call
-from script_template import create_file
+from script_template import create_file, logger
 
 f = create_file('wel_c_DEdow', 'w', [1,2,3,4,5,6,7,8,9,10])
-
+l = logger('DEdow')
 
 def main():
     open("wel_c_DEdow.pdf", "w").write(requests.get("http://www.dnrec.delaware.gov/wr/Information/WaterSupplyInfo/Documents/2013%20Licensed%20Water%20Well%20Contractors.pdf").content)
@@ -19,7 +19,8 @@ def main():
 if __name__ == '__main__':
     try:
         main()
+        l.info('complete')
     except Exception, e:
-        print str(e)
+        l.critical(str(e))
     finally:
         f.close()

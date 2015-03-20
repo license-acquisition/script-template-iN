@@ -2,13 +2,14 @@ from string import ascii_lowercase
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from itertools import product
-from script_template import create_file
+from script_template import create_file, logger
 
 #type = asb,hva, etc.. authority = OKepa etc. entity_type = c, i, or b
 #reference canonical headers doc
 f = create_file("type_entityType_authority", "w", [header1,header2,...])
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
+l = logger('authority')
 
 def main():
 
@@ -41,10 +42,10 @@ def main():
 if __name__ == '__main__':
 	try:
 		main()
+		l.info('complete')
 	except Exception, e:
-		print str(e)
+		l.critical(str(e))
 	finally:
-		driver.close()
 		driver.quit()
 		f.close()
 

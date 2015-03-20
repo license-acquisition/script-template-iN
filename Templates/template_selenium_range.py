@@ -1,10 +1,11 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
-from script_template import create_file
+from script_template import create_file, logger
 
 #type = asb,hva, etc.. authority = OKepa etc. entity_type = c, i, or b
 f = create_file('pro-type_entity-type_authority','w',[header_num, header_num,...])
 browser = webdriver.PhantomJS() #use phantom js when available
+l = logger('authority') # initialize logger
 
 def main():
 	#### standardized code
@@ -25,8 +26,7 @@ if __name__ == '__main__':
 	try:
 		main()
 	except Exception, e:
-		print str(e)
+		l.critical(str(e))
 	finally:
-		browser.close()
 		browser.quit()
 		f.close()

@@ -5,11 +5,12 @@
 
 import requests
 from bs4 import BeautifulSoup
-from script_template import create_file
+from script_template import create_file, logger
 
 
 f = create_file('arc_c_ARbar', 'w', [21,6,0,4,36,44,37,13,102,32])
 #headers = ["license_number", "company_flag", "address1", "city", "state", "zip", "status", "expiration_date", "number_type", "licensee_type_cd"]
+l = logger('ARbar')
 
 ###################################################
 
@@ -34,19 +35,20 @@ def main():
                             cert = BeautifulSoup(requests.get(link['href']).content)
                             info.append(cert.find_all("p", {"align" : "center"})[0].find("strong").text.replace("This individual registration expires on ", ""))
                     except Exception, e:
-                        print str(e)
+                        l.error(str(e))
                 while len(info) < 8:
                     info.append("")
                 info.append("Certificate of Authorization Number")
                 info.append("Architectural Firm")
-                print info
+                l.info(info)
                 f.write("|".join(info) + "\n")
 
 		
 if __name__ == '__main__':
         try:
             main()
+            l.info('complete')
         except Exception, e:
-            print str(e)
+            l.critical(str(e))
         finally:
             f.close()

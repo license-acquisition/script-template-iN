@@ -1,7 +1,8 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
-from script_template import create_file
+from script_template import create_file, logger
 f = create_file("wel_c_NYdec","w",[12,0,4,36,44,33,21,"number_type",32])
+l = logger('NYdec')
 browser = webdriver.PhantomJS()
 
 
@@ -23,7 +24,7 @@ def main():
 					info.append("Registration Number")
 					info.append("Water Well Contractor")
 					f.write("|".join(info) + "\n")
-					print('|'.join(info) + "\n")
+					l.info('|'.join(info) + "\n")
 					browser.find_element_by_partial_link_text("Next").click()
 			except:
 				#if next doesn't exist, break the while loop
@@ -32,8 +33,7 @@ if __name__ == '__main__':
 	try:
 		main()
 	except Exception, e:
-		print str(e)
+		l.critical(str(e))
 	finally:
-		browser.close()
 		browser.quit()
 		f.close()
