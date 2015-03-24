@@ -1,13 +1,14 @@
 import codecs, re, requests, csv, time, sys
 from bs4 import BeautifulSoup
 from datetime import date
-start=time.time()
+from script_template import create_file, logger
 
-f = codecs.open('led_c_ILdph_%s_000.csv' %(time.strftime('%Y%m%d')), 'w', 'utf-8')
-f.write("licensee_type_cd|number_type|license_number|entity_name|last update|county|address1|city|state|zip|expiration_date|phone|fax\n")
-s = requests.session()
-found = True
-try:
+f = create_file('led_c_ILdph', 'w', ['32', '102', '21', '12', 'last update', '8', '0', '4', '36', '44', '13', '33', '66'])
+l = logger('led_c_ILdph')
+
+def main():
+	s = requests.session()
+	found = True
 	for i in xrange(1,999999999,20):
 		if found == False:
 			break
@@ -23,21 +24,21 @@ try:
 						found = True
 						soup= BeautifulSoup(s.get("http://app.idph.state.il.us" + link["href"]).content)
 						#print soup.text
-						data = []
-						data.append("Licensed Lead Contractors")
-						data.append("License Number")
+						info = []
+						info.append("Licensed Lead Contractors")
+						info.append("License Number")
 						table = soup.find_all("table", {"cellpadding" : "2"})[1]
 						for tr in table.find_all("tr"):
-							data.append(re.sub("\s+", " ", tr.find_all("td")[1].text.strip().replace(u',',' ')))
-							#for td in tr.find_all("td", {"bgcolor" : "White"}):
-							#	data.append(td.text)
-						print("\"" + "\",\"".join(data) + "\"\n")
-						f.write("|".join(data) + "\n")
+							info.append(re.sub("\s+", " ", tr.find_all("td")[1].text.strip().replace(u',',' ')))
+						l.info(info)
+						f.write("|".join(info) + "\n")
 				except Exception as e:
-					print data
-					print str(e)
-					pass
-except Exception as e:
-	print str(e)
+					l.error('Error on %s: %s' %(i,str(e)))
 
-print time.time()-start	
+if __name__ == '__main__':
+    try:
+        main()
+        l.info('complete')
+    except Exception as e:
+        l.critical(str(e))
+    finally: f.close()

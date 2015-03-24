@@ -3,21 +3,16 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from datetime import date
 from string import ascii_letters, digits
-start=time.time()
-year = date.today().year
-month = date.today().month
-day = date.today().day
+from script_template import create_file, logger
 
-f = codecs.open('arc_c_PA_%s%s%s_000k.csv' %(str(year), str(month).zfill(2), str(day).zfill(2)), 'w', 'utf-8')
-#g = open("arc_c_PA_links.txt", "w")
-f.write("entity_name|city|state|zip|licensee_type_cd|license_number| |professions|status|first_issue_date|expiration_date|last_renew_date|company_flag\n")
+f = create_file('arc_c_PA', 'w', ['12', '4', '36', '44', '32', '21', '', 'professions', '37', '19', '13', '20', '6'])
+l = logger('arc_c_PA')
 
 s = requests.session()
 s.get("http://www.licensepa.state.pa.us/Search.aspx?facility=Y")
 
 
-try:
-
+def main():
     for i in range (30000,35000):
         url = "http://www.licensepa.state.pa.us/Details.aspx?agency_id=1&license_id=%d&"%i
         page=s.get(url)
@@ -25,7 +20,6 @@ try:
         soup = BeautifulSoup(page.content)
         
         try:
-            
             info = []
             info.append((soup.find("span", id="_ctl17__ctl1_full_name")).text)
             info.append((soup.find("span", id="_ctl22__ctl1_addr_line_4")).text)
@@ -39,20 +33,21 @@ try:
             info.append((soup.find("span", id="_ctl27__ctl1_date_last_renewal")).text)
             info.append("1")
 
-            info[1] = "\",\"".join(info[1].rsplit(" ", 1))
-            info[1] = "\",\"".join(info[1].rsplit(" ", 1))
+            info[1] = "|".join(info[1].rsplit(" ", 1))
+            info[1] = "|".join(info[1].rsplit(" ", 1))
             
 
         except Exception, e:
-            print str(e)
+            l.error(str(e))
             continue
-        print i    
-        print "\"" + "\",\"".join(info) + "\"\n"
+        l.debug(i)    
+        l.info(info)
         f.write("|".join(info) + "\n")
 
-except Exception, e:
-    print str(e)
-       
-
-
-
+if __name__ == '__main__':
+    try:
+        main()
+        l.info('complete')
+    except Exception as e:
+        l.critical(str(e))
+    finally: f.close()

@@ -1,22 +1,23 @@
-import requests, re
+import requests, re, time, codecs
 from bs4 import BeautifulSoup
-import time
-import codecs
-f = codecs.open("gen.res_c_PAhic_20150223_000.txt","a","utf-8")
-l = codecs.open('PAhic_log2.csv','a','utf-8')
-#f.write("licensee_type_cd,company_flag,entity_name,dba,license_number,first_issue_date,expiration_date,phone,fax,address1,address2,city,state,zip,website,description\n".replace(',', '|'))
-s = requests.session()
-headers={"User-Agent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0"}
 from thready import threaded
-import logging
-import subprocess
+import logging, subprocess
+from script_template import create_file, logger
 logging.basicConfig()
 
-start = time.time()
+f = create_file('gen.res_c_PAhic', 'w', ['32', '6', '12', '10', '21', '19', '13', '33', '66', '0', '1', '4', '36', '44', '43', 'description'])
+l = logger('gen.res_c_PAhic')
+g = codecs.open('gen.res_c_PAhic_links','w','utf-8')
+
+
+s = requests.session()
+headers={"User-Agent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0"}
+
 soup = BeautifulSoup(s.get("http://hicsearch.attorneygeneral.gov/").content)
-low = raw_input("Enter start number: ") # 1
-high = raw_input("Enter end number: ") # 116000
-threads = raw_input("Number of threads: ") # 3 or 4
+low = 1 # raw_input("Enter start number: ")
+high = 116000 # raw_input("Enter end number: ")
+threads =  3 # raw_input("Number of threads: ") # 3 or 4
+
 def PA_hic(numb):
 	try:
 		soup = BeautifulSoup(s.get("http://hicsearch.attorneygeneral.gov/").content)
@@ -75,14 +76,11 @@ def PA_hic(numb):
 		info.append(soup.findAll("table",{"class":"templateTable"})[0].findAll("tr")[-2].findAll("td")[1].text.strip())
 		desc = info.pop().replace('\n','').replace('\r','')
 		info.append(desc)
-		print info
+		l.info(info)
 		f.write("|".join(info) + "\n")
 	except Exception, e:
-		print re.sub("s+"," ",soup.text)
-		log = []
-		log.append(str(numb) + "\n")
-		print numb
-		l.write("|".join(log) + "\n")
+		l.error(re.sub("s+"," ",soup.text))
+		l.error('number = %s' %numb)
 		pass
 
 
@@ -91,7 +89,6 @@ def ThreadedScrape():
 	threaded(numb, PA_hic, num_threads=int(threads))
 
 if __name__ == '__main__':
-	ThreadedScrape()
-	#f.write('Minutes elapsed: %s \n' %((time.time() - start)/60))
-	#f.write('It actually finished.')
-	f.close()
+	try: ThreadedScrape()
+	except Exception as e: l.critical(str(e))
+	finally: f.close()
