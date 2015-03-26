@@ -1,6 +1,10 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import re, time, codecs
+from script_template import create_file, logger
+
+f = create_file('arc_b_IAiwd', 'w', [])
+l = logger('arc_b_IAiwd')
 
 f = codecs.open("arc_b_IAiwd_%s_000.txt" %(time.strftime('%Y%m%d')),"w","utf-8")
 headers = ['name', 'blank', 'entity_name', 'address1', 'address2', 'city/state/zip', 'phone', 'fax', 'license_number',
@@ -31,20 +35,6 @@ for i in range(1,30000):
                     info += td.text.split(':')[1].replace('\n','').replace('\r','').strip() + '|'
             except:
                 info += td.text.replace('\n','').replace('\r','').strip() + '|'
-        '''
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(2) > td > font > strong").text) # qualifying individual
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr:nth-child(1) > td").text) # entity_name
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr:nth-child(2) > td").text) # address1
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr:nth-child(3) > td").text) # address2
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(4) > td:nth-child(1) > table > tbody > tr:nth-child(3) > td").text) # city/state/zip
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(1) > td:nth-child(2) > pre").text)
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(2) > td:nth-child(2) > pre").text)
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(3) > td:nth-child(2) > pre").text)
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(4) > td:nth-child(2)").text)
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(1) > td:nth-child(2) > pre").text)
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(2) > td:nth-child(2)").text)
-        info.append(browser.find_element_by_css_selector("body > form > table > tbody > tr:nth-child(6) > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(3) > td:nth-child(2)").text)
-        '''
         print info
         f.write(info + '\n')
     except Exception, e:

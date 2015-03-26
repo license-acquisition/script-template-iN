@@ -47,7 +47,7 @@ def main():
 			for employee in employees:
 				for td in employee.find_all('td'):
 					info.append(td.text) # Employee Name to Certification Categories.
-				for m in [business_name, business_license, street, city, state, zipcode, phone, 'Employee License ID', 'Pest Control']
+				for m in [business_name, business_license, street, city, state, zipcode, phone, 'Employee License ID', 'Pest Control']:
 					infol.append(m)
 				certifications = info[4].split(',')
 				while len(certifications) < 3:
@@ -58,10 +58,10 @@ def main():
 				info[4:5] = certification1, certification2, certification3
 				f.write("|".join(info) + "\n")
 				l.info(info)
-				print "ULR index: %d" %i
+				l.debug("ULR index: %d" %i)
 				info = []
 		except Exception as e:
-			l.error('Error on %s: %s' %i, str(e))
+			l.error('Error on %s: %s' %(i, str(e)))
 			# print "You stare into the abyss and go insane. Good job!"
 
 

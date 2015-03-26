@@ -1,29 +1,17 @@
 import requests, re, codecs, time
 from subprocess import call
 from bs4 import BeautifulSoup
+from script_template import create_file, logger
 
-start = time.time()
-'''
-url = 'http://www.airquality.utah.gov/HAPs/docs/updates/currentcert.pdf'
+f = create_file('asb_c_UTdeq', 'w', ['21', '7', '0', 'city/state/zip', '33', '66', '13'])
+l = logger('asb_c_UTdeq')
 
-pdfFile = open('asb_c_UTdeq.pdf', 'w')
-pdfFile.write(requests.get(url).content)
-pdfFile.close()
-
+open('asb_c_UTdeq.pdf', 'wb').write(requests.get('http://www.airquality.utah.gov/HAPs/docs/updates/currentcert.pdf').content)
 call(['pdftotext', '-layout', 'asb_c_UTdeq.pdf'])
-'''
-
-# create txt file
-f = codecs.open('asb_c_UTdeq_%s_000.txt' %(time.strftime('%Y%m%d')), 'w', 'utf-8')
-f.write('|'.join(['license_number', 'company_name', 'address1', 'city/state/zip', 'phone', 'fax', 'expiration_date']) + '\n')      
-# get lines
-g = open('asb_c_UTdeq.txt', 'r')
-lines = g.readlines()
-g.close()
     
 right = []
 left = []
-for line in lines:
+for line in open('asb_c_UTdeq.txt', 'r'):
         columns = line.split('\t')
         left.append(''.join([columns[0], columns[1]]).strip())
         right.append(''.join([columns[2], columns[3]]).strip())

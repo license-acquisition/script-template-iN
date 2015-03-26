@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 from datetime import date
 from script_template import create_file, logger
 
-f = create_file('gen.res_c_NMpsi', 'w', ['102', '32', '6', '21', '33', '37', '19', '13', 'volume', '0', '4', '36', '44', '35', 'qpcertificate no1', 'qpclassification1', 'qpattach date1', 'qpstatus1', '35', 'qpcertificate no2', 'qpclassification2', 'qpattach date2', 'qpstatus2'])
-l = logger('gen.res_c_NMpsi')
+f = create_file('gen.res_c_NMrld', 'w', ['102', '32', '6', '21', '33', '37', '19', '13', 'volume', '0', '4', '36', '44', '35', 'qpcertificate no1', 'qpclassification1', 'qpattach date1', 'qpstatus1', '35', 'qpcertificate no2', 'qpclassification2', 'qpattach date2', 'qpstatus2'])
+l = logger('gen.res_c_NMrld')
 
 def main():
     i = 0
@@ -41,7 +41,7 @@ def main():
                     info.append(td.text)    
             del(info[10])
             f.write("|".join(info) + "\n")
-            print(info)
+            l.info(info)
         
         except Exception as e:
             l.error(str(e))

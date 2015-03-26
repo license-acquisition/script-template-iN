@@ -35,9 +35,8 @@ def main():
                                 pageText = soup.find("div", {"id" : "content_column"}).text.replace('\n', " ")
                                 pageText = re.sub("\s\s*", " ", pageText)
                                 if "no matching record for profession was found" in pageText:
-                                        l.info("No Results for %s"%i)
+                                        l.debug("No Results for %s"%i)
                                 else:
-                                        #print pageText
                                         info = []
                                         info.append("Engineering Firm")
                                         info.append("Certificate of Authorization")

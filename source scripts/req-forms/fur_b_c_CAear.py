@@ -22,7 +22,8 @@ def main():
          'P_RECORD_SET_SIZE': '500',
          'Z_START': '1',
          'Z_ACTION': 'Find'}
-
+  s = requests.Session()
+  s.get('http://www2.dca.ca.gov/pls/wllpub/wllqryna$lcev2.startup?p_qte_code=LIC&p_qte_pgm_code=5710') # initialize session
   # loop through 500s until dead
   fails = 0
   while check:

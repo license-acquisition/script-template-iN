@@ -2,56 +2,58 @@ import sys, requests, codecs, time, re, csv, string
 from bs4 import BeautifulSoup
 from datetime import date
 from string import ascii_letters, digits
+from script_template import create_file, logger
 
-start=time.time()
-year=date.today().year
-month=date.today().month
-day=date.today().day
-#automate date naming of file
+f = create_file('arc_b_ORbae', 'w', ['12', '21', '37', '62', '0', '4', '36', '44', '19', '13', 'HSW', '6', '32'])
+l = logger('arc_b_ORbae')
 
-f=codecs.open('arc_b_ORbae_%s%s%s_000.csv' %(str(year), str(month).zfill(2), str(day).zfill(2)), 'w', 'utf-8')
-f.write("entity_name|license_number|status|disciplinary_status|address1|city|state|zip|first_issue_date|expiration_date|HSW|company_flag|licensee_type_cd\n")
-#create a .csv file and write the appropriate headings in the file
+def main():
+    url='http://orbae.com/database/search_architects.php?status=Active&fname=&mi=&lname=&firm=&license=&city=&state=&option=com_content&task=view&id=20&Itemid=1'
+    soup=BeautifulSoup(requests.get(url).content.replace("<br>"," "))
 
-url='http://orbae.com/database/search_architects.php?status=Active&fname=&mi=&lname=&firm=&license=&city=&state=&option=com_content&task=view&id=20&Itemid=1'
-page=requests.get(url)
-soup=BeautifulSoup(page.content.replace("<br>"," "))
+    #grab the html for the page
+    info=[]
+    td=soup.findAll('td')
+    i=0
+    try:
+        for one in td[1::6]:
+            info.append(one.text)
+            
+            two=td[2+(6*i)].text
+            info.append(two)
+            
+            three=td[3+(6*i)].text.replace(",","")
+            three="|".join(three.rsplit(" ", 3))
+            info.append(three)
+            
+            four=td[4+(6*i)].text
+            d=four[0:10]
+            e=four[10:]
+            info.append(d)
+            info.append(e)
+            
+            five=td[5+(6*i)].text
+            info.append(five)
 
-#grab the html for the page
+            part1 = "|".join(info[0].rsplit(" ",1))
+            info[1] = "|".join(info[1].rsplit(" ",1))
 
-list1=[]
-td=soup.findAll('td')
-i=0
-for one in td[1::6]:
-    list1.append(one.text)
+            determineCom = info[0].rsplit("(",1)
+            if "AF" in determineCom[1]:
+                info.append("1")
+                info.append("Architecture Firm")
+            
+            l.info(info)
+            f.write("|".join(info) + "\n")
+            info=[]
+            i += 1
+    except Exception as e:
+        l.error(str(e))
     
-    two=td[2+(6*i)].text
-    list1.append(two)
-    
-    three=td[3+(6*i)].text.replace(",","")
-    three="\",\"".join(three.rsplit(" ", 3))
-    list1.append(three)
-    
-    four=td[4+(6*i)].text
-    d=four[0:10]
-    e=four[10:]
-    list1.append(d)
-    list1.append(e)
-    
-    five=td[5+(6*i)].text
-    list1.append(five)
-
-    part1 = "|".join(list1[0].rsplit(" ",1))
-    list1[1] = "|".join(list1[1].rsplit(" ",1))
-
-    determineCom = list1[0].rsplit("(",1)
-    if "AF" in determineCom[1]:
-        list1.append("1")
-        list1.append("Architecture Firm")
-    
-    print("\"" + "\",\"".join(list1) + "\"\n")
-    f.write("|".join(list1) + "\n")
-    list1=[]
-    i=i+1
-    
-f.close()
+if __name__ == '__main__':
+    try:
+        main()
+        l.info('complete')
+    except Exception as e:
+        l.critical(str(e))
+    finally: f.close()

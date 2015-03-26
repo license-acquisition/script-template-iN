@@ -39,8 +39,8 @@ def main():
 
         except Exception, e:
             l.error(str(e))
-            continue
-        l.debug(i)    
+            l.debug(str(i))
+            continue  
         l.info(info)
         f.write("|".join(info) + "\n")
 

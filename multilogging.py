@@ -5,7 +5,6 @@
 # RabbitMQ would be super cool to implement (stack or queue)
 ############################
 
-
 import logging
 import logging.handlers
 import multiprocessing
@@ -36,8 +35,8 @@ class QueueHandler(logging.Handler):
 def listener_configurer():
 	root = logging.getLogger()
 	fh = logging.handlers.RotatingFileHandler('/tmp/mptest.log', 'a', 300, 10)
-	format = logging.Formatter('%(asctime)s %(processName)-10s %(name)s %(levelname)-8s %(message)s')
-	fh.setFormatter(format)
+	fmt = logging.Formatter('%(asctime)s %(processName)-10s %(name)s %(levelname)-8s %(message)s')
+	fh.setFormatter(fmt)
 	rott.addHandler(fh)
 
 def listener_process(queue, configurer):
@@ -74,32 +73,33 @@ def worker_configurer(queue):
 	root.setLevel(logging.DEBUG)
 
 def worker_process(queue, configurer):
-	configurer(queue)
-    name = multiprocessing.current_process().name
-    print('Worker started: %s' % name)
-    for i in range(10):
-        time.sleep(random())
-        logger = logging.getLogger(choice(LOGGERS))
-        level = choice(LEVELS)
-        message = choice(MESSAGES)
-        logger.log(level, message)
-    print('Worker finished: %s' % name)
+        configurer(queue)
+        name = multiprocessing.current_process().name
+        print 'Worker started: %s' % name
+        for i in range(10):
+                time.sleep(random())
+                logger = logging.getLogger(choice(LOGGERS))
+                level = choice(LEVELS)
+                message = choice(MESSAGES)
+                logger.log(level, message)
+        print 'Worker finished: %s' % name
 
 def main():
-    queue = multiprocessing.Queue(-1)
-    listener = multiprocessing.Process(target=listener_process,
+        queue = multiprocessing.Queue(-1)
+        print queue
+        listener = multiprocessing.Process(target=listener_process,
                                        args=(queue, listener_configurer))
-    listener.start()
-    workers = []
-    for i in range(10):
-        worker = multiprocessing.Process(target=worker_process,
-                                       args=(queue, worker_configurer))
-        workers.append(worker)
-        worker.start()
-    for w in workers:
-        w.join()
-    queue.put_nowait(None)
-    listener.join()
+        listener.start()
+        workers = []
+        for i in range(10):
+                worker = multiprocessing.Process(target=worker_process,
+                                               args=(queue, worker_configurer))
+                workers.append(worker)
+                worker.start()
+        for w in workers:
+                w.join()
+        queue.put_nowait(None)
+        listener.join()
 
 if __name__ == '__main__':
     main()

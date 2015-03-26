@@ -1,6 +1,5 @@
 import codecs, re, requests, csv, time
 from bs4 import BeautifulSoup
-from datetime import date
 from script_template import create_file, logger
 
 f = create_file('arc_c_ARbar', 'w', ['21', '6', '0', '4', '36', '44', '37', '13', '102', '32'])

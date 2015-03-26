@@ -2,6 +2,9 @@
 
 import requests, re, codecs, time
 from subprocess import call
+from script_template import create_file, logger
+
+f = create_file('fir_c_COdfp', 'w', [])
 
 f = codecs.open('fir_c_COdfp_%s_000.txt' %(time.strftime('%Y%m%d')), 'w', 'utf-8')
 headers = ['company_name', 'qualifying_individual', 'address1', 'city/state/zip', 'year', 'license_number', 'license_type']

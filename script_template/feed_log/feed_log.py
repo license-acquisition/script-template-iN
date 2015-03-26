@@ -14,19 +14,22 @@ def logger(feed, master='N'):
     else:
         fh = logging.FileHandler('main_%s.log' %time.strftime('%Y-%m-%d'))
         fh.setLevel(logging.DEBUG)
-    ch = logging.StreamHandler() # logs to console all Critical errors
-    ch.setLevel(logging.CRITICAL)    
+    #ch = logging.StreamHandler() # we don't really want to see anything on console
+    #ch.setLevel(logging.CRITICAL)    
     
     # format and add to handlers
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                                   '%Y/%m/%d %H:%M:%S')
     if master == 'N':
-        for handler in [fh, fh2, ch]:
+        for handler in [fh, fh2]: # ch
             handler.setFormatter(formatter)
             logger.addHandler(handler)
     else:
-        for handler in [fh, ch]:
+        for handler in [fh]: #ch
             handler.setFormatter(formatter)
             logger.addHandler(handler)
     
     return logger
+
+f = logger('test')
+f.info('pest')

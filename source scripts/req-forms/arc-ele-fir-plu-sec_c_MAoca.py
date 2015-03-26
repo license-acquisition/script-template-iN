@@ -35,7 +35,7 @@ def scrapeLinks(cities, license_type):
                                 pass
 
 def ThreadedScrape():
-        links = [x.strip() for x in codecs.open('arc-ele-fir-plu-sec_c_MAoca.txt').readlines()]
+        links = [x.strip() for x in codecs.open('arc-ele-fir-plu-sec_c_MAoca_links.txt').readlines()]
         l.info('Number of links: %s' %len(links))
         threaded(links, MAoca, num_threads=3)
 

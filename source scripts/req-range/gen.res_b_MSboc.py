@@ -8,17 +8,14 @@
 import csv, re, requests, time, string, codecs
 from bs4 import BeautifulSoup
 from datetime import date
+from script_template import create_file, logger
 
-f = codecs.open('gen.res_b_MSboc_%s_000.csv' % (time.strftime('%Y%m%d')), 'w', 'UTF-8') 
-
-#---------------------------- Define Headers for the Data -------------------------
-
-headers = ["entity_name", "company_flag", "county_flag", "city_flag", "number_type", "license_number", "licensee_type_cd", "address1", "city", "state", "county", "zip", "phone", "fax", "DBA", "expiration_date", "Minority", "certification1", "qualifying_individual", "certification2", "qualifying_individual2", "certification3", "qualifying_individual3", "certification4", "qualifying_individual4", "certification5", "qualifying_individual5", "Officer 1 Name", "Officer 1 Title", "Officer 2 Name", "Officer 2 Title", "Officer 3 Name", "Officer 3 Title", "Officer 4 Name", "Officer 4 Title", "disciplinary_status", "Complaint Date 1", "disciplinary_string", "Resoultion Date 1", "Complaint 2", "Complaint Date 2", "Resolution 2", "Resoultion Date 2" "Complaint 3", "Complaint Date 3", "Resolution 3", "Resoultion Date 3"]
-f.write("\"" + "\",\"".join(headers) + "\"\n") 
+f = create_file('gen.res_b_MSboc', 'w', ['12', '6', '9', '5', '102', '21', '32', '0', '4', '36', '8', '44', '33', '66', 'DBA', '13', 'Minority', '57', '35', '58', 'qualifying_individual2', '59', 'qualifying_individual3', 'certification4', 'qualifying_individual4', 'certification5', 'qualifying_individual5', 'Officer 1 Name', 'Officer 1 Title', 'Officer 2 Name', 'Officer 2 Title', 'Officer 3 Name', 'Officer 3 Title', 'Officer 4 Name', 'Officer 4 Title', '62', 'Complaint Date 1', '63', 'Resoultion Date 1', 'Complaint 2', 'Complaint Date 2', 'Resolution 2', 'Resoultion Date 2Complaint 3', 'Complaint Date 3', 'Resolution 3', 'Resoultion Date 3'])
+l = logger('gen.res_b_MSboc')
 
 #---------------------------- Define Parsing Function -----------------------------
 
-def parse():
+def parse(soup):
 	#Parses the record's source HTML and writes a row of data to our CSV
 	
 	info = [] # Lots of cool stuff will be put in here.
@@ -109,85 +106,46 @@ def parse():
 	else:
 		info.insert(6, "Residential Contractor") # licensee_type_cd
 
-	f.write("\"" + "\",\"".join(info) + "\"\n")
-	print "\"" + "\",\"".join(info) + "\"\n"
-	print '-' * 50
+	f.write("|".join(info) + "\n")
+	l.info(info)
+	l.info('-' * 50)
 
 
 #-------------------------------------- Parse HTML --------------------------------
-largeGap = 1000
-gap = 0
-i = 7000 # originally 7000
-while True:
+def main():	
+	largeGap = 1000
+	gap = 0
+	i = 7000 # originally 7000
+	while True:
+		try:
+			# Try to find a valid URL and get data.
+			i += 1
+			gap += 1
+
+			if gap > largeGap * 2 and i > 50000:
+				break
+			if i <= 30000:	
+				url = "http://www.msboc.us/Detail.cfm?ContractorID=%d&ContractorType=Commercial&varDataSource=BOC" % i
+			elif i > 30000:
+				url = "http://www.msboc.us/Detail.cfm?ContractorID=%d&ContractorType=Residential&varDataSource=BOCRes" % i
+			
+			soup = BeautifulSoup(requests.get(url).content)
+
+			parse(soup)
+
+			if gap > largeGap:
+				largeGap = gap
+			gap = 0
+
+		except Exception as e:
+			# I assume that the url leads to a blank page.
+			l.debug("Oops, invalid URL index: %d. Try again..." % i)
+			l.debug('-' * 25)
+
+		
+if __name__ == '__main__':
 	try:
-		# Try to find a valid URL and get data.
-		i += 1
-		gap += 1
-
-		if gap > largeGap * 2 and i > 50000:
-			break
-		if i <= 30000:	
-			url = "http://www.msboc.us/Detail.cfm?ContractorID=%d&ContractorType=Commercial&varDataSource=BOC" % i
-		elif i > 30000:
-			url = "http://www.msboc.us/Detail.cfm?ContractorID=%d&ContractorType=Residential&varDataSource=BOCRes" % i
-		
-		soup = BeautifulSoup(requests.get(url).content)
-
-		parse()
-
-		if gap > largeGap:
-			largeGap = gap
-		gap = 0
-
-	except Exception as e:
-		# I assume that the url leads to a blank page.
-		print "Oops, invalid URL index: %d. Try again..." % i 
-		print '-' * 25
-
-		
-f.close()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		main()
+		l.info('complete')
+	except Exception as e: l.critical(str(e))
+	finally: f.close()

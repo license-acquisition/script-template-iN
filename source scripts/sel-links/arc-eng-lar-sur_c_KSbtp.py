@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import re, codecs, time
 from thready import threaded
 
+
 start = time.time()
 log = codecs.open('KSbtp_log.csv','w','utf-8')
 #url = open("KSbtp_links.csv","w")

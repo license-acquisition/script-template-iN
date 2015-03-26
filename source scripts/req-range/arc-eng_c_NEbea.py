@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import date
 from script_template import create_file, logger
 
-f = create_file('arc-eng_c_NEbea', 'w' ['12', '21', '32', '35', 'qualifying_individual2', '78', '37', '4', '8', '36', 'country', '19', '13', '6', '102'])
+f = create_file('arc-eng_c_NEbea', 'w', ['12', '21', '32', '35', 'qualifying_individual2', '78', '37', '4', '8', '36', 'country', '19', '13', '6', '102'])
 l = logger('arc-eng_c_NEbea')
 
 def main():

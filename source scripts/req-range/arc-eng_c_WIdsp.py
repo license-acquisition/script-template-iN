@@ -16,7 +16,7 @@ l = logger('arc-eng_c_WIdsp')
 def main():
 	for i in range(71629,74424):
 		try:
-			page = BeautifulSoup(requests.get('https://app.wi.gov/LicenseSearch/OrganizationLicense/SearchResultsSummary?chid=%d' % i).content)
+			soup = BeautifulSoup(requests.get('https://app.wi.gov/LicenseSearch/OrganizationLicense/SearchResultsSummary?chid=%d' % i).content)
 			info = []
 			paragraphs = soup.find_all('p')
 			org_information = paragraphs[1]

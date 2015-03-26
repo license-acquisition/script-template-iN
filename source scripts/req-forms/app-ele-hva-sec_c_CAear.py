@@ -12,9 +12,9 @@ def main():
     l.debug('getting list of counties')
     home = 'http://www2.dca.ca.gov/pls/wllpub/wllqryna$lcev2.startup?p_qte_code=SRD&p_qte_pgm_code=3900'
     soup = soupify(requests.get(home).content)
-    options = str(soup.find_all('option')[0]).replace('</option>','')
-    counties = re.sub('<.*?>', '|', options).split('|')
-    counties = counties[2:]
+    counties = []
+    for option in soup.find_all('option')[1:-10]:
+        counties.append(option['value'])
     l.debug('got counties')
     l.info(counties)
 

@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from script_template import create_file, logger
 
 f = create_file('pes_c_TNdoa', 'w', [21,12,0,1,"ctiy,state,zip",])
-l = logger('TNdoa')
+l = logger('pes_c_TNdoa')
 
 #*************************** Get Active Companies ****************************************
 
@@ -36,7 +36,7 @@ def main():
 			info=[]
 			
 		except Exception as e:
-			l.error('Error on %s: %s' %i,str(e))
+			l.error('Error on %s: %s' %(i,str(e)))
 
 if __name__ == '__main__':
     try:

@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import mechanize, urllib2, requests, re, cookielib, time, codecs
 
+
 start = time.time()
 s = requests.Session()
 s.get('https://mylicense.in.gov/everification/Search.aspx?facility=Y')

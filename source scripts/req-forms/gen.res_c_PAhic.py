@@ -7,7 +7,6 @@ logging.basicConfig()
 
 f = create_file('gen.res_c_PAhic', 'w', ['32', '6', '12', '10', '21', '19', '13', '33', '66', '0', '1', '4', '36', '44', '43', 'description'])
 l = logger('gen.res_c_PAhic')
-g = codecs.open('gen.res_c_PAhic_links','w','utf-8')
 
 
 s = requests.session()

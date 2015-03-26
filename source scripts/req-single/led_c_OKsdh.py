@@ -7,30 +7,30 @@
 
 import csv, re, requests, time, string, codecs
 from bs4 import BeautifulSoup
+from script_template import create_file, logger
 
-stamp = time.strftime("%Y%m%d")
-name = 'led_c_OKsdh_'+stamp+'_000.csv'
-f = codecs.open(name,'w','UTF-8')
+f = create_file('led_c_OKsdh', 'w', ['12', '21', '0', '4', '36', '44', '33', '66', '32', '102', '6'])
+l = logger('led_c_OKsdh')
 
-headers = ["entity_name","license_number","address1","city","state","zip",
-           "phone","fax","license_type_cd","number_type","company_flag"]
+def main():
+    url = 'http://www.deq.state.ok.us/aqdnew/lbp/Certified%20Lists/CertifiedLBPFirms.html'
+    soup = BeautifulSoup(requests.get(url).content)
 
-f.write("|".join(headers) + "\n")
-
-url = 'http://www.deq.state.ok.us/aqdnew/lbp/Certified%20Lists/CertifiedLBPFirms.html'
-page = requests.get(url)
-soup = BeautifulSoup(page.content)
-
-for tr in soup.find_all('tr'):
-    info = []
-    for td in tr.find_all('td'):
-        info.append(td.text)
-    info.append('Certified LBP Firms')
-    info.append('Certification Number')
-    info.append('1')
-    if len(info) > 3:
-        f.write("|".join(info) + "\n")
-        print("\"" + "\",\"".join(info) + "\"\n")
-
-f.close()
+    for tr in soup.find_all('tr'):
+        info = []
+        for td in tr.find_all('td'):
+            info.append(td.text)
+        info.append('Certified LBP Firms')
+        info.append('Certification Number')
+        info.append('1')
+        if len(info) > 3:
+            f.write("|".join(info) + "\n")
+            l.info(info)
     
+if __name__ == '__main__':
+    try:
+        main()
+        l.info('complete')
+    except Exception as e:
+        l.critical(str(e))
+    finally: f.close()

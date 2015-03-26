@@ -8,32 +8,31 @@
 
 import csv, re, time, requests, codecs
 from bs4 import BeautifulSoup
+from script_template import create_file, logger
 
-url = 'http://www.ipels.idaho.gov/rosterallrecords_1.cfm'
+f = create_file('eng-sur_b_IDpel', 'w', ['6', '35', '12', 'qualifying_individual2', 'Address', '0', '4', '36', '44', 'country', '21', 'license authority', '32', '37', 'retired', '19', '13'])
+l = logger('eng-sur_b_IDpel')
 
-stamp = time.strftime("%Y%m%d")
+def main():
+	url = 'http://www.ipels.idaho.gov/rosterallrecords_1.cfm'
+	s = requests.Session()
+	page = s.get(url)
+	time.sleep(300) #Note: This page takes a very long time to load, can be 10+ minutes
+	soup = BeautifulSoup(page.content)
+	info = []
 
-name = 'eng-sur_b_IDpel_' + stamp + '_000.csv'
+	for tr in soup.find_all('tr'):
+	    info.append('1')
+	    for td in tr.find_all('td'):
+	        info.append(td.text.replace(u'\xa0',u'').strip())
+	    f.write('|'.join(info) + '\n')
+	    l.info(info)
+	    info = []
 
-f = codecs.open(name, 'w', 'UTF-8')
-headers = ["company_flag", "First Name", "entity_name", "Attn", "Address",
-           "address1", "city", "state", "zip", "country", "license_number",
-           "license authority", "license_type_cd", "status", "retired",
-           "first_issue_date", "expiration_date"]
-
-f.write("\"" + "\",\"".join(headers) + "\"\n")
-
-page = requests.get(url)
-soup = BeautifulSoup(page.content)
-info = []
-
-#Note: This page takes a very long time to load, can be 10+ minutes
-
-for tr in soup.find_all('tr'):
-    info.append('1')
-    for td in tr.find_all('td'):
-        info.append(td.text.replace(u'\xa0',u'').strip())
-    f.write("\"" + "\",\"".join(info) + "\"\n")
-    print("\"" + "\",\"".join(info) + "\"\n")
-    info = []
-f.close()
+if __name__ == '__main__':
+    try:
+        main()
+        l.info('complete')
+    except Exception as e:
+        l.critical(str(e))
+    finally: f.close()

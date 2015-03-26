@@ -13,8 +13,7 @@ def main():
 
     for i in range (1,250000):
         url = "http://www.ccb.state.or.us/search/search_results.asp?regno=%6d" %i
-        page = s.get(url)
-        soup = BeautifulSoup(page.content)
+        soup = BeautifulSoup(s.get(url).content)
         url2 = "http://www.ccb.state.or.us/search/business_detail.asp?license_number=%6d" %i
         try:
             info2 = []
@@ -32,8 +31,7 @@ def main():
             info.append("1")
             
             if len(info)>2:
-                page2 = s.get(url2)
-                soup = BeautifulSoup(page2.content)
+                soup = BeautifulSoup(s.get(url2).content)
 
                 data2 = soup.findAll('td',{"colspan":"3"})
 
