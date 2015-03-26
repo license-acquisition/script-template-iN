@@ -22,8 +22,8 @@ headers = {
 	'company_address3': '93', 'secondary_specialty': '80', 'insurance_expiration': '73', 'fieldbVALUE': '70', 'ubi': '81', 'work_comp_cancelation': '82', 'license_number': '21', 'county_flag': '9'}
 
 # insert array here
-lookup = ['WV COA#','entity_name','address1','city','state','zip','engineer-in-charge','wv pe#','coa expiration date']
-#lookup = lookup[0].split(',')
+lookup = ["dba,company_name,company_address1,phone,licensee_type_cd,license_number,first_issue_date,expiration_date,status,license_type2,license2,issue_date2,expiration_date2,status2,license_type3,license3,issue_date3,expiration_date3,status3,license_type4,license4,issue_date4,expiration_date4,status4,license_type5,license5,issue_date5,expiration_date5,status5,company_flag,number_type"]
+lookup = lookup[0].split(',')
 output = []
 for i in lookup:
 	try:

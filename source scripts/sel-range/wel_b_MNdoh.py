@@ -6,11 +6,9 @@ from datetime import date
 import codecs, time
 from script_template import create_file, logger
 
-start = time.time()
-driver = webdriver.PhantomJS()
-
 f = create_file('wel_b_MNdoh', 'w', [6, 8, 12, 21, 32, 1, 4, 36, 44, 33, 35, 'qualifying_individual2'])
-l = logger('MNdoh')
+l = logger('wel_b_MNdoh')
+driver = webdriver.PhantomJS()
 
 count = 0
 def main():
@@ -22,8 +20,7 @@ def main():
             numbsearch = driver.find_element_by_xpath("//*[@id='company_issue_nbr']/option[%d]"%i)
             numbsearch.click()
             driver.find_element_by_css_selector("input[type=\"submit\"]").click()
-            c = driver.page_source
-            soup = BeautifulSoup(c)
+            soup = BeautifulSoup(driver.page_source)
             td = soup.findAll("td",{"width":"372"})
             info.append("1")
             info.append(td[0].text.replace(u'\xa0',u''))
@@ -55,7 +52,6 @@ if __name__ == '__main__':
     try:
         main()
         l.info('complete')
-        l.info(str(time.time() - start))
     except Exception as e:
         l.critical(str(e))
     finally:
