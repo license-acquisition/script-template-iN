@@ -8,15 +8,15 @@ from script_template import create_file, logger
 f = create_file('plu_c_DCitb', 'w', ['21', '12', '4', '36', '44', '19', '13', '37', 'LicenseOrigin', '32'])
 l = logger('plu_c_DCitb')
 
-browser = webdriver.PhantomJS()
+driver = webdriver.PhantomJS()
 for keyword in [''.join(i) for i in product(ascii_lowercase, repeat =3)]:
-    browser.get("https://www.asisvcs.com/services/licensing/DCOPLA/search_page.asp?CPCAT=4909STATEREG")
+    driver.get("https://www.asisvcs.com/services/licensing/DCOPLA/search_page.asp?CPCAT=4909STATEREG")
     l.info(' - - - - - Searching %s - - - - - ' %(keyword))
-    browser.find_element_by_xpath('//*[@id="mainContent"]/form/table/tbody/tr[1]/td[2]/input[2]').click()
-    browser.find_element_by_xpath('//*[@id="mainContent"]/form/table/tbody/tr[3]/td[3]/input').send_keys(keyword)
-    browser.find_element_by_name("submit1").click()
+    driver.find_element_by_xpath('//*[@id="mainContent"]/form/table/tbody/tr[1]/td[2]/input[2]').click()
+    driver.find_element_by_xpath('//*[@id="mainContent"]/form/table/tbody/tr[3]/td[3]/input').send_keys(keyword)
+    driver.find_element_by_name("submit1").click()
     try:
-        soup = soupify(browser.page_source)
+        soup = soupify(driver.page_source)
         for tr in soup.find_all('table', {'id': 'results'})[0].find_all('tr')[2:]:
             info = []
             count = 0
@@ -37,7 +37,7 @@ for keyword in [''.join(i) for i in product(ascii_lowercase, repeat =3)]:
         l.error(str(e))
         l.error('Failed on %s' %(keyword))
     time.sleep(1)
-    browser.back()
+    driver.back()
 
 if __name__ == '__main__':
     try:

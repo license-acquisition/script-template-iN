@@ -7,13 +7,12 @@ from script_template import create_file, logger
 
 f = create_file('gen.res_c_MDllr', 'w', ['7', '0', '4', '36', '44', '13', '32', '21'])
 l = logger('gen.res_c_MDllr')
+driver = webdriver.PhantomJS()
 
 # Requires 3 letters for inclusive search, hit most common and de-dupe until consistent final #
 def main():
-        driver = webdriver.PhantomJS()
         keywords = [''.join(i) for i in product(ascii_lowercase, repeat =3)]
 
-        #def MDllr(url):
         for lictype in ['AR', 'LA', 'LS']: # original ['AR', 'LA','LS']
                 for term in keywords:
                         l.debug(' - - - - Searching %s: %s - - - - - ' %(lictype, term))
@@ -39,4 +38,6 @@ if __name__ == '__main__':
         l.info('complete')
     except Exception as e:
         l.critical(str(e))
-    finally: f.close()
+    finally:
+        f.close()
+        driver.quit()
