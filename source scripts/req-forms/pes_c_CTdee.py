@@ -8,28 +8,30 @@ from script_template import create_file, logger
 
 f = create_file('pes_c_CTdee', 'w', ['6', '12', '0', '13', '32'])
 l = logger('pes_c_CTdee')
-g = codecs.open('pes_c_CTdee_links.csv', 'w',
+g = codecs.open('pes_c_CTdee_links.csv', 'w', 'utf-8')
+s = requests.Session()
 
 def main():
     url = "http://www.kellysolutions.com/CT/Business/searchbyCategory.asp"
     categories = []
-    soup = soupify(requests.get(url).content)
+    soup = BeautifulSoup(s.get(url).content)
     for option in soup.find_all('option'):
             categories.append(option.text[:option.text.find('-')].strip())
+    l.info(categories)
     for category in categories:
             try:
                     url = 'http://www.kellysolutions.com/CT/Business/searchbyCategory.asp?Cat1=%s' %category
-                    soup = soupify(requests.get(url))
+                    soup = BeautifulSoup(s.post(url).content)
                     for link in soup.find_all('a'):
-                            #print link
                             if "showcoinfo" in link['href']:
+                                    l.info(link['href'])
                                     g.write("http://www.kellysolutions.com/CT/Business/%s\n"%link['href'])
             except Exception as e:
                     l.error(str(e))
                     l.error('Next category')
-                    
+    g.close()                
 
-    for line in open("pes_c_CTdee_links.txt", "r"):
+    for line in open("pes_c_CTdee_links.csv", "r"):
             soup2 = BeautifulSoup(requests.get(line.strip()).content.replace("&nbsp;", " "))
             for bold in soup2.find_all('b'):
                     bold.decompose()

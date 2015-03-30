@@ -14,44 +14,51 @@ from selenium.webdriver.support import expected_conditions as EC
 import selenium.webdriver as webdriver
 import selenium.webdriver.support.ui as ui
 from time import sleep
+from script_template import create_file, logger
 
-f = codecs.open('bui-ele-fir-plu-roo_c_CO.PUrbd_%s_000.csv' %(time.strftime('%Y%m%d')),'w','UTF-8')
+f = create_file('bui-ele-fir-plu-roo_c_CO.PUrbd', 'w', ['102', '6', '32', '12', 'examinee', '0', '4', '36', '44', '33', '73', '85', '13'])
+l = logger('bui-ele-fir-plu-roo_c_CO.PUrbd')
+driver = webdriver.PhantomJS()
 
-headers = ["number_type","company_flag","licensee_type_cd","entity_name", "examinee", "address1", "city", "state", "zip", "phone", "insurance_expiration", "work_comp_expiration", "expiration_date"]
-f.write("\"" + "\",\"".join(headers) + "\"\n")
+def main():
+    url = 'http://www.prbd.com/searches/consearch.php'
+    for i in range(0,46):
+        l.debug(i)
+        driver.get(url)
 
-#path_to_chromedriver = '/Users/Anthony/Documents/drivers/chromedriver'
-browser = webdriver.Chrome(glob('C:\\Users\\*\\Downloads\\chromedriver.exe'))
-url = 'http://www.prbd.com/searches/consearch.php'
+        element1 = driver.find_elements_by_tag_name('option')
+        element2 = driver.find_element_by_xpath('/html/body/div[1]/form[2]/table[2]/tbody/tr/td/input')
+        licensee_type = element1[i].text
 
-for i in range(0,46):
-    print i
-    browser.get(url)
+        element1[i].click()
+        element2.click()
 
-    element1 = browser.find_elements_by_tag_name('option')
-    element2 = browser.find_element_by_xpath('/html/body/div[1]/form[2]/table[2]/tbody/tr/td/input')
-    licensee_type = element1[i].text
-
-    element1[i].click()
-    element2.click()
-
-    soup = BeautifulSoup(browser.page_source)
-    
-    info = []
-    start = False
-    for tr in soup.find_all('tr'):
-        info.append("")
-        info.append('1')
-        info.append(licensee_type)
+        soup = BeautifulSoup(driver.page_source)
         
-        for td in tr.find_all('td'):
-            info.append(td.text)
-        if info[3] == "Name":
-            start = True
-        if (start == True and info[3] != "Name"):
-            f.write("\"" + "\",\"".join(info) + "\"\n")
-            print("\"" + "\",\"".join(info) + "\"\n")
         info = []
-    print i
-browser.close()
-f.close()
+        start = False
+        for tr in soup.find_all('tr'):
+            info.append("")
+            info.append('1')
+            info.append(licensee_type)
+            
+            for td in tr.find_all('td'):
+                info.append(td.text)
+            if info[3] == "Name":
+                start = True
+            if (start == True and info[3] != "Name"):
+                f.write("|".join(info) + "\n")
+                l.info(infO)
+            info = []
+        l.info(i)
+
+
+if __name__ == '__main__':
+    try:
+        main()
+        l.info('complete')
+    except Exception, e:
+        l.critical(str(e))
+    finally:
+        f.close()
+        driver.quit()

@@ -35,7 +35,7 @@ def main():
             f.write(info + '\n')
         except Exception, e:
         	l.info("Nothing found on %d"%i)
-            l.error(str(e))
+                l.error(str(e))
 
 if __name__ == '__main__':
     try:
