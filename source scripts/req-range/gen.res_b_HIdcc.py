@@ -4,31 +4,24 @@ from bs4 import BeautifulSoup
 
 #=======
 #>>>>>>> ea8ddcced279b00725b0af98257566a05f755d5f:Trigger/Source Scripts/HI/HIdcc.py
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from script_template import create_file, logger
 
 f = create_file('gen.res_b_HIdcc', 'w', ['21', '38', '37', '13', 'Legal License Name', 'Trade/Professional Name', 'Entity', '19', 'Class Prefix', 'Special Privilege', 'Restriction', 'Education Code', 'Business Code', 'Conditions & Limitations', 'Business Address'])
 l = logger('gen.res_b_HIdcc')
-driver = webdriver.PhantomJS()
+s = requests.Session()
 
 def main():
     licenseTypes = ['PJ', 'EJ', 'EM', 'CT', 'PCFR']
+    s.get('https://pvl.ehawaii.gov/pvlsearch/')
     for lic in licenseTypes:
             i = 25000 # original i = 1
             while i <= 35000:
                     info = []
-                    driver.get("https://pvl.ehawaii.gov/pvlsearch/info/%s-%s-0"%(lic, str(i)))
+                    page = s.get("https://pvl.ehawaii.gov/pvlsearch/info/%s-%s-0"%(lic, str(i)))
+                    l.info('searching %s-%s' %(lic, str(i)))
+                    time.sleep(1)
                     try:
-                             element = WebDriverWait(driver, 10).until(
-                               EC.presence_of_element_located((By.ID, "collapse1"))
-                            )
-                    finally:
-                            pass
-                    try:
-                            soup = BeautifulSoup(driver.page_source)
+                            soup = BeautifulSoup(page.content)
                             for span in soup.findAll("span"):
                                     span.extract()
                             for td in soup.findAll("td"):
@@ -52,4 +45,3 @@ if __name__ == '__main__':
                 l.critical(str(e))
         finally:
                 f.close()
-                driver.quit()

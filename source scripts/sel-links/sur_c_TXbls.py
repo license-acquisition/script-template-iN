@@ -28,7 +28,7 @@ def main():
 			links = driver.find_elements_by_xpath("//*[@id='contentBox']/form/table[2]/tbody/tr/td[1]/span/a")
 			for licnumb in links:
 				list_of_links.append(licnumb.text)
-			l.debug(list_of_links, x)
+			l.debug(' '.join(list_of_links) + ' ' + str(x))
 			for license in list_of_links:
 				driver.find_element_by_link_text(license).click()
 				time.sleep(3)

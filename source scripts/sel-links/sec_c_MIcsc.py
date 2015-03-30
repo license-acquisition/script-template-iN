@@ -8,6 +8,7 @@ f = create_file('sec_c_MIcsc', 'w', ['6', 'url', '12', '35', '0', '8', '32', '21
 l = logger('sec_c_MIcsc')
 g = codecs.open('sec_c_MIcsc_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
+s = requests.Session()
 
 def main():
 	driver.get("https://www.lara.michigan.gov/colaLicVerify/lName.jsp")
@@ -31,6 +32,7 @@ def main():
 
 	for line in open("MIlar_links_test.csv","r"):
 		try:
+			s.get("https://www.lara.michigan.gov/colaLicVerify/lName.jsp")
 			url = "https://www.lara.michigan.gov/colaLicVerify/" + line.strip()
 			source = s.get(url)
 			soup = BeautifulSoup(source.content.replace("</br>","_"))

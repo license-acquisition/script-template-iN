@@ -12,7 +12,7 @@ from script_template import create_file, logger
 f = create_file('eng_c_OHpen', 'w', ['6', '102', '32', '27', '12', '0', '4', '36', '44', '21', 'licensetype', '19', '13', '37', '62', '78'])
 l = logger('eng_c_OHpen')
 g = codecs.open('eng_c_OHpen_links.csv', 'w', 'utf-8')
-driver  = webdriver.Chrome()
+driver  = webdriver.PhantomJS()
 
 def main():
     keywords = [''.join(i) for i in product(ascii_uppercase, repeat =2)]
@@ -22,7 +22,7 @@ def main():
             driver.find_element_by_css_selector("#iform > table > tbody > tr > td > table:nth-child(5) > tbody > tr:nth-child(1) > td:nth-child(2) > select > option:nth-child(11)").click()
             search = driver.find_element_by_css_selector("#iform > table > tbody > tr > td > table:nth-child(5) > tbody > tr:nth-child(3) > td:nth-child(2) > input[type='text']")
             search.send_keys("%s"%x)
-            driver.find_element_by_css_selector("#iform > table > tbody > tr > td > table:nth-child(5) > tbody > tr:nth-child(9) > td:nth-child(2) > input[type='submit']:nth-child(1)").click()
+            driver.find_element_by_css_selector("#iform > table > tbody > tr > td > table:nth-child(5) > tbody > tr:nth-child(9) > td:nth-child(2) > input[type="submit"]:nth-child(1)").click()
             for a in driver.find_elements_by_css_selector("#iform > table > tbody > tr > td > table:nth-child(6) > tbody > tr > td:nth-child(1) > a"):
                 info = []
                 info.append((a.get_attribute('href')))
@@ -34,6 +34,7 @@ def main():
     driver.quit()
 
     s = requests.session()
+    s.get("https://license.ohio.gov/Lookup/")
     for line in open("eng_c_OHpen_links.csv","r","utf-8"):
         try:
             quotes = "%s" %line
@@ -80,7 +81,7 @@ def main():
             l.info(info)
             f.write("|".join(info) + "\n")
         except Exception, e:
-            l.error(str(e)
+            l.error(str(e))
 
 
 if __name__ == '__main__':

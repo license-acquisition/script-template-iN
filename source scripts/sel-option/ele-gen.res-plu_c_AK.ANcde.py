@@ -19,20 +19,13 @@ import selenium.webdriver.support.ui as ui
 from time import sleep
 from script_template import create_file, logger
 
-def checker(info, item, j):
-    while j < len(item):
-        if info[0] == item[j]:
-            return False
-        j = j+1
-    return True
-
 f = create_file('ele-gen.res-plu_c_AK.ANcde', 'w', ['102', '6', '12', '33', '21', '32', '13', '27', '22', '14', '28', '23', '15', '29', '24', '16'])
 l = logger('ele-gen.res-plu_c_AK.ANcde')
 driver = webdriver.PhantomJS()
 
 def main():
     url = 'http://bsd.muni.org/contractorlicensing/#Search'
-    for k in range(1): #originally 1->87
+    for k in range(1, 87): #originally 1->87
         driver.get(url)
         #element1 = driver.find_elements_by_tag_name('option')
         element2 = driver.find_element_by_xpath('//*[@id="btnSearch"]')
@@ -49,6 +42,7 @@ def main():
         i = 0
         j = 0
         test = True
+        l.debug(k)
         #print len(table[10].find_all('tr'))
         if len(table) > 10:
             for tr in table[10].find_all('tr'):
@@ -88,8 +82,13 @@ def main():
                 info3 = []
                 i = 0
                 j = 0
-        l.info('done')
 
+def checker(info, item, j):
+    while j < len(item):
+        if info[0] == item[j]:
+            return False
+        j += 1
+    return True
 
 if __name__ == '__main__':
     try:

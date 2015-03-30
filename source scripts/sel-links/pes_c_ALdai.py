@@ -10,6 +10,7 @@ f = create_file('pes_c_ALdai', 'w', ['35', '7', '8', '0', '4', '36', '44', '21',
 l = logger('pes_c_ALdai')
 g = codecs.open('pes_c_ALdai_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
+s = requests.Session()
 
 # Private or Commercial
 driver.get("http://agi-app.alabama.gov/Commercial.aspx")
@@ -35,6 +36,7 @@ l.info('finished grabbing links')
 tally = 0
 for line in open("pes_c_ALdai_links.csv", "r"):
 	info = []
+	s.get('http://agi-app.alabama.gov/Commercial.aspx')
 	for td in BeautifulSoup(requests.get("http://agi-app.alabama.gov/%s"%line).content.replace("<br>", "\",\"")).findAll("td", {"style":"font-size: x-small;"})[1::2]:
 		info.append(td.text)
 	info[3] = re.sub("(?<!\"),", "", "\",\"".join(info[3].rsplit(" ", 2)))

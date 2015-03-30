@@ -33,6 +33,7 @@ f = create_file('arc_c_NJdca', 'w', ['12', '4', '36', '32', '21', '37', 'cause',
 l = logger('arc_c_NJdca')
 g = codecs.open('arc_c_NJdca_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
+s = requests.Session()
 
 def main():
     page = 1
@@ -50,7 +51,7 @@ def main():
         for link in links:
             if "Details" in link['href']:
                 #link_list.append(link['href'])
-                g.write(str(link) + '\n')
+                g.write(str(link['href']) + '\n')
 
         fail = 0
         while fail < 4:
@@ -84,11 +85,12 @@ def main():
     g.close()
 
     # We have a file full of links. Now lets PARSE!
-    for x in open('arc_c_NJdca_links', 'r'):
+    for x in open('arc_c_NJdca_links.csv', 'r'):
             count += 1
             try:
+                s.get('https://newjersey.mylicense.com/verification/Search.aspx?facility=Y')
                 url = 'https://newjersey.mylicense.com/verification/' + x
-                soup = BeautifulSoup(requests.get(url).content)
+                soup = BeautifulSoup(s.get(url).content)
                 
                 info = []
                 info.append(soup.find_all('span', {'id': 'full_name'})[0].text)
@@ -111,7 +113,7 @@ def main():
                     else:
                         l.info('BOO YAA')
                 
-                f.write("\"" + "\",\"".join(info) + "\"\n")
+                f.write("|".join(info) + "\n")
                 l.info(info)
                 info = []
 

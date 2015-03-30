@@ -14,19 +14,17 @@ def main():
     url = "http://www.waterrights.utah.gov/cgi-bin/drilview.exe"
     driver.get(url)
     driver.find_element_by_css_selector("body > form > pre > select > option:nth-child(7)").click()
-    for a in driver.find_elements_by_css_selector("body > form > pre > p:nth-child(3) > a"):
-        info = []
-        info.append((a.get_attribute('href')))
-        l.info(info)
-        g.write("\"" + "\"\n\"".join(info) + "\"\n")
+    soup = BeautifulSoup(driver.page_source)
+    for link in soup.find('pre').find_all('a'):
+        if 'drilview' in link['href']:
+            g.write(link['href']+'\n')
     g.close()
 
     for line in codecs.open("wel_c_UTdwr_links.csv"):
         try:
             asdf = "%s" %line
             link = asdf.replace("\"","")
-            #source = s.get(link)
-            driver.get(link)
+            driver.get('http://www.waterrights.utah.gov/cgi-bin/'+link)
             info = []
             name = str(driver.find_element_by_css_selector("body > pre").text)
             name = re.sub("\s\s*"," ",name)
@@ -42,7 +40,7 @@ def main():
             l.info(info)
             f.write("|".join(info) + "\n")
         except Exception, e:
-            l.error(str(e)
+            l.error(str(e))
 
 if __name__ == '__main__':
     try:

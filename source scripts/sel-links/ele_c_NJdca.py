@@ -32,6 +32,7 @@ f = create_file('ele_c_NJdca', 'w', ['12', '4', '36', '32', '21', '37', 'cause',
 l = logger('ele_c_NJdca')
 g = codecs.open('ele_c_NJdca_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
+s = requests.Session()
 
 def main():
     page = 1
@@ -49,7 +50,7 @@ def main():
         links = soup.findAll("a")
         for link in links:
             if "Details" in link['href']:
-        
+                g.write(str(link['href']) + '\n')
         fail = 0
         while fail < 40:
             try:
@@ -80,11 +81,12 @@ def main():
 
     g.close()
 
-    for x in open('ele_c_NJdca_links', 'r'):
+    for x in open('ele_c_NJdca_links.csv', 'r'):
             count += 1
+            s.get('https://newjersey.mylicense.com/verification/Search.aspx?facility=Y')
             try:
-                url = 'https://newjersey.mylicense.com/verification/' + x
-                soup = BeautifulSoup(requests.get(url).content)
+                url = 'https://newjersey.mylicense.com/verification/' + x.replace('\n','')
+                soup = BeautifulSoup(s.get(url).content)
                 
                 info = []
                 info.append(soup.find_all('span', {'id': 'full_name'})[0].text.strip())

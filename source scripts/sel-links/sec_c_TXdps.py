@@ -5,9 +5,9 @@ import re, codecs, time
 from thready import threaded
 from script_template import create_file, logger
 
-f = create_file('gen.res_c_TXdps', 'w', ['6', '7', '21', 'CompanyCode', '32', '0', '4', '36', '44', 'CompanyStatus', 'CompanyExpiration', 'InsuranceExpiration', 'ArmedGuardInsurance', 'GuardDogInsurance'])
-l = logger('gen.res_c_TXdps')
-g = codecs.open('gen.res_c_TXdps_links.csv', 'w', 'utf-8')
+f = create_file('sec_c_TXdps', 'w', ['6', '7', '21', 'CompanyCode', '32', '0', '4', '36', '44', 'CompanyStatus', 'CompanyExpiration', 'InsuranceExpiration', 'ArmedGuardInsurance', 'GuardDogInsurance'])
+l = logger('sec_c_TXdps')
+g = codecs.open('sec_c_TXdps_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
 s = requests.Session()
 s.get("http://www.txdps.state.tx.us/rsd/psb/psbSearch/company_search.aspx")
@@ -24,7 +24,7 @@ def GetPage(n):
 def GrabLinks():
         for link in BeautifulSoup(driver.page_source).findAll("a"):
                 if "company_details" in link['href']:
-                                l.info(link.text.strip()
+                                l.info(link.text.strip())
                                 g.write(link['href'][1:] + "\n") 
                 else:
                         pass
@@ -92,7 +92,7 @@ def TXdps(link):
 
 def ThreadedScrape():
         links = []
-        for line in codecs.open("TXdps_links.csv","r").readlines():
+        for line in codecs.open("sec_c_TXdps.csv","r").readlines():
                 links.append(line.strip())
         threaded(links, TXdps, num_threads=1)
         

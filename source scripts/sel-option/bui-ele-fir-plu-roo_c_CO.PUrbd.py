@@ -28,7 +28,7 @@ def main():
 
         element1 = driver.find_elements_by_tag_name('option')
         element2 = driver.find_element_by_xpath('/html/body/div[1]/form[2]/table[2]/tbody/tr/td/input')
-        licensee_type = element1[i].text
+        licensee_type = element1[i].text.strip()
 
         element1[i].click()
         element2.click()
@@ -43,12 +43,12 @@ def main():
             info.append(licensee_type)
             
             for td in tr.find_all('td'):
-                info.append(td.text)
+                info.append(td.text.strip())
             if info[3] == "Name":
                 start = True
             if (start == True and info[3] != "Name"):
                 f.write("|".join(info) + "\n")
-                l.info(infO)
+                l.info(info)
             info = []
         l.info(i)
 

@@ -41,8 +41,8 @@ def main():
                     j = j + 1
                     line = re.split(':', lst[i])
                     if len(line) > 2:
-                        for l in range(2, len(line)):
-                            line[1] = line[1] + line[l]
+                        for m in range(2, len(line)):
+                            line[1] = line[1] + line[m]
                     if len(line) > 1 and j!=3:
                         info.append(line[1])
                     if len(line) == 1 and j!=3:
@@ -64,7 +64,7 @@ def main():
                         j = 0
                         info.append('License Number')
                         info.append('1')
-                        f.write("\"" + "\",\"".join(info) + "\"\n")
+                        f.write("|".join(info) + "\n")
                         l.info(info)
                         info = []
             next_ = '//*[@id="ContentPlaceHolder1_GridView1"]/tbody/tr[1]/td/table/tbody/tr/td['+str(k)+']/a'

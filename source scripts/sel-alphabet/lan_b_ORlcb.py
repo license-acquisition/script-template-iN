@@ -145,8 +145,8 @@ def main():
 					l.error('-' * 25)
 			except Exception as e:
 				# No detail record found.
-				l.error("Ooops, detail record missing. Continue..."))
-				l.error(str(e)))
+				l.error("Ooops, detail record missing. Continue...")
+				l.error(str(e))
 				l.error('-' * 25)
 
 

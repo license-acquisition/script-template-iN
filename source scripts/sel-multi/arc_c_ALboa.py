@@ -23,14 +23,15 @@ def main():
             tds = table1[0].find_all('td', {'valign': 'top'})
             for col in table1[0].findAll('td',{"valign":"top", "style":"width: 300px;"}):
                 lod = col.text.split('\n')
+                l.debug(lod)
                 info = []
                 try:
-                    info.append(lod[1].replace('\r','').replace(',',' '))    # entity_name
-                    info.append(lod[2].strip().replace('\r','')) #address1
+                    info.append(lod[1].replace('\r','').replace(',',' ').strip())    # entity_name
+                    info.append(lod[2].strip().replace('\r','').strip()) #address1
                     city, state = lod[3].split(',')
-                    info.append(city.strip().replace('\r','')) # city
-                    info.append(re.search('[A-Z]'*2, state).group()) # state
-                    info.append(re.search('[0-9]'*5,state).group()) # zip
+                    info.append(city.strip().replace('\r','').strip()) # city
+                    info.append(re.search('[A-Z]'*2, state).group().strip()) # state
+                    info.append(re.search('[0-9]'*5,state).group().strip()) # zip
 
                     info.append(lod[4].strip()) # phone
                     qual_ind = lod[5][lod[5].find(re.search('[A-Z][a-z]',lod[5]).group()):]
@@ -42,12 +43,13 @@ def main():
                     info.append('certification number') # number_type
                     info.append('1') # company_flag
                     info.append('certificate of authorization') # licensee type code
-                    info.append(number.replace(u'\xa0',u'')) # number
-                    info.append(qual_ind.replace(',', ' ').replace(u'\xa0',u' ')) # qualifying individual
+                    info.append(number.replace(u'\xa0',u'').strip()) # number
+                    info.append(qual_ind.replace(',', ' ').replace(u'\xa0',u' ').strip()) # qualifying individual
 
                     i += 2
                     # write it all
                     f.write('|'.join(info) + '\n')
+                    l.info(info)
                     
                 except Exception as e:
                     l.error(str(e))

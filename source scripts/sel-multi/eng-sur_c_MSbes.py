@@ -15,9 +15,10 @@ def main():
         browser.find_element_by_css_selector("input[value=Search]").click()
         j = 2
         while j < 49:
+                l.debug('J: ' + str(j))
                 try:
                         for i in range(0, 50):
-                                print i
+                                l.debug('I: '+str(i))
                                 fail = 0
                                 while fail == 0:
                                         try:    

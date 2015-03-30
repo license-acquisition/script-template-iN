@@ -15,8 +15,7 @@ def main():
 
     count = 1
     winners = 0
-    page = 152
-    # initialize webdriver
+    page = 1
 
     #driver = webdriver.PhantomJS(glob('C:\\Users\\*\\Downloads\\phantomjs.exe'))
     driver.get(url)

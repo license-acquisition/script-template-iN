@@ -26,47 +26,48 @@ def main():
         tr = soup.findAll("tr",{"style":"color:#333333;background-color:#F7F6F3;","style":"color:#284775;background-color:White;"})
         tl = soup.findAll("tr",{"style":"color:#284775;background-color:White;"})
         for ok in tr:
-            info = []
-            first = ok.findAll('td')[0].text
-            last = ok.findAll('td')[1].text
-            fullname = first + " " + last
-            info.append("".join(i for i in fullname if ord(i)<128))
-            info.append("registration number")
-           
-            for td in ok.findAll('td')[2:]:
-                info.append("".join(i for i in td.text if ord(i)<128))
-            
-            if len(info[2])>1:
-                info.append("1")
+            try:
+                info = []
+                first = ok.findAll('td')[0].text
+                last = ok.findAll('td')[1].text
+                fullname = first + " " + last
+                info.append("".join(i for i in fullname if ord(i)<128))
+                info.append("registration number")
+               
+                for td in ok.findAll('td')[2:]:
+                    info.append("".join(i for i in td.text if ord(i)<128))
+                
+                if len(info[2])>1:
+                    info.append("1")
 
-            else:
-                info.append("")
-
-            f.write("|".join(info) + "\n")
-    		l.info(info)
-
-            info=[]
+                else:
+                    info.append("")
+                f.write("|".join(info) + "\n")
+                l.info(info)
+            except Exception as e:
+                l.error(str(e))
         for ok in tl:
-            info = []
-            first = ok.findAll('td')[0].text
-            last = ok.findAll('td')[1].text
-            fullname = first + " " + last
-            info.append("".join(i for i in fullname if ord(i)<128))
-            info.append("registration number")
-            
-            for td in ok.findAll('td')[2:]:
-                info.append("".join(i for i in td.text if ord(i)<128))
+            try:
+                info = []
+                first = ok.findAll('td')[0].text
+                last = ok.findAll('td')[1].text
+                fullname = first + " " + last
+                info.append("".join(i for i in fullname if ord(i)<128))
+                info.append("registration number")
+                
+                for td in ok.findAll('td')[2:]:
+                    info.append("".join(i for i in td.text if ord(i)<128))
 
-            if len(info[2])>1:
-                info.append("1")
+                if len(info[2])>1:
+                    info.append("1")
 
-            else:
-                info.append("")
+                else:
+                    info.append("")
 
-            f.write("|".join(info) + "\n")
-            l.info(info)
-
-            info=[]
+                f.write("|".join(info) + "\n")
+                l.info(info)
+            except Exception as e:
+                l.error(str(e))
 
 
 if __name__ == '__main__':

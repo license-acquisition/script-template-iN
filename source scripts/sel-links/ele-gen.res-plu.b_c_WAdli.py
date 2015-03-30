@@ -60,7 +60,7 @@ def main():
 			l.info(info)
 			f.write("\"" + "\"\n\"".join(info) + "\n")
 		except Exception, e:
-			l.error(str(e)
+			l.error(str(e))
 
 #driver.find_element_by_css_selector("#pagination > span:nth-child(3) > input.nextButton").click()
 

@@ -18,8 +18,8 @@ from glob import glob
 import re, time
 from script_template import create_file, logger
 
-f = create_file('eng-sur_c_ARblb', 'w', ['7', '0', '4', '36', '44', '21', '13'])
-l = logger('eng-sur_c_ARblb')
+f = create_file('eng-sur_c_ARblp', 'w', ['7', '0', '4', '36', '44', '21', '13'])
+l = logger('eng-sur_c_ARblp')
 driver = webdriver.PhantomJS()
 
 #takes a float value of progress (current over total) and
@@ -45,36 +45,36 @@ def main():
 
         try:
                 while driver.find_element_by_xpath('//*[@id="app_form"]/table/tbody/tr[1]/td[3]/a'): # Next 20 >>
-                        sauce = BeautifulSoup(driver.page_source)
-                        table = sauce.find("table",{'class':'renewal_results'})
-                        #print table
+                        soup = BeautifulSoup(driver.page_source.replace('<br>', '|').replace('</br>','|'))
+                        table = soup.find("table",{'class':'renewal_results'})
+                        l.debug(len(table.find_all('tr')[2:-3]))
                         info = []
                 
                         for tr in table.find_all('tr')[2:-3]:
                                 tds = tr.find_all('td')
+                                l.debug(len(tds))
                                 info.append(tds[0].text.strip()) # company_name
-                                addr = str(tds[1]).split('<br>')
+                                addr = tds[1].text.split('|')
+                                l.debug(addr)
                                 if 'CANADA' in addr[2]: # filter for Canadian addresses
-                                        info.append(addr[0][addr[0].find('>')+1:]) # address1
-                                        info.append(addr[1].split(',')[0].split(' ')[0]) # city
-                                        info.append(addr[1].split(',')[0].split(' ')[1]) # state
-                                        info.append(addr[1].split(',')[1].strip()) # zip
+                                        pass
                                 else:
-                                        info.append(addr[0][addr[0].find('>')+1:]) # address1
-                                        info.append(addr[1].split(',')[0]) # city
-                                        info.append(re.search(r'[A-Za-z]'*2, addr[1].split(',')[1]).group()) # state
-                                        info.append(re.search(r'[0-9]'*5, addr[1].split(',')[1]).group()) # zip
+                                        info.append(addr[0].strip()) # address1
+                                        info.append(addr[1].rsplit(' ', 2)[-1])
+                                        info.append(addr[1].rsplit(' ', 2)[-2])
+                                        info.append(addr[1].rsplit(' ', 2)[0].replace(',', '').strip())
                                 info.append(tds[2].text.strip()) # license_number
                                 info.append(tds[3].text.strip()) # expiration_date
 
                                 # write to file and empty info list
                                 f.write('|'.join(info) +'\n')
-                                
+                                l.info(info)
                                 info = []
                         # go to next page
                         driver.find_element_by_xpath('//*[@id="app_form"]/table/tbody/tr[1]/td[3]/a').click()
                         i+=1
                         l.debug(i)
+                        '''
                         # progress bar
                         soup = BeautifulSoup(driver.page_source)
                         info_text = soup.find('table',{'class':'renewal_results'}).findAll('tr')[0].findAll('td')[1].text
@@ -83,7 +83,7 @@ def main():
                         total = pages[2]
                         page_progress = float(current)/float(total)
                         update_progress(page_progress)
-                        
+                        '''
 
         except Exception as e:
                 l.error(str(e))

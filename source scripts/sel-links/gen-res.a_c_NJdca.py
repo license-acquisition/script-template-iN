@@ -16,6 +16,7 @@ f = create_file('gen-res.a_c_NJdca', 'w', ['12', '4', '36', '32', '21', '37', 'c
 l = logger('gen-res.a_c_NJdca')
 g = codecs.open('gen-res.a_c_NJdca_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
+s = requests.Session()
 
 def main():
     page = 1
@@ -26,7 +27,7 @@ def main():
     driver.find_element_by_id("sch_button").click()
 
     while page < 10000:
-        print (page)
+        l.debug(page)
         soup = BeautifulSoup(driver.page_source)
         links = soup.findAll("a")
         for link in links:
@@ -66,7 +67,8 @@ def main():
     g.close()
 
     for x in open('gen-res.a_c_NJdca_links.csv', 'r'):
-            count = count + 1
+            count += 1
+            s.get("https://newjersey.mylicense.com/verification/Search.aspx?facility=Y")
             try:
                 url = 'https://newjersey.mylicense.com/verification/' + x
                 soup = BeautifulSoup(requests.get(url).content)

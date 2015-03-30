@@ -13,6 +13,7 @@ f = create_file('ele_b_MIbcc', 'w', ['entity_name','qualifying_individual','city
 l = logger('ele_b_MIbcc')
 driver = webdriver.PhantomJS()
 g  = codecs.open('ele_b_MIbcc_links.csv', 'w', 'UTF-8')
+s = requests.Session()
 
 def main():
 	# start section 1
@@ -33,9 +34,10 @@ def main():
 	driver.quit()
 
 	#start section 2
-	for link in open('ele_b_MIbcc_links', 'r'):
+	for link in open('ele_b_MIbcc_links.csv', 'r'):
 		info = []
-		page = requests.get('http://w3.lara.state.mi.us/bcclicense/' + link)
+		s.get('http://w3.lara.state.mi.us/bcclicense/Search.asp')
+		page = s.get('http://w3.lara.state.mi.us/bcclicense/' + link)
 		soup = BeautifulSoup(page.content)
 		tds = soup.find_all('td')
 		entity_name = tds[14].text.replace(u'\xa0',u'').strip()

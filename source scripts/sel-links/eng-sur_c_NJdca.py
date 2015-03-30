@@ -30,6 +30,7 @@ f = create_file('eng-sur_c_NJdca', 'w', ['12', '4', '36', '32', '21', '37', 'cau
 l = logger('eng-sur_c_NJdca')
 g = codecs.open('eng-sur_c_NJdca_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
+s = requests.Session()
 
 def main():
     page = 1
@@ -83,6 +84,7 @@ def main():
 
     for x in open('eng-sur_c_NJdca_links.csv', 'r'):
             count += 1
+            s.get("https://newjersey.mylicense.com/verification/Search.aspx?facility=Y")
             try:
                 url = 'https://newjersey.mylicense.com/verification/' + x
                 soup = BeautifulSoup(requests.get(url))

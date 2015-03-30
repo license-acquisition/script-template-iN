@@ -5,8 +5,8 @@ from selenium import webdriver
 from itertools import product
 from script_template import create_file, logger
 
-f = create_file('gen.res_c_MDllr', 'w', ['7', '0', '4', '36', '44', '13', '32', '21'])
-l = logger('gen.res_c_MDllr')
+f = create_file('arc-lar-sur_c_MDllr', 'w', ['7', '0', '4', '36', '44', '13', '32', '21'])
+l = logger('arc-lar-sur_c_MDllr')
 driver = webdriver.PhantomJS()
 
 # Requires 3 letters for inclusive search, hit most common and de-dupe until consistent final #

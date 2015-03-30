@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
-import mechanize, urllib2, requests, re, cookielib, time, codecs
+import urllib2, requests, re, cookielib, time, codecs
 from script_template import create_file, logger
 
 f = create_file('arc-asb-eng-hom-id-lar-led-oth-sur_c_INoli', 'w', ['12', 'city/state/zip', '21', 'authority', '32', 'Method', '19', '13', '37'])
@@ -39,7 +39,7 @@ def main():
                     
                         # write payload to file
                         f.write("|".join(info) + "\n")
-                        print info
+                        l.info(info)
                         
                         # make sure it goes back to search results every time
                         driver.back()

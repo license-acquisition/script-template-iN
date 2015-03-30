@@ -15,8 +15,8 @@ driver = webdriver.PhantomJS()
 def main():
 	protype = ['Electricians','Building Trades']
 	links = []
-	fail = 0
 	for x in protype:
+		fail = 0
 		driver.get('http://nhlicenses.nh.gov/mylicense%20verification/Search.aspx?facility=Y')
 		Select(driver.find_element_by_id("t_web_lookup__profession_name")).select_by_visible_text("%s"%x)
 		driver.find_element_by_id("sch_button").click()
@@ -29,7 +29,7 @@ def main():
 					break
 				driver.find_element_by_partial_link_text("%s"%i).click()
 				time.sleep(3)
-				for link in BeautifulSoup(driver.page_source).findAll("a"):
+				for link in BeautifulSoup(driver.page_source).find_all("a"):
 					if "Details" in link['href']:
 						l.info('found link: ' + link['href'])
 						links.append(link['href'])

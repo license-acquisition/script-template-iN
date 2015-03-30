@@ -64,7 +64,7 @@ def ScrapeLinks(n):
         g.close()
 
 def KSbtp(link):
-        l.info(link.replace('\n','')
+        l.info(link.replace('\n',''))
         try:
                 page = s.get("http://licensing.ks.gov/verification/web/" + link.replace('\n',''))
                 time.sleep(3)
@@ -86,7 +86,7 @@ def KSbtp(link):
                 l.info(info)
                 f.write("|".join(info) + "\n")
         except Exception as e:
-                l.critical(str(e))
+                l.error(str(e))
 
 def ThreadedScrape():
         links = []

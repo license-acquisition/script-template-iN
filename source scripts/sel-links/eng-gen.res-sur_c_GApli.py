@@ -11,7 +11,7 @@ logging.basicConfig()
 
 f = create_file('eng-gen.res-sur_c_GApli', 'w', ['6', '12', '0', '1', '2', '3', '36', '44', 'profession', '21', '32', 'secondary_license', '37', '19', '20', '13', 'obatained_by', 'state_reprosity', 'url_number'])
 l = logger('eng-gen.res-sur_c_GApli')
-g = codecs.open('eng-gen.res-sur_c_GApli', 'w', 'utf-8')
+g = codecs.open('eng-gen.res-sur_c_GApli_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
 s = requests.session()
 s.get("http://verify.sos.ga.gov/websites/verification/Search.aspx?facility=Y")
@@ -104,7 +104,7 @@ def GA_Pli(url):
 
 def ThreadedScrape():
         links = []
-        for line in open("eng-gen.res_links.csv","r"):
+        for line in open("eng-gen.res-sur_c_GApli_links.csv","r"):
                 links.append(line.strip())
         threaded(links, GA_Pli, num_threads=3)
 

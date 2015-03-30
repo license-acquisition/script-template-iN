@@ -11,6 +11,7 @@ from script_template import create_file, logger
 f = create_file('plu_b_MIbcc', 'w', ['12', '35', '4', '36', '44', '35', '32', '21', '37', '13'])
 l = logger('plu_b_MIbcc')
 g = codecs.open('plu_b_MIbcc_links.csv', 'w', 'utf-8')
+s = requests.Session()
 
 def main():
 	#start section 1
@@ -34,6 +35,7 @@ def main():
 	#start section 2
 	for link in open('plu_b_MIbcc_links.csv', 'r'):
 		info = []
+		s.get('http://w3.lara.state.mi.us/bcclicense/Search.asp')
 		page = requests.get('http://w3.lara.state.mi.us/bcclicense/' + link)
 		soup = BeautifulSoup(page.content)
 		tds = soup.find_all('td')

@@ -8,11 +8,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from script_template import create_file, logger
 
-f = create_file('led_c_RIdoh', 'w', [])
+f = create_file('led_c_RIdoh', 'w', ['headers'])
 l = logger('led_c_RIdoh')
 driver = webdriver.PhantomJS()
+s = requests.Session()
 
 def main():
+	s.get("http://209.222.157.144/RIDOH_Verification/Search.aspx?facility=Y&SubmitComplaint=Y")
 	driver.get("http://209.222.157.144/RIDOH_Verification/Search.aspx?facility=Y&SubmitComplaint=Y")
 	driver.find_elements_by_css_selector("option")[35].click()
 	driver.find_element_by_css_selector("input[value='Search']").click()
@@ -24,41 +26,35 @@ def main():
 				l.debug(i)
 				fail = 0
 				while fail == 0:
-					try:	
-						driver.find_element_by_css_selector('a[id=infogrid_results__ctl%d_hl]'%i).click()
-						#time.sleep(.5)
-						driver.switch_to_window(driver.window_handles[-1])
-						
-						info = []
-						try:
-							try:
-								element = WebDriverWait(driver, 10).until(
-								    EC.presence_of_element_located((By.ID, "full_name"))
-								)
-							finally:
-								pass
-							soup = BeautifulSoup(driver.page_source)
-							info.append(soup.find("span", {"id" : "full_name"}).text)
-							try:
-								info.append(soup.find("span", {"id" : "_ctl19__ctl1_addr_line_1"}).text)
-								info.append(soup.find("span", {"id" : "_ctl19__ctl1_line_4"}).text)
-							except:
-								info.append(" ")
-								info.append(" ")
-							info.append(soup.find("span", {"id" : "_ctl25__ctl1_license_no"}).text)
-							info.append(soup.find("span", {"id" : "_ctl25__ctl1_profession_id"}).text)
-							info.append(soup.find("span", {"id" : "_ctl25__ctl1_license_type"}).text)
-							info.append(soup.find("span", {"id" : "_ctl25__ctl1_sec_lic_status"}).text)
-							info.append(soup.find("span", {"id" : "_ctl25__ctl1_issue_date"}).text)
-							info.append(soup.find("span", {"id" : "_ctl25__ctl1_expiration_date"}).text)
-							info.append(soup.find("span", {"id" : "_ctl25__ctl1_sec_license_type"}).text)
-							f.write("|".join(info) + "\n")
-							l.info(info)
-						except Exception as e:
-							l.error(info)		    
-							l.error('Level 1: '+str(e))
-						driver.close()
-						driver.switch_to_window(driver.window_handles[0])
+					try:
+						soup = BeautifulSoup(driver.page_source)	
+						for link in soup.find_all('a'):
+							if 'Details.aspx' in link['href']:
+								info = []
+								shortie = 'http://209.222.157.144/RIDOH_Verification/'
+								try:
+									
+									soup = BeautifulSoup(s.get(shortie+link['href']).content)
+									l.debug(shortie+link['href'])
+									info.append(soup.find("span", {"id" : "full_name"}).text)
+									try:
+										info.append(soup.find("span", {"id" : "_ctl19__ctl1_addr_line_1"}).text)
+										info.append(soup.find("span", {"id" : "_ctl19__ctl1_line_4"}).text)
+									except:
+										info.append(" ")
+										info.append(" ")
+									info.append(soup.find("span", {"id" : "_ctl25__ctl1_license_no"}).text)
+									info.append(soup.find("span", {"id" : "_ctl25__ctl1_profession_id"}).text)
+									info.append(soup.find("span", {"id" : "_ctl25__ctl1_license_type"}).text)
+									info.append(soup.find("span", {"id" : "_ctl25__ctl1_sec_lic_status"}).text)
+									info.append(soup.find("span", {"id" : "_ctl25__ctl1_issue_date"}).text)
+									info.append(soup.find("span", {"id" : "_ctl25__ctl1_expiration_date"}).text)
+									info.append(soup.find("span", {"id" : "_ctl25__ctl1_sec_license_type"}).text)
+									f.write("|".join(info) + "\n")
+									l.info(info)
+								except Exception as e:
+									l.error(info)		    
+									l.error('Level 1: '+str(e))
 						fail = 1
 						
 					except Exception as e:

@@ -52,7 +52,7 @@ def main():
 							f.write('\"' + "\",\"".join(data) + "\"\n")
 							l.info(data)
 						except Exception as e:	    
-						l.error('Level 1: ' + str(e))
+							l.error('Level 1: ' + str(e))
 						driver.close()
 						driver.switch_to_window(driver.window_handles[0])
 						fail = 1
@@ -68,7 +68,7 @@ def main():
 				driver.find_element_by_partial_link_text(str(j)).click()
 			j = j + 1
 		except Exception, e:
-			l.error('Level 3: ' + str(e)
+			l.error('Level 3: ' + str(e))
 
 if __name__ == '__main__':
     try:

@@ -32,6 +32,7 @@ def main():
         #elem.clear
         #elem.send_keys('1092' + 'Keys.RETURN')
         time.sleep(1)
+        count = 1
         #driver.send_keys("Keys.ENTER")
         #driver.find_element_by_css_selector("span.ui-icon.ui-icon-seek-next").send_keys("Keys.ENTER")
         while count < 7:

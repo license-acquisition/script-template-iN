@@ -1,4 +1,4 @@
-import sys, re, requests, codecs, csv
+import sys, re, requests, codecs, csv, time
 from bs4 import BeautifulSoup
 from glob import glob
 from selenium import webdriver
@@ -11,9 +11,13 @@ driver = webdriver.PhantomJS()
 
 def main():
 	driver.get("https://csapp.800helpfla.com/cspublicapp/businesssearch/businesssearch.aspx")
+	time.sleep(1)
 	driver.find_element_by_css_selector("option[value=LB]").click()
+	time.sleep(1)
 	driver.find_element_by_css_selector("input[value='Search']").click()
+	time.sleep(1)
 	driver.find_element_by_css_selector("option[value=ALL]").click()
+	time.sleep(5)
 	soup = BeautifulSoup(driver.page_source)
 
 	i = 0

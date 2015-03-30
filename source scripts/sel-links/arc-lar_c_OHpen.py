@@ -30,15 +30,15 @@ def main():
                 info = []
                 info.append((a.get_attribute('href')))
                 l.info(info)
-                l.write("\"" + "\"\n\"".join(info) + "\"\n")
+                g.write("\"" + "\"\n\"".join(info) + "\"\n")
         except Exception, e:
             l.error(str(e))
 
     g.close()
     driver.quit()
 
-    s = requests.session()
-    #driver.get("https://license.ohio.gov/Lookup/")
+    s = requests.Session()
+    s.get("https://license.ohio.gov/Lookup/")
     for line in codecs.open("arc-lar_c_OHpen_links.csv","r","utf-8"):
         try:
             quotes = "%s" %line
@@ -47,7 +47,6 @@ def main():
             licenseno = re.search("Idnt=(.*?)&D",link_mod).group(1)
             l.info(licenseno)
             l.info(link_mod)
-            #driver.get(link)
             source = s.get(link_mod)
             
             soup = BeautifulSoup(source.content)

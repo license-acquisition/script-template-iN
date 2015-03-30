@@ -10,7 +10,7 @@ from script_template import create_file, logger
 
 f = create_file('gen.res_c_UTopl', 'w', ['7', '4', '36', '44', 'profession', '32', '21', 'obtby', '37', '19', '13', 'agency', 'docket', '6'])
 l = logger('gen.res_c_UTopl')
-g = codes.open('gen.res_c_UTopl_links.csv', 'w', 'utf-8')
+g = codecs.open('gen.res_c_UTopl_links.csv', 'w', 'utf-8')
 driver = webdriver.PhantomJS()
 s = requests.Session()
 
@@ -18,19 +18,19 @@ def main():
     count = 1
     url = 'https://secure.utah.gov/llv/search/'
     driver.get('https://secure.utah.gov/llv/search/index.html')
-    driver.find_element_by_css_selector("#professions3").click() # Architect
-    driver.find_element_by_css_selector("#professions6").click() # Building Inspector
-    driver.find_element_by_css_selector("#professions7").click() # Burglar Alarm
-    driver.find_element_by_css_selector("#professions10").click() # Contractor
-    driver.find_element_by_css_selector("#professions20").click() # Electrician
-    driver.find_element_by_css_selector("#professions24").click() #Factory Built Housing
-    driver.find_element_by_css_selector("#professions21").click() # Engineer/Land Surveyor
-    driver.find_element_by_css_selector("#professions28").click() # Handyman
-    driver.find_element_by_css_selector("#professions22").click() # Elevator Mechanic
-    driver.find_element_by_css_selector("#professions32").click() # Landscape Architect
-    driver.find_element_by_css_selector("#professions52").click() # Plumber
-    driver.find_element_by_css_selector("#professions59").click() # Security Companies & Guards
-    driver.find_element_by_xpath("//*[@id='command']/fieldset[3]/p[3]/input[1]").click()
+    driver.find_element_by_css_selector("#item6").click() # Architect
+    driver.find_element_by_css_selector("#item12").click() # Building Inspector
+    driver.find_element_by_css_selector("#item15").click() # Burglar Alarm
+    driver.find_element_by_css_selector("#item29").click() # Contractor
+    driver.find_element_by_css_selector("#item173").click() # Electrician
+    driver.find_element_by_css_selector("#item188").click() #Factory Built Housing
+    driver.find_element_by_css_selector("#item181").click() # Engineer/Land Surveyor
+    #driver.find_element_by_css_selector("#item").click() # Handyman
+    driver.find_element_by_css_selector("#item179").click() # Elevator Mechanic
+    driver.find_element_by_css_selector("#item210").click() # Landscape Architect
+    driver.find_element_by_css_selector("#item325").click() # Plumber
+    driver.find_element_by_css_selector("#item360").click() # Security Companies & Guards
+    driver.find_element_by_xpath("//*[@id='command']/fieldset[3]/p/input[1]").click()
 
     while True:
         soup = BeautifulSoup(driver.page_source)
@@ -90,7 +90,7 @@ def main():
                 docket = td[21].text.strip()
                 if docket == "":
                     docket = " "
-                for data in [name, city, state, zipcode, profession, lictype, licnumb1, obtby, licstat, issdate, expdate, agency, docket, 1]
+                for data in [name, city, state, zipcode, profession, lictype, licnumb1, obtby, licstat, issdate, expdate, agency, docket, 1]:
                     info.append(data)
                 l.info(info)
                 ft.write("|".join(info) + "\n")
