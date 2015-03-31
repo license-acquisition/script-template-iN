@@ -11,50 +11,35 @@
 import requests, re, sys, time, codecs
 from subprocess import call
 from bs4 import BeautifulSoup
-'''
-# Find link to download PDF
-url = 'https://www.mdsp.org/Organization/StateFireMarshal/CodeEnforcementLicensingRegulation/SprinklerContractors.aspx'
-page = requests.get(url)
-soup = BeautifulSoup(page.content)
-links = soup.find_all('a')
-contractor_link = ""
-for link in links:
-        if link.text == "Sprinkler Contractor Approved Listing":
-                contractor_link = link['href']
-if contractor_link == "":
-        sys.exit("FATAL ERROR! PDF not found. Check source link for changes.")
-url = 'https://www.mdsp.org' + contractor_link
+from script_template import create_file, logger
 
-# Download PDF
-url = 'https://www.mdsp.org/LinkClick.aspx?fileticket=QG1QDiUyq00%3d&tabid=614'
-open('fir_b_MDfmo.pdf', 'w').write(requests.get(url).content)
+f = create_file('fir_b_MDfmo', 'w', ['21', '13', '12', '0', '4', '36', '44', '33', '32', '35', '6'])
+l = logger('fir_b_MDfmo')
 
-# Convert PDF to text
-call(["pdftotext", "-layout", "-table", "fir_b_MDfmo.pdf"])
-'''
-f = codecs.open("fir_b_MDfmo_%s_000.txt" %(time.strftime('%Y%m%d')), "w", 'utf-8')
+def main():
+        #open('fir_b_MDfmo.pdf', 'wb').write(requests.get('https://www.mdsp.org/LinkClick.aspx?fileticket=QG1QDiUyq00%3d&tabid=614').content)
+        call(["pdftotext", "-layout", "-table", "fir_b_MDfmo.pdf"])
 
-headers = ["license_number", "expiration_date", "entity_name", "address1", "city", "state", "zip", "phone", "licensee_type_cd", "qualifying_individual", "company_flag"]
-f.write("|".join(headers) + "\n")
-
-info = []
-for line in codecs.open("fir_b_MDfmo.txt", "r").readlines():
-        if 'Maryland State Fire' not in line and 'Licensed Sprinkler' not in line and 'License  #' not in line and 'of 5' not in line:
-                if len(line) != 0:
-                        data = line.replace('\n','').split('  ')
-                        for d in data:
-                                info.append(d.strip())
-                        info = [x for x in info if len(x) != 0]
-                        if len(info) > 1:
-                                info.append('1')
-                                f.write('|'.join(info) + '\n')
-                                print info
-                                info = []
+        info = []
+        for line in open('fir_b_MDfmo.txt', 'r'):
+                if 'Maryland State Fire' not in line and 'Licensed Sprinkler' not in line and 'License  #' not in line and 'of 5' not in line:
+                        if len(line) != 0:
+                                data = line.replace('\n','').split('  ')
+                                for d in data:
+                                        info.append(d.strip())
+                                info = [x for x in info if len(x) != 0]
+                                if len(info) > 1:
+                                        info.append('1')
+                                        f.write('|'.join(info) + '\n')
+                                        l.info(info)
+                                        info = []
                         
-f.close()
 
-
-
-
-
-
+if __name__ == '__main__':
+        try:
+                main()
+                l.info('complete')
+        except Exception as e:
+                l.critical(str(e))
+        finally:
+                f.close()

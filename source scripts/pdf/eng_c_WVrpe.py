@@ -8,7 +8,7 @@ l = logger('eng_c_WVrpe')
 
 def main():
         open('eng_c_WVrpe.pdf', 'wb').write(requests.get("http://www.wvpebd.org/Portals/WVPEBD/docs/ACTIVE_COAs_Roster.pdf").content)
-        call(["pdftotext", "-layout", "eng_c_WVrpe.pdf"])
+        call(["pdftotext", "-layout", "-table", "eng_c_WVrpe.pdf"])
 
         for line in open("eng_c_WVrpe.txt", "r"):
                 if "Address" not in line:
@@ -21,13 +21,13 @@ def main():
                                 del(nline[3])
                         if len(nline) >= 6:
                                 f.write("|".join(nline) + "\n")
+                                l.info(nline)
 
 if __name__ == '__main__':
 	try:
 		main()
 		l.info('complete')
-	except Exception as e: l.critical(str(e))
+	except Exception as e:
+                l.critical(str(e))
 	finally:
 		f.close()
-		call(['rm', 'eng_c_WVrpe.pdf'])
-		call(['rm', 'eng_c_WVrpe.txt'])

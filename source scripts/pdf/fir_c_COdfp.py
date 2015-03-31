@@ -4,24 +4,26 @@ import requests, re, codecs, time
 from subprocess import call
 from script_template import create_file, logger
 
-f = create_file('fir_c_COdfp', 'w', [])
+f = create_file('fir_c_COdfp', 'w', ['7', '35', '0', 'city/state/zip', 'year', '21', '32'])
+l = logger('fir_c_COdfp')
 
-f = codecs.open('fir_c_COdfp_%s_000.txt' %(time.strftime('%Y%m%d')), 'w', 'utf-8')
-headers = ['company_name', 'qualifying_individual', 'address1', 'city/state/zip', 'year', 'license_number', 'license_type']
-f.write('|'.join(headers) + '\n')
+def main():
+	call(['pdftotext', '-layout', '-table', 'fir_c_COdfp.pdf'])
 
-call(['pdftotext', '-layout', '-table', 'fir_c_COdfp.pdf'])
+	for line in open('fir_c_COdfp.txt', 'r'):
+	    info = []
+	    if len(line) > 1 and 'CityStateZip' not in line:
+	        info = line.replace('\n','').split('  ')
+	        info = [x.strip() for x in info if len(x) != 0]
+	        f.write('|'.join(info) + '\n')
+	       	l.info(info)
 
-g = codecs.open('fir_c_COdfp.txt', 'r')
-lines = g.readlines()
-g.close()
 
-for line in lines:
-    info = []
-    if len(line) > 1 and 'CityStateZip' not in line:
-        info = line.replace('\n','').split('  ')
-        info = [x.strip() for x in info if len(x) != 0]
-        f.write('|'.join(info) + '\n')
-        print info
-
-f.close()
+if __name__ == '__main__':
+	try:
+		main()
+		l.info('complete')
+	except Exception as e:
+                l.critical(str(e))
+	finally:
+		f.close()
