@@ -2,48 +2,49 @@
 import re, codecs, time, requests
 from subprocess import call
 from urllib import urlretrieve
+from script_template import create_file, logger
 
-# Convert PDF to TEXT (using pdftotext, duh)
-#url = 'http://dnr.wi.gov/topic/Wells/documents/WellDrillers.pdf'
-#urlretrieve(url, 'wel_c_WIdnr.pdf')
-#call(["pdftotext", "-layout", "-table", "wel_c_WIdnr.pdf"])
+f = create_file('wel_c_WIdnr', 'w', ['21', '12', '33', 'phone2', 'address1/dba', '4', '36', '44', '11', '0'])
+l = logger('wel_c_WIdnr')
 
-f = codecs.open('wel_c_WIdnr_%s_000.txt' %(time.strftime('%Y%m%d')), 'w', 'utf-8')
+def main():
+    open('wel_c_WIdnr.pdf', 'wb').write(requests.get('http://dnr.wi.gov/topic/Wells/documents/WellDrillers.pdf').content)
+    call(['pdftotext', '-layout', '-table', 'wel_c_WIdnr.pdf'])
 
-# Write headers to data
-headers = ['license_number', 'company_name', 'phone1', 'phone2', 'address1/qualifying_individual',
-           'city', 'state', 'zip', 'email', 'address1/qualifying_individual']
-f.write("|".join(headers) + "\n")
+    # split into a huge array
+    rows = []
+    for line in open('wel_c_WIdnr.txt', 'r'):
+        if 'WELL DRILLERS' not in line and 'LIC#' not in line and 'Friday, January' not in line:
+            if len(line) != 0:
+                row = line.replace('\n','').split('  ')
+                for part in row:
+                    rows.append(part.strip())
+    rows = [x for x in rows if len(x) != 0]
 
-# Read the converted text file.
-lines = codecs.open('wel_c_WIdnr.txt', 'r').readlines()
+    # get index of comps
+    index = []
+    for i in range(len(rows)):
+        try:
+            if rows[i] == re.search(r'[0-9]{4}', rows[i]).group():
+                index.append(i)
+        except: pass
 
-# split into a huge array
-rows = []
-for line in lines:
-    if 'WELL DRILLERS' not in line and 'LIC#' not in line and 'Friday, January' not in line:
-        if len(line) != 0:
-            row = line.replace('\n','').split('  ')
-            for part in row:
-                rows.append(part.strip())
-rows = [x for x in rows if len(x) != 0]
+    # parse data string
+    for i in range(len(index)-1):
+        info = rows[index[i]:index[i+1]]
+        if len([x for x, char in enumerate(info) if '(' in char]) != 2:
+            info.insert(3, '')
+        if len([x for x, char in enumerate(info) if '@' in char]) != 1:
+            info.insert(5, '')
+        f.write('|'.join(info) + '\n') 
+        l.info(info)    
 
-# get index of comps
-index = []
-for i in range(len(rows)):
+
+if __name__ == '__main__':
     try:
-        if rows[i] == re.search(r'[0-9]{4}', rows[i]).group():
-            index.append(i)
-    except: pass
-
-# parse data string
-for i in range(len(index)-1):
-    info = rows[index[i]:index[i+1]]
-    if len([x for x, char in enumerate(info) if '(' in char]) != 2:
-        info.insert(3, '')
-    if len([x for x, char in enumerate(info) if '@' in char]) != 1:
-        info.insert(5, '')
-    f.write('|'.join(info) + '\n') 
-print 'Done.'    
-f.close()
-
+        main()
+        l.info('complete')
+    except Exception as e:
+                l.critical(str(e))
+    finally:
+        f.close()
