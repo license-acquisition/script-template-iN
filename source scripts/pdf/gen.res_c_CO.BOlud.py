@@ -6,7 +6,7 @@ from script_template import create_file, logger
 l = logger('gen.res_c_CO.BOlud')
 
 def main():
-	feeds = ['con-ele-gen.com-gen.res_c_CO.BOlud_20140707_000', 'gen.res-roo_c_CO.BOlud_20140707_000', 'ele-gen.res-hva-plu_c_CO.BOlud_20140707_000','hva-plu_c_CO.BOlud_20140707_000','bui-car-gen.res-til_c_CO.BOlud_20140707_000','bui-gen.res-rem_c_CO.BOlud_20140707_000','bui-rem_c_CO.BOlud_20140707_000']
+	feeds = ['con-ele-gen.com-gen.res-lan-poo-wel_c_CO.BOlud', 'gen.res-roo_c_CO.BOlud0', 'ele-gen.res-hva-plu_c_CO.BOlud','hva-plu_c_CO.BOlud','bui-car-gen.res-til_c_CO.BOlud','bui-gen.res-rem_c_CO.BOlud','bui-rem_c_CO.BOlud']
 
 	for a in BeautifulSoup(requests.get("http://www.bouldercounty.org/property/build/pages/buildinglicensedcontractors.aspx").content).findAll("a"):
 		try:

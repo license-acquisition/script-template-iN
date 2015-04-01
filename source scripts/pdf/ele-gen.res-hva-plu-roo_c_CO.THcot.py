@@ -9,17 +9,14 @@ import codecs, re, requests, time
 from subprocess import call # allows for doing terminal commands
 from script_template import create_file, logger
 
-       
-# Write file and logger #################################
-
 f = create_file('ele-gen.res-hva-plu-roo_c_CO.THcot', 'w', ['12', '0', '4', '36', '44', '21', '32', '33', '6', '5'])
 l = logger('ele-gen.res-hva-plu-roo_c_CO.THcot')
 
-# write pdf to file and convert it ######################
-open('ele-gen.res-hva-plu-roo_c_CO.THcot.pdf', 'wb').write(requests.get('http://www.cityofthornton.net/Departments/CityDevelopment/Development/Documents/BUILDING%20INSPECTION/Reports/Licensed_Contractors_2015_CityofThornton/City_of_Thornton_Licensed_Contractors_as_of_3-9-2015.pdf').content)
-call(['pdftotext', '-layout', '-table', 'ele-gen.res-hva-plu-roo_c_CO.THcot.pdf'])
-
 def main():
+    # write pdf to file and convert it ######################
+    open('ele-gen.res-hva-plu-roo_c_CO.THcot.pdf', 'wb').write(requests.get('http://www.cityofthornton.net/Departments/CityDevelopment/Development/Documents/BUILDING%20INSPECTION/Reports/Licensed_Contractors_2015_CityofThornton/City_of_Thornton_Licensed_Contractors_as_of_3-9-2015.pdf').content)
+    call(['pdftotext', '-layout', '-table', 'ele-gen.res-hva-plu-roo_c_CO.THcot.pdf'])
+
     # iterate through lines #####################################
     for line in codecs.open("ele-gen.res-hva-plu-roo_c_CO.THcot.txt", "r").readlines():
         nline = re.sub("   *", "_%_", line)
