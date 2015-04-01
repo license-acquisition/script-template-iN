@@ -1,17 +1,16 @@
 from bs4 import BeautifulSoup
 from selenium import webdriver
-import mechanize, urllib2, requests, re, cookielib, time, codecs
+import urllib2, requests, re, cookielib, time, codecs
 from script_template import create_file, logger
 
 f = create_file('plu_c_INoli', 'w', ['12', 'city/state/zip', '21', 'authority', '32', 'Method', '19', '13', '37'])
 l = logger('plu_c_INoli')
+s = requests.Session()
+driver = webdriver.PhantomJS() #instantiate a webdriver
 
 def main():
-    s = requests.Session()
     s.get('https://mylicense.in.gov/everification/Search.aspx?facility=Y')
-    driver = webdriver.PhantomJS() #instantiate a webdriver
     cj = cookielib.LWPCookieJar() #cookie jar
-
     count = []
     for letter in map(chr, range(65,91)):
         tally = 0

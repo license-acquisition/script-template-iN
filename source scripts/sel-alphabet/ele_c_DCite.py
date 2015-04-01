@@ -7,9 +7,9 @@ from script_template import create_file, logger
 
 f = create_file('ele_c_DCitb', 'w', ['21', '12', '4', '36', '44', '19', '13', '37', 'LicenseOrigin', '32'])
 l = logger('ele_c_DCitb')
+driver = webdriver.PhantomJS()
 
 def main():
-    driver = webdriver.PhantomJS()
     keywords = [''.join(i) for i in product(ascii_lowercase, repeat =3)]
     # two letter search had 500+ results
     for term in keywords:
@@ -48,4 +48,6 @@ if __name__ == '__main__':
         l.info('complete')
     except Exception as e:
         l.critical(str(e))
-    finally: f.close()
+    finally: 
+        f.close()
+        driver.quit()

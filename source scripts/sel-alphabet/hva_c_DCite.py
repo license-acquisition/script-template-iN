@@ -7,9 +7,9 @@ from script_template import create_file, logger
 
 f = create_file('hva_c_DCitb', 'w', ['21', '12', '4', '36', '44', '19', '13', '37', 'LicenseOrigin', '32'])
 l = logger('hva_c_DCitb')
+driver = webdriver.PhantomJS()
 
 def main():
-driver = webdriver.PhantomJS()
     for keyword in [''.join(i) for i in product(ascii_lowercase, repeat =3)]:
                 driver.get("https://www.asisvcs.com/services/licensing/DCOPLA/search_page.asp?CPCAT=RA09STATEREG")
                 l.debug(' - - - - - Searching %s - - - - - ' %(keyword))
@@ -46,4 +46,6 @@ if __name__ == '__main__':
         l.info('complete')
     except Exception as e:
         l.critical(str(e))
-    finally: f.close()
+    finally: 
+        f.close()
+        driver.quit()

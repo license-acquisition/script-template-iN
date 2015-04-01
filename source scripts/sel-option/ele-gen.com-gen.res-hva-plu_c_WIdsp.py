@@ -6,70 +6,75 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException 
 import csv
 import codecs, time
-h = codecs.open('ele-gen.com-gen.res-hva-plu_c_WIdsp_%s_000.csv'%(time.strftime('%Y%m%d')),'w','UTF-8')
-f = csv.writer(h, delimiter =',',quotechar =' ',quoting=csv.QUOTE_MINIMAL)
+from script_template import create_file, logger
 
-browser = webdriver.Chrome()
-url = 'https://app.wi.gov/licensesearch'
-browser.get(url)
-browser.find_element_by_css_selector(".accordion > dd:nth-child(4) > a:nth-child(1)")
+f = create_file('ele-gen.com-gen.res-hva-plu_c_WIdsp', 'w', ['21', '12', 'First/Middle Name', '0', 'License Name'])
+l = logger('ele-gen.com-gen.res-hva-plu_c_WIdsp')
+driver = webdriver.PhantomJS()
 
-soup = BeautifulSoup(browser.page_source)
-select = soup.find('select',{'name': "CredentialViewModel.CredentialType.CredNameCode"})
-option_tags = select.findAll('option')
-option_tags = option_tags[1:]
-info = []
-name = browser.find_element_by_id('tadvancedzip')
-true = browser.find_element_by_xpath('//*[@id="wrapper"]/div[2]/div/dl/dd[4]/a')
-true.click()
-select = browser.find_element_by_xpath('//*[@id="CredentialStatusCode"]/option[2]')
-select.click()
-search = browser.find_element_by_xpath('//*[@id="TradeCredAdvSearch"]')
-#title = ['Name: ', 'Hassan Uraiee', 'State: ', 'Wisconsin', 'URL: ', 'https://app.wi.gov/licensesearch']
-data =  ['license_number', 'entity_name', 'First/Middle Name', 'address1', 'License Name']
-print data
-#f.writerow(title)
-f.writerow(data)
-def check_exists_by_xpath(xpath):
-    try:
-         soupo = BeautifulSoup(browser.page_source)
-         browser.find_element_by_xpath(xpath)
-         info = []
-         table1 = soupo.find_all('td')
-         counter = 1
-         for i in table1:
-             info.append(i.text)
-             counter += 1
-             if counter % 6 == 0: 
-                  f.writerow(info)
-                  info = []
-                  counter = 1            
+def main():
+    url = 'https://app.wi.gov/licensesearch'
+    driver.get(url)
+    #driver.find_element_by_css_selector(".accordion > dd:nth-child(4) > a:nth-child(1)")
 
-    except NoSuchElementException:
-        return False
-    return True
+    soup = BeautifulSoup(driver.page_source)
+    select = soup.find('select',{'id': "CredentialViewModel_CredentialType_CredNameCode"})
+    option_tags = select.find_all('option')
+    option_tags = option_tags[1:]
+    info = []
+    name = driver.find_element_by_id('tadvancedzip')
+    true = driver.find_element_by_xpath('//*[@id="wrapper"]/div[2]/div/dl/dd[4]/a')
+    true.click()
+    select = driver.find_element_by_xpath('//*[@id="CredentialStatusCode"]/option[2]')
+    select.click()
+    search = driver.find_element_by_xpath('//*[@id="TradeCredAdvSearch"]')
 
-companyType = ['21','23','24','25','29','37','53','54','61','82']
-for i in range(len(companyType)):
-    print companyType[i]
-    a = browser.find_element_by_xpath('//*[@id="CredentialViewModel_CredentialType_CredNameCode"]/option['+companyType[i]+']')
-    a.click()
-    for x in range(0,9):
-        name.clear()
-        name.send_keys(x)
-        search.click()
-        check_exists_by_xpath('/html/body/div[3]/div[3]/div/table/thead/tr/th[1]')
-        browser.get(url)
-        name = browser.find_element_by_id('tadvancedzip')
-        true = browser.find_element_by_xpath('//*[@id="wrapper"]/div[2]/div/dl/dd[4]/a')
-        true.click()
-        select = browser.find_element_by_xpath('//*[@id="CredentialStatusCode"]/option[2]')
-        select.click()
-        a = browser.find_element_by_xpath('//*[@id="CredentialViewModel_CredentialType_CredNameCode"]/option['+companyType[i]+']')
+    def check_exists_by_xpath(xpath):
+        try:
+             soupo = BeautifulSoup(driver.page_source)
+             driver.find_element_by_xpath(xpath)
+             info = []
+             table1 = soupo.find_all('td')
+             counter = 1
+             for i in table1:
+                 info.append(i.text)
+                 counter += 1
+                 if counter % 6 == 0: 
+                      f.write('|'.join(info) + '\n')
+                      info = []
+                      counter = 1            
+
+        except NoSuchElementException:
+            return False
+        return True
+
+    companyType = ['21','23','24','25','29','37','53','54','61','82']
+    for i in range(len(companyType)):
+        l.debug(companyType[i])
+        a = driver.find_element_by_xpath('//*[@id="CredentialViewModel_CredentialType_CredNameCode"]/option['+companyType[i]+']')
         a.click()
-        search = browser.find_element_by_xpath('//*[@id="TradeCredAdvSearch"]')
+        for x in range(0,9):
+            name.clear()
+            name.send_keys(x)
+            search.click()
+            check_exists_by_xpath('/html/body/div[3]/div[3]/div/table/thead/tr/th[1]')
+            driver.get(url)
+            name = driver.find_element_by_id('tadvancedzip')
+            true = driver.find_element_by_xpath('//*[@id="wrapper"]/div[2]/div/dl/dd[4]/a')
+            true.click()
+            select = driver.find_element_by_xpath('//*[@id="CredentialStatusCode"]/option[2]')
+            select.click()
+            a = driver.find_element_by_xpath('//*[@id="CredentialViewModel_CredentialType_CredNameCode"]/option['+companyType[i]+']')
+            a.click()
+            search = driver.find_element_by_xpath('//*[@id="TradeCredAdvSearch"]')
 
-browser.close()
-browser.quit()
-h.close()
-f.close()
+
+if __name__ == '__main__':
+    try:
+        main()
+        l.info('complete')
+    except Exception, e:
+        l.critical(str(e))
+    finally:
+        f.close()
+        driver.quit()

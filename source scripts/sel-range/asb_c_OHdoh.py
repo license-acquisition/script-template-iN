@@ -31,7 +31,6 @@ def main():
                 i = i + 6
             except:
                 i = i+6
-        print (link_list)
 
 
         for link in link_list:

@@ -3,31 +3,29 @@ import requests
 from bs4 import BeautifulSoup
 import re, codecs, time
 from thready import threaded
+from script_template import create_file, logger
 
-start = time.time()
-log = codecs.open('TXdps_log.csv','w','utf-8')
-#url = open("TXdps_links.csv","w")
-f = codecs.open('gen.res_c_TXdps_%s_000.txt'%(time.strftime("%Y%m%d")), 'w', 'utf-8')
-f.write("company_flag,company_name,license_number,CompanyCode,licensee_type_cd,address1,city,state,zip,CompanyStatus,CompanyExpiration,InsuranceExpiration,ArmedGuardInsurance,GuardDogInsurance".replace(',','|') + "\n")
-
-browser = webdriver.PhantomJS()
+f = create_file('sec_c_TXdps', 'w', ['6', '7', '21', 'CompanyCode', '32', '0', '4', '36', '44', 'CompanyStatus', 'CompanyExpiration', 'InsuranceExpiration', 'ArmedGuardInsurance', 'GuardDogInsurance'])
+l = logger('sec_c_TXdps')
+g = codecs.open('sec_c_TXdps_links.csv', 'w', 'utf-8')
+driver = webdriver.PhantomJS()
 s = requests.Session()
 s.get("http://www.txdps.state.tx.us/rsd/psb/psbSearch/company_search.aspx")
- 
+
 def GetPage(n):
-        browser.get("http://www.txdps.state.tx.us/rsd/psb/psbSearch/company_search.aspx")
+        driver.get("http://www.txdps.state.tx.us/rsd/psb/psbSearch/company_search.aspx")
         #time.sleep(3)
         licenseTypes = [2, 10]
-        browser.find_element_by_xpath("//*[@id=\"ctl00_SearchContentPlaceHolder_ddType\"]/option[%s]" %(licenseTypes[n])).click()
+        driver.find_element_by_xpath("//*[@id=\"ctl00_SearchContentPlaceHolder_ddType\"]/option[%s]" %(licenseTypes[n])).click()
         #time.sleep(3)
-        browser.find_element_by_xpath("//*[@id=\"ctl00_SearchContentPlaceHolder_cmdSearch\"]").click()
-        print '- - - - - - - Getting License Type %s - - - - - -' %n
+        driver.find_element_by_xpath("//*[@id=\"ctl00_SearchContentPlaceHolder_cmdSearch\"]").click()
+        l.debug('- - - - - - - Getting License Type %s - - - - - -' %n)
                 
 def GrabLinks():
-        for link in BeautifulSoup(browser.page_source).findAll("a"):
+        for link in BeautifulSoup(driver.page_source).findAll("a"):
                 if "company_details" in link['href']:
-                                print link.text.strip()
-                                url.write(link['href'][1:] + "\n") 
+                                l.info(link.text.strip())
+                                g.write(link['href'][1:] + "\n") 
                 else:
                         pass
 
@@ -35,37 +33,37 @@ def ScrapeLinks(n):
         i=1
         while True:
                 try:
-                        print "Grabbing links for", i
+                        l.debug("Grabbing links for", i)
                         GrabLinks()
                         i+=1
-                        browser.find_element_by_link_text("%d"%i).click()
+                        driver.find_element_by_link_text("%d"%i).click()
                         time.sleep(3)
-                        print "Clicked on", i
+                        l.debug("Clicked on", i)
                         time.sleep(3)
                 except:
-                        if len(browser.find_elements_by_link_text("...")) == 2 and i>21:
+                        if len(driver.find_elements_by_link_text("...")) == 2 and i>21:
                                 n += 1
                                 if n >= 2: # len(licenseTypes)
                                         break
                                 else:
                                         GetPage(n)
                                         i = 1
-                        elif len(browser.find_elements_by_link_text("...")) == 0:
+                        elif len(driver.find_elements_by_link_text("...")) == 0:
                                 n += 1
                                 if n >= 2: # len(licenseTypes)
                                         break
                                 else:
                                         GetPage(n)
                                         i = 1
-                        elif len(browser.find_elements_by_link_text("..."))==2:
-                                browser.find_element_by_link_text("...").click()
-                        elif len(browser.find_elements_by_link_text("...")) == 4:
-                                browser.find_elements_by_link_text("...")[1].click()
+                        elif len(driver.find_elements_by_link_text("..."))==2:
+                                driver.find_element_by_link_text("...").click()
+                        elif len(driver.find_elements_by_link_text("...")) == 4:
+                                driver.find_elements_by_link_text("...")[1].click()
                                 
         url.close()
 
 def TXdps(link):
-        print link.replace('\n','')
+        l.info(link.replace('\n',''))
         try:
                 page = s.get("http://www.txdps.state.tx.us/rsd/psb/psbSearch" + link.replace('\n',''))
                 time.sleep(3)
@@ -87,37 +85,31 @@ def TXdps(link):
                 info.append(soup.find("span", id="ctl00_SearchContentPlaceHolder_lblArmedGuard").text) # ArmedGuard
                 info.append(soup.find("span", id="ctl00_SearchContentPlaceHolder_lblGuardDog").text) # GuardDog
                 info = [x.strip() for x in info]
-                print info
+                l.info(info)
                 f.write("|".join(info) + "\n")
-        except:
-                if page.status_code != 200:
-                        log_list = []
-                        log_list.append(url)
-                        print page.status_code, url
-                        log.write("\"" + "\",\"".join(log_list) + "\"\n")
-                        pass
+        except Exception as e:
+                l.error(str(e))
 
 def ThreadedScrape():
         links = []
-        for line in codecs.open("TXdps_links.csv","r").readlines():
-                links.append(line.strip())
-        threaded(links, TXdps, num_threads=1)
-
-def ErrorPass():
-        links = []
-        for line in codecs.open("TXdps_log.csv","r").readlines():
+        for line in codecs.open("sec_c_TXdps.csv","r").readlines():
                 links.append(line.strip())
         threaded(links, TXdps, num_threads=1)
         
+def main():
+        n = 0
+        GetPage(n)
+        ScrapeLinks(n)
+        ThreadedScrape()
+
 # - - - - - MAIN CODE - - - - - 
 
 if __name__ == '__main__':
-        #n = 0
-        #GetPage(n)
-        #ScrapeLinks(n)
-        ThreadedScrape()
-        ErrorPass()
-
-        f.write('It actually finished. \n')
-        f.write('Minutes Elapsed: %s' %((time.time() - start)/60))
-        f.close()
+        try:
+                main()
+                l.info('complete')
+        except Exception as e:
+                l.critical(str(e))
+        finally:
+                f.close()
+                driver.quit()
