@@ -32,14 +32,13 @@ def main():
                 stew = BeautifulSoup(requests.get(detail_url).content)
                 try:
                     info = []
-                    info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_NameLabel"}).text.strip()) #nameprint soup.find_all("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_NameLabel"}).text.strip()
+                    info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_NameLabel"}).text.strip()) #nameprint
                     info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_LicenseNoLabel"}).text.strip()) #licno
                     info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_AddressLabel"}).text.strip()) #address
                     info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_CityLabel"}).text.strip()) #city
                     info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_StateLabel"}).text.strip()) #state
                     info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_ZipLabel"}).text.strip()) #zipcode
                     info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_PhonenoLabel"}).text.strip()) #phone
-                    # info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_FaxLabel"}).text.strip()) #fax
                     info.append(stew.find("span", {"id" : "ctl00_ContentPlaceHolder1_FormView1_Expr1Label"}).text.strip()) #expdate
                     l.info(info)
                     f.write('|'.join(info) + '\n')

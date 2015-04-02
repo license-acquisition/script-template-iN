@@ -5,12 +5,12 @@ from script_template import create_file, logger
 
 f = create_file('wel_c_NDswc', 'w', ['7', '32', '12', '102', '21', '0', '4', '36', '44', '33', '11'])
 l = logger('wel_c_NDswc')
+s = requests.session()
 
 def main():
-	s = requests.session()
 	page = s.post("http://www.swc.nd.gov/4dlink2/4dcgi/ContractSearch",
-	data={	"webCategory":"ND Water Well Contractors","wCertType":"All","wSEARCHTYPE":"AND", "Button":"Query"}).content
-	soup = BeautifulSoup(page)
+                data={	"webCategory":"ND Water Well Contractors","wCertType":"All","wSEARCHTYPE":"AND", "Button":"Query"})
+	soup = BeautifulSoup(page.content)
 	Email = False
 	i=1
 	while True:
@@ -38,7 +38,6 @@ def main():
 				info = []
 				Email = False
 		i+=1
-
 
 if __name__ == '__main__':
     try:

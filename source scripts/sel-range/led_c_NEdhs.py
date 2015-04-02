@@ -37,7 +37,7 @@ def main():
                                             info = []
                                             for j in soup.find_all("div", {"class" : "fieldValue"}):
                                                     info.append(j.text)
-                                            f.write('\"' + "\",\"".join(info) + "\"\n")     
+                                            f.write('|'.join(info) + '\n')     
                                             l.info(info)
                             except:
                                     pass
