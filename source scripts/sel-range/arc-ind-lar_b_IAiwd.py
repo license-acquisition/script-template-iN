@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from script_template import create_file, logger
 f = create_file("arc-ind-lar_b_IAiwd","w",[12,0,1,4,36,44,33,66,21,"entity_type",37,13,19,"licensed_by"])
 l = logger('IAiwd')
-browser = webdriver.Chrome()
+browser = webdriver.PhantomJS()
 
 
 def main():
@@ -40,7 +40,7 @@ def main():
 							if td.has_attr("class"):
 								pass
 							else:
-								info.append(td.text.strip())
+								info.append(td.text.strip()) 
 								break
 
 					for issue_info in soup.find_all("table")[5].find_all("tr"):
@@ -49,10 +49,10 @@ def main():
 								pass
 					
 							else:
-								info.append(td.text.strip())
 								
+								info.append(td.text.strip())
 								break
-						break
+						
 					info = [x for x in info if len(x) !=0]	
 					f.write("|".join(info) + "\n")
 					print info
@@ -60,7 +60,6 @@ def main():
 
 				except Exception, e:
 					l.error(str(e))
-					#if next doesn't exist, break the while loop
 					break
 if __name__ == '__main__':
 	try:
