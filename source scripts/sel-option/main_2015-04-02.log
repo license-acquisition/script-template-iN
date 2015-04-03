@@ -1,0 +1,35 @@
+2015/04/02 12:31:17 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - local variable 'l' referenced before assignment
+2015/04/02 12:35:19 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - local variable 'l' referenced before assignment
+2015/04/02 12:38:43 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 'int' object has no attribute 'info'
+2015/04/02 12:54:22 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 12:55:10 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 'NoneType' object has no attribute 'find_all'
+2015/04/02 12:56:56 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 12:57:50 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 12:59:01 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 12:59:47 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 14:06:41 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 'NavigableString' object has no attribute 'find_all'
+2015/04/02 14:07:17 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 'NavigableString' object has no attribute 'find_all'
+2015/04/02 14:10:06 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 'NoneType' object has no attribute 'find_all'
+2015/04/02 14:11:22 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 'NoneType' object has no attribute 'find_all'
+2015/04/02 14:15:03 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 14:15:19 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 14:16:03 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 14:16:36 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - list index out of range
+2015/04/02 14:17:50 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 0
+2015/04/02 14:19:04 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 0
+2015/04/02 14:20:14 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 0
+2015/04/02 14:20:44 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 0
+2015/04/02 14:21:38 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 0
+2015/04/02 14:25:38 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - 0
+2015/04/02 14:32:55 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - Message: {"errorMessage":"Unable to find element with xpath '//*[@id=\"dgMain\"]/tbody/tr[2]/td[1]/div/div/text()'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"136","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:56192","User-Agent":"Python-urllib/2.7"},"httpVersion":"1.1","method":"POST","post":"{\"using\": \"xpath\", \"sessionId\": \"ccb140c0-d97f-11e4-a39b-b3b5ab7d96cc\", \"value\": \"//*[@id=\\\"dgMain\\\"]/tbody/tr[2]/td[1]/div/div/text()\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/ccb140c0-d97f-11e4-a39b-b3b5ab7d96cc/element"}}
+Screenshot: available via screen
+
+2015/04/02 14:33:39 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - Message: {"errorMessage":"Unable to find element with xpath '//*[@id=\"dgMain\"]/tbody/tr[2]/td[1]/div/div'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"129","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:56239","User-Agent":"Python-urllib/2.7"},"httpVersion":"1.1","method":"POST","post":"{\"using\": \"xpath\", \"sessionId\": \"e6fb2450-d97f-11e4-8855-0bc621813220\", \"value\": \"//*[@id=\\\"dgMain\\\"]/tbody/tr[2]/td[1]/div/div\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/e6fb2450-d97f-11e4-8855-0bc621813220/element"}}
+Screenshot: available via screen
+
+2015/04/02 14:36:41 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - Message: {"errorMessage":"Unable to find element with xpath '//*[@id=\"dgMain\"]/tbody/tr[2]/td[1]/div/div'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"129","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:56380","User-Agent":"Python-urllib/2.7"},"httpVersion":"1.1","method":"POST","post":"{\"using\": \"xpath\", \"sessionId\": \"5333ea30-d980-11e4-b936-abf1a5824844\", \"value\": \"//*[@id=\\\"dgMain\\\"]/tbody/tr[2]/td[1]/div/div\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/5333ea30-d980-11e4-b936-abf1a5824844/element"}}
+Screenshot: available via screen
+
+2015/04/02 14:38:13 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - local variable 'l' referenced before assignment
+2015/04/02 14:38:45 - ele-gen.res-plu_c_AK.ANcde - CRITICAL - global name 'k' is not defined
+2015/04/02 15:24:46 - asb-bui-ele-fir-gen.res-hva-lan-mec-plu-poo-roo-sec_b_FL.ORfst - CRITICAL - cannot concatenate 'str' and 'list' objects

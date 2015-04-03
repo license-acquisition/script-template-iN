@@ -1,0 +1,720 @@
+entity_name|license_number|status|disciplinary_status|address1|city|state|zip|first_issue_date|expiration_date|HSW|company_flag|licensee_type_cd
+2Form Architecture, P. C. (0611AF)|Active||121 Lawrence Street|Eugene|OR|97401|12/29/2009| 01/31/2016|0.00|1|Architecture Firm
+42/40 Architecture, Inc. (0659AF)|Active||328 S Jefferson St Suite 750|Chicago|IL|60661|01/25/2005| 01/31/2015|0.00|1|Architecture Firm
+4U Architectural Solutions, L.L.C. (1148AF)|Active||20904 E Ithaca Pl|Aurora|CO|80013|06/28/2013| 01/31/2016|0.00|1|Architecture Firm
+A & E Architects, P. C.  (0853AF)|Active|1|608 N 29th Street Billings||MT|59101|12/06/2007| 01/31/2015|0.00|1|Architecture Firm
+A & E National Architecture of Oregon, P.C. (0876AF)|Active||1812 North 203rd Street|Elkhorn|NE|68022|05/20/2008| 01/31/2016|0.00|1|Architecture Firm
+AAD: FITCH Architecture, P.L.L.C. (1028AF)|Active||16435  N Scottsdale Rd Suite 195|Scottsdale|AZ|85254|05/09/2011| 01/31/2016|0.00|1|Architecture Firm
+Abbot Studios Architects+planners+designers, L.L. (0912AF)|Active||130 E Chestnut Street Suite 302|Columbus|OH|43215|03/19/2009| 01/31/2016|0.00|1|Architecture Firm
+Abbott Architecture, L.L.C. (0880AF)|Active||2751 68th Ave SE Mercer|Island|WA|98040|03/26/2012| 01/31/2016|0.00|1|Architecture Firm
+ABI Architects, Inc. (0461AF)|Active||9400 N Broadway Suite 300 (Legal Dept) Oklahoma|City|OK|73114-|09/20/2001| 01/31/2016|0.00|1|Architecture Firm
+AC + Co Architecture | Community  (0162AF)|Active|1|363 State Street|Salem|OR|97301-3533|01/01/2015| 01/31/2016|0.00|1|Architecture Firm
+ADA Architects, Inc. (0933AF)|Active||17710 Detroit Ave|Lakewood|OH|44107|07/02/2009| 01/31/2016|0.00|1|Architecture Firm
+AECOM Architects, P.C. (0926AF)|Active||515 S Flower St Suite 1050 Los|Angeles|CA|90071|08/07/2014| 01/31/2016|0.00|1|Architecture Firm
+AHHA Architect, Inc. (1211AF)|Active||615 SE Alder St|Portland|OR|97214|02/01/2015| 01/31/2016|0.00|1|Architecture Firm
+AKAAN Architecture & Design, L.L.C. (0701AF)|Active||101 St. Helens St. St.|Helens|OR|97051|06/20/2005| 01/31/2016|0.00|1|Architecture Firm
+Alliance Architects, Inc. (1006AF)|Active||1600 N Collins Blvd Suite 1000|Richardson|TX|75080|08/16/2010| 01/31/2016|0.00|1|Architecture Firm
+Allied Works Architecture, Inc. (0168AF)|Active||1532 SW Morrison Street 3rd Floor|Portland|OR|97205|06/21/1995| 01/31/2016|0.00|1|Architecture Firm
+ALLUSA Architecture, L.L.C. (0845AF)|Active||2118 SE Division St.|Portland|OR|97202|08/20/2007| 01/31/2016|0.00|1|Architecture Firm
+ALSC Architects, P.S. (0732AF)|Active||203 N. Washington St. Suite 400|Spokane|WA|99201|10/12/2005| 01/31/2016|0.00|1|Architecture Firm
+Alta Vista Design Architecture & Planning, L.L.C. (0672AF)|Active||2422 NW Molly Ct|Corvallis|OR|97330|03/10/2005| 01/31/2016|0.00|1|Architecture Firm
+An Architect's Atelier - Jane A.B. Honbeck (0733AF)|Active|2|10550 Clow Corner Rd.|Dallas|OR|97351|10/17/2005| 01/31/2016|0.00|1|Architecture Firm
+Anderson Dabrowski Architects, L.L.C. (0229AF)|Active||1430 SE Third Avenue Suite 200|Portland|OR|97214|04/02/1998| 01/31/2016|0.00|1|Architecture Firm
+Anderson Mason Dale Architects, P.C. (1052AF)|Active||3198 Speer Blvd|Denver|CO|80211|08/03/2011| 01/31/2016|0.00|1|Architecture Firm
+Anderson Shirley Architects, Inc. (0614AF)|Active||695 Commercial St. SE Suite 5|Salem|OR|97301|07/20/2004| 01/31/2016|0.00|1|Architecture Firm
+Andrus Architecture, Inc. (0653AF)|Active||11629 Northland Drive Suite 200|Rockford|MI|49341|01/05/2005| 01/31/2016|0.00|1|Architecture Firm
+Angie Amato Wieland Architecture, L.L.C. (1192AF)|Active||5114 NE 32nd Pl|Portland|OR|97211|05/12/2014| 01/31/2016|0.00|1|Architecture Firm
+Animal Arts Architects (1177AF)|Active||4520 Broadway Ste E|Boulder|CO|80304|02/21/2014| 01/31/2016|0.00|1|Architecture Firm
+Ankrom Moisan Architects, Inc. (0251AF)|Active|3|6720 SW Macadam Ave Suite 100|Portland|OR|97219-7710|06/25/1998| 01/31/2016|0.00|1|Architecture Firm
+Ankrom Moisan Architects, Inc. (1108AF)|Active||6720 SW Macadam Ave #100|Portland|OR|97219|10/01/2012| 01/31/2016|0.00|1|Architecture Firm
+APAZ Architect, AIA (0485AF)|Active|1|86950 Cedar Flat Road|Springfield|OR|97478-|04/12/2006| 01/31/2016|0.00|1|Architecture Firm
+APD, L.L.C., Architecture & Engineering (0720AF)|Active||110 110th Ave. NE Suite 550|Bellevue|WA|98004|08/17/2005| 01/31/2016|0.00|1|Architecture Firm
+APMI Architecture (1180AF)|Active||8300 N Hayden Rd Suite A-204|Scottsdale|AZ|85258|03/06/2014| 01/31/2016|0.00|1|Architecture Firm
+Apropos Architecture, L.L.C. (1058AF)|Active||2703 NE 35th Ave|Portland|OR|97212|08/29/2011| 01/31/2016|0.00|1|Architecture Firm
+Arbor South Architecture, P.C. (0145AF)|Active||380 Lincoln Street|Eugene|OR|97401-|06/30/1993| 01/31/2016|0.00|1|Architecture Firm
+Archibald Little Dillman Architects, P.S., P.C. (0868AF)|Active||660 Symons Street|Richland|WA|99354|03/17/2008| 01/31/2016|0.00|1|Architecture Firm
+Archistruction, L.L.C., an Architectural Firm (1150AF)|Active||2607 Midpoint Dr Fort|Collins|CO|80525|08/06/2013| 01/31/2016|0.00|1|Architecture Firm
+Architect: Patrick Bickler, L.L.C. (0502AF)|Active||1313 Mill St. SE Suite 201|Salem|OR|97301|07/05/2002| 01/31/2016|0.00|1|Architecture Firm
+Architects Associative, Inc. (0438AF)|Active||8513 NE Hazel Dell Ave Suite 106|Vancouver|WA|98665|04/25/2012| 01/31/2016|0.00|1|Architecture Firm
+Architects BCRA  (0973AF)|Active||2106 Pacific Ave Suite 300|Tacoma|WA|98402|03/22/2010| 01/31/2015|0.00|1|Architecture Firm
+Architects Van Lom Group, AIA, P.C. (0081AF)|Active||PO Box 25690|Portland|OR|97298|06/25/2007| 01/31/2016|0.00|1|Architecture Firm
+Architects West, Inc. (0153AF)|Active||210 E Lakeside Ave Coeur|d'Alene|ID|83814-|08/11/2008| 01/31/2016|0.00|1|Architecture Firm
+Architectural Alliance International (0787AF)|Active||400 Clifton Avenue South|Minneapolis|MN|55403|09/28/2006| 01/31/2016|0.00|1|Architecture Firm
+Architectural Associates (0237AF)|Active||241 East Broadway|Eugene|OR|97401-|06/08/1998| 01/31/2016|0.00|1|Architecture Firm
+Architectural Design Studio, L.L.C. (0959AF)|Active||19363 Willamette Dr #167 West|Linn|OR|97068|12/22/2009| 01/31/2016|0.00|1|Architecture Firm
+Architectural Design Works, Inc. (0531AF)|Active||518 Washington St Suite #4|Ashland|OR|97520|02/12/2003| 01/31/2016|0.00|1|Architecture Firm
+Architectural Group International, P.S.C., Inc.  (0691AF)|Active||15 W 7th St|Covington|KY|41011|03/12/2013| 01/31/2016|0.00|1|Architecture Firm
+Architectural Investigative Reports & Opinions (0849AF)|Active||1083 Windemere Drive NW/P.O. Box 5324|Salem|OR|97304|09/21/2007| 01/31/2016|0.00|1|Architecture Firm
+Architectural Resources Group, Inc.  (0649AF)|Active||Pier 9 The Embarcadero Suite 107 San|Francisco|CA|94111|08/03/2009| 01/31/2016|0.00|1|Architecture Firm
+Architectural Services NW, L.L.C (1151AF)|Active||500 East 46th Ave|Eugene|OR|97405|08/23/2013| 01/31/2016|0.00|1|Architecture Firm
+Architectural Technologies (0207AF)|Active||2960 E Northern Ave Bldg C|Phoenix|AZ|85028-|12/01/2009| 01/31/2016|0.00|1|Architecture Firm
+Architectural Werks, Inc. (0226AF)|Active||11416 98th Ave. NE Suite 200|Kirkland|WA|98034|03/03/1998| 01/31/2016|0.00|1|Architecture Firm
+Architecture Building Culture, L.L.C. (1059AF)|Active|1|208 SW Stark St Suite 200|Portland|OR|97204|09/22/2011| 01/31/2016|0.00|1|Architecture Firm
+Architecture Design Collaborative, Inc. (1214AF)|Active||3505 Cadillac Ave Bldg O Suite 205A Costa|Mesa|CA|92626|03/03/2015| 01/31/2016|0.00|1|Architecture Firm
+Architecture for Hospitals, Inc. (0600AF)|Active||11330 Olive Blvd St.|Louis|MO|63141|10/18/2010| 01/31/2015|0.00|1|Architecture Firm
+Architecture Northwest, P.C. (0443AF)|Active||PO Box 702|Gresham|OR|97030|03/06/2014| 01/31/2015|0.00|1|Architecture Firm
+Architecture W (0471AF)|Active|1|240 W Broadway #208|Portland|OR|97227|07/22/2003| 01/31/2016|0.00|1|Architecture Firm
+Architeriors - Architecture and Interiors (0330AF)|Active||17111 Preston Rd. Suite 130|Dallas|TX|75248-|03/25/1999| 01/31/2016|0.00|1|Architecture Firm
+Aria Group Architects, Inc. (0881AF)|Active||830 North Boulevard Oak|Park|IL|60301|04/09/2014| 01/31/2016|0.00|1|Architecture Firm
+ARKITEK:  Design & Architecture, L.L.C. (1152AF)|Active||426 A Street Suite 101|Ashland|OR|97520|08/28/2013| 01/31/2016|0.00|1|Architecture Firm
+Artifekt Architecture + Interiors   (0602AF)|Active||519 SW Park Ave #410|Portland|OR|97204|02/08/2011| 01/31/2016|0.00|1|Architecture Firm
+Ascent Architecture and Interiors (0972AF)|Active||920 NW Bond St #204|Bend|OR|97701|05/01/2014| 01/31/2016|0.00|1|Architecture Firm
+Atelier Z an Architecture and Industrial Design St (0719AF)|Active|1|4912 NE 27th Avenue|Portland|OR|97211-6329|08/17/2005| 01/31/2016|0.00|1|Architecture Firm
+Austin Building and Design - Architects & Engineer (0884AF)|Active||6095 Parkland Blvd|Cleveland|OH|44124|08/08/2008| 01/31/2016|0.00|1|Architecture Firm
+AWJ  Architecture P.C.  (0038AF)|Active||1500 Valley River Dr Suite 220|Eugene|OR|97401|01/17/2013| 01/31/2016|0.00|1|Architecture Firm
+Axis Design Group Architecture & Engineering, Inc. (0450AF)|Active||11104 SE Stark Street|Portland|OR|97216|01/14/2009| 01/31/2016|0.00|1|Architecture Firm
+Balance Architecture + Design, P.C. (1008AF)|Active||1808 Jefferson St|Eugene|OR|97402|08/19/2010| 01/31/2016|0.00|1|Architecture Firm
+BAMA Architecture and Design, L.L.C. (0966AF)|Active||1631 NE Broadway #754|Portland|OR|97232|02/12/2010| 01/31/2016|0.00|1|Architecture Firm
+Barker, Rinker, Seacat Architecture, P.C. (0810AF)|Active||3457 Ringsby Court Unit 200|Denver|CO|80216|04/14/2008| 01/31/2016|0.00|1|Architecture Firm
+Barry R. Smith, P.C., Architect (0612AF)|Active||715 SW Morrison St #909|Portland|OR|97205|04/13/2012| 01/31/2016|0.00|1|Architecture Firm
+Baskervill & Son Architecture, P.C. (0527AF)|Active||101 S 15th St Suite 200|Richmond|VA|23219|01/07/2015| 01/31/2016|0.00|1|Architecture Firm
+Bassetti Architects P.S., P.C. (1004AF)|Active||71 Columbia St Suite 500|Seattle|WA|98104|08/09/2010| 01/31/2016|0.00|1|Architecture Firm
+Baylis Architects, Inc. (0337AF)|Active||10801 Main St. Suite 110|Bellevue|WA|98004-|04/22/1999| 01/31/2016|0.00|1|Architecture Firm
+Baysinger Partners Architecture, P.C. (0175AF)|Active||1006 SE Grand Ave. Suite 300|Portland|OR|97214-|04/09/2003| 01/31/2016|0.00|1|Architecture Firm
+BB Architects, Inc. (0741AF)|Active||1590 S Coast Highway Ste. 18 Laguna|Beach|CA|92851|06/19/2014| 01/31/2016|0.00|1|Architecture Firm
+BBL Architects (0504AF)|Active||200 North State Street Lake|Oswego|OR|97034|03/16/2011| 01/31/2016|0.00|1|Architecture Firm
+BBL Architects, L.L.C. (1045AF)|Active||200 N State St Lake|Oswego|OR|97034|04/22/2011| 01/31/2016|0.00|1|Architecture Firm
+BBN Architects (1114AF)|Active||411 Nichols Rd Ste 246 Kansas|City|MO|64112|10/16/2012| 01/31/2016|0.00|1|Architecture Firm
+BBT Architects, Inc. (0078AF)|Active|1|1160 SW Simpson Ave Suite 100|Bend|OR|97702|04/30/1984| 01/31/2016|0.00|1|Architecture Firm
+BCF Architecture, P.C. (1013AF)|Active||2333 Third Ave|Seattle|WA|98121|05/03/2011| 01/31/2016|0.00|1|Architecture Firm
+BCV Architects (0956AF)|Active||1527 Stockton St 4th Floor San|Francisco|CA|94133|07/01/2011| 01/31/2016|0.00|1|Architecture Firm
+Beaman Architecture Ltd. (0384AF)|Active||PO Box 86038|Portland|OR|97286|02/01/2000| 01/31/2016|0.00|1|Architecture Firm
+Becker Architects (0714AF)|Active||320 120th Avenue NE #107|Bellevue|WA|98005|08/03/2005| 01/31/2016|0.00|1|Architecture Firm
+Beebe Skidmore Architects, L.L.C. (0883AF)|Active||1500 SW 11th Ave 2004|Portland|OR|97201|08/08/2008| 01/31/2016|0.00|1|Architecture Firm
+Benchmark Architectural Services (0293AF)|Active||2897 Firwood Place S.E.|Albany|OR|97330|09/17/1998| 01/31/2016|0.00|1|Architecture Firm
+Benner Stange Associates Architects, Inc. (0157AF)|Active||5200 SW Meadows Road Suite B130 Lake|Oswego|OR|97035-|04/14/2008| 01/31/2016|0.00|1|Architecture Firm
+Bergmeyer Architectural, P.C. (0788AF)|Active||51 Sleeper Street 6th Floor|Boston|MA|02210|09/28/2006| 01/31/2016|0.00|1|Architecture Firm
+Bergsund Delaney Architecture & Planning, P.C. (0186AF)|Active||1369 Olive Street|Eugene|OR|97401-|03/19/1997| 01/31/2016|0.00|1|Architecture Firm
+Bernardo-Wills Architects, P.C. (0555AF)|Active||153 S Jefferson St|Spokane|WA|99201|09/10/2003| 01/31/2016|0.00|1|Architecture Firm
+Beth Cantrell Architecture, L.L.C. (1110AF)|Active||3308 NE 11th Avenue|Portland|OR|97211|10/02/2012| 01/31/2016|0.00|1|Architecture Firm
+Big Red Rooster Architecture, L.L.C. (1141AF)|Active||121 Thurman Ave|Columbus|OH|43206|04/11/2013| 01/31/2016|0.00|1|Architecture Firm
+BIOS Architecture, L.L.C. (1037AF)|Active||820 N River St Ste 205|Portland|OR|97203|03/08/2011| 01/31/2015|0.00|1|Architecture Firm
+BKL/A Architecture, L.L.C. (0870AF)|Active||5505 SE Oetkin Dr|Milwaukie|OR|97267|04/10/2008| 01/31/2016|0.00|1|Architecture Firm
+Blaise Cacciola Architect, L.L.C. (1009AF)|Active||1465 SW Knoll Ave Ste 210|Bend|OR|97702|09/02/2010| 01/31/2016|0.00|1|Architecture Firm
+BLRB Architects, P.C. (0403AF)|Active|1|1250 Pacific Ave Ste 700|Tacoma|WA|98402|05/19/2000| 01/31/2016|0.00|1|Architecture Firm
+Bodega Architecture, Inc. (0931AF)|Active|1|1700 SW 90th Ave|Portland|OR|97225|06/22/2009| 01/31/2016|0.00|1|Architecture Firm
+Bohlin Cywinski Jackson Architects (0736AF)|Active||8 West Market St Suite 1200|Wilkes-Barre|PA|18701|11/09/2005| 01/31/2016|0.00|1|Architecture Firm
+BOORA Architects, Inc. (0027AF)|Active|1|720 SW Washington #800|Portland|OR|97205-3510|07/09/2009| 01/31/2016|0.00|1|Architecture Firm
+Boulder Associates Corporation, Architecture & Int (0395AF)|Active||1426 Pearl Street Suite 300|Boulder|CO|80302|03/27/2000| 01/31/2016|0.00|1|Architecture Firm
+Bowen Architecture (0908AF)|Active||834 SW Vista Avenue|Portland|OR|97219|02/12/2009| 01/31/2016|0.00|1|Architecture Firm
+Bradford K. Wright, Architect, L.L.C. (1186AF)|Active||123 W Broad St|Greenville|SC|29601|04/14/2014| 01/31/2016|0.00|1|Architecture Firm
+Brainstorm Architecture (0377AF)|Active||PO Box 82416|Portland|OR|97282|10/08/2014| 01/31/2016|0.00|1|Architecture Firm
+Brian C. Jackson, Architect, L.L.C. (0986AF)|Active|1|13640 NW Laidlaw Rd|Portland|OR|97229|04/26/2010| 01/31/2016|0.00|1|Architecture Firm
+Brian J. Hawkins, Architect, P.C. (0979AF)|Active|1|406 E Main St Suite C|Medford|OR|97501|04/09/2010| 01/31/2016|0.00|1|Architecture Firm
+Bridgetown Design Architecture Illustration Graphi (0985AF)|Active||17574 Schalit Way Lake|Oswego|OR|97035|04/26/2010| 01/31/2016|0.00|1|Architecture Firm
+Brittell Architecture, Inc. (0941AF)|Active||PO Box 1145|Newberg|OR|97132|10/19/2010| 01/31/2016|0.00|1|Architecture Firm
+Broadleaf Architecture (0548AF)|Active||534 NW 4th St|Corvallis|OR|97330|07/22/2003| 01/31/2016|0.00|1|Architecture Firm
+BRR Architecture, Inc. (0627AF)|Active||6700 Antioch Plaza Suite 300|Merriam|KS|66204|11/12/2004| 01/31/2016|0.00|1|Architecture Firm
+BRS Architects (0799AF)|Active||1010 S. Allante Place #100|Boise|ID|83709|11/30/2006| 01/31/2016|0.00|1|Architecture Firm
+Bruce H. Abeloe, Architect, AIA (0474AF)|Active||PO Box 1125|Medford|OR|97501|01/10/2011| 01/31/2016|0.00|1|Architecture Firm
+Bruce Sternberg, Architect, Inc. (0312AF)|Active||PO Box 82416|Portland|OR|97282|02/09/2010| 01/31/2016|0.00|1|Architecture Firm
+BSA Architects, A California Corporation (0539AF)|Active||300 Montgomery St Suite 1135 San|Francisco|CA|94104|05/06/2014| 01/31/2016|0.00|1|Architecture Firm
+BSA LifeStructures of Oregon Architects and Engine (0894AF)|Active||9365 Counselors Row|Indianapolis|IN|46240|10/01/2008| 01/31/2016|0.00|1|Architecture Firm
+Buckenmeyer Architecture, L.L.C. (1035AF)|Active||2517 NE 47th Ave|Portland|OR|97213|03/08/2011| 01/31/2016|0.00|1|Architecture Firm
+Buffalo Design Architecture & Interiors (0325AF)|Active||1520 Fourth Ave Suite 400|Seattle|WA|98101|02/24/1999| 01/31/2016|0.00|1|Architecture Firm
+Butler, Rosenbury & Partners - Architects (0704AF)|Active||319 N Main Ste. 200|Springfield|MO|65806|07/05/2005| 01/31/2016|0.00|1|Architecture Firm
+C2 Architects (0921AF)|Active||2476 Westlake Ave N Suite 102|Seattle|WA|98109|04/08/2009| 01/31/2016|0.00|1|Architecture Firm
+C2K Architecture, Inc. (0993AF)|Active||1645 NW Hoyt|Portland|OR|97209|03/10/2011| 01/31/2016|0.00|1|Architecture Firm
+CAI Architects, Inc. (1040AF)|Active||401 N Houston St|Dallas|TX|75202|04/07/2011| 01/31/2016|0.00|1|Architecture Firm
+Callison Architects, P.C. (0834AF)|Active||1420 Fifth Avenue #2400|Seattle|WA|75201|08/10/2007| 01/31/2016|0.00|1|Architecture Firm
+Cameron P. Dutz Architect, L.L.C. (0473AF)|Active||12365 SW Marion St.|Tigard|OR|97223-|02/13/2002| 01/31/2016|0.00|1|Architecture Firm
+Cannon Design Architects (1159AF)|Active||1901 Ave of the Stars Suite 175 Los|Angeles|CA|90067|10/22/2013| 01/31/2016|0.00|1|Architecture Firm
+Capri Architecture, L.L.C. (1178AF)|Active||747 SW 13th Street|Newport|OR|97365|03/05/2014| 01/31/2016|0.00|1|Architecture Firm
+Carleton Hart Architecture, P.C. (0156AF)|Active||322 NW 8th Ave|Portland|OR|97209-3504|10/25/1994| 01/31/2015|0.00|1|Architecture Firm
+Carlos Delgado Architect, L.L.C. (1170AF)|Active||217 4th St|Ashland|OR|97520|02/03/2014| 01/31/2016|0.00|1|Architecture Firm
+Carlson Associates (Architectural and Engineering) (1158AF)|Active||34 Executive Park Suite 250|Irvine|CA|92614|10/22/2013| 01/31/2015|0.00|1|Architecture Firm
+Carlson Veit Architects, P.C. (0001AF)|Active||3095 River Rd. N|Salem|OR|97303-6512|10/27/1969| 01/31/2016|0.00|1|Architecture Firm
+Castellaw Kom Architects (1136AF)|Active||850 Main St|Lewiston|ID|83501|03/08/2013| 01/31/2016|0.00|1|Architecture Firm
+CB Two Architects, L.L.C. (0843AF)|Active|1|500 Liberty St SE Suite 100|Salem|OR|97301|02/23/2011| 01/31/2016|0.00|1|Architecture Firm
+CDM Architects, Inc. (0761AF)|Active||75 State Street|Boston|MA|02139|06/14/2006| 01/31/2016|0.00|1|Architecture Firm
+Cedar Street Architecture at TKDA, Inc. (1084AF)|Active||444 Cedar St Suite 1500 Saint|Paul|MN|55101|04/13/2012| 01/31/2016|0.00|1|Architecture Firm
+Celeste Lewis Architecture, L.L.C. (0861AF)|Active||821 NW Flanders; suite 210|Portland|OR|97201|02/12/2008| 01/31/2016|0.00|1|Architecture Firm
+Cella Architecture (1102AF)|Active||PO Box 13407|Portland|OR|97213|08/14/2012| 01/31/2016|0.00|1|Architecture Firm
+CH2M Hill Architects, P.C. (0507AF)|Active||9191 South Jamaica St. Attn: Sally Hill|Englewood|CO|80112-5946|08/07/2002| 01/31/2016|0.00|1|Architecture Firm
+Chadbourne + Doss Architects (0641AF)|Active||1469 22nd Avenue|Seattle|WA|98122|12/01/2004| 01/31/2016|0.00|1|Architecture Firm
+Chambers Architectural Associates, Inc. (0915A)|Active||1800 Washington Blvd Suite 111|Baltimore|MD|21230|11/21/2013| 01/31/2016|0.00
+Chesshir Architecture, P.C. (0587AF)|Active||2337 NW York St #208|Portland|OR|97210|03/01/2004| 01/31/2016|0.00|1|Architecture Firm
+Chicago Design Network Architecture & Allied Arts (0426AF)|Active||850 W Jackson Blvd. Suite 850|Chicago|IL|60607-|12/07/2000| 01/31/2016|0.00|1|Architecture Firm
+Chipman Design Architecture, Inc.   (0313AF)|Active||2700 S River Rd Suite 400 Des|Plaines|IL|60018|03/02/2011| 01/31/2016|0.00|1|Architecture Firm
+Chris Davis Design Architecture and Interiors (0939AF)|Active||3435 NE 45th Ave Suite H|Portland|OR|97213|08/03/2009| 01/31/2016|0.00|1|Architecture Firm
+Christie Architecture, L.L.C. (0596AF)|Active||9532 SW 18th Place|Portland|OR|97212|04/26/2010| 01/31/2016|0.00|1|Architecture Firm
+Chuck Bailey Architect, A.I.A., L.L.C. (0997AF)|Active|1|1740  Willamette St|Eugene|OR|97401|07/12/2010| 01/31/2016|0.00|1|Architecture Firm
+CIDA Architecture (0515AF)|Active||15895 SW 72nd Ave #200|Portland|OR|97224|11/01/2002| 01/31/2016|0.00|1|Architecture Firm
+Cinch Architecture, L.L.C. (0962AF)|Active||1742 NE 60th Ave|Portland|OR|97213|02/09/2010| 01/31/2016|0.00|1|Architecture Firm
+Clark/Kjos Architects (0321AF)|Active||333 NW 5th Ave.|Portland|OR|97209-|02/10/1999| 01/31/2016|0.00|1|Architecture Firm
+Climate Architecture + Landscape, L.L.C. (0872AF)|Active||4033 North Willamette Blvd|Portland|OR|97203|04/15/2008| 01/31/2015|0.00|1|Architecture Firm
+Colab Architecture & Urban Design (0425AF)|Active||421 SW Sixth Avenue Suite 1250|Portland|OR|97204-|04/07/2008| 01/31/2016|0.00|1|Architecture Firm
+Cole + Russell Architects, Inc. (0702AF)|Active||600 Vine Street Suite 2210|Cincinnati|OH|45202|06/20/2005| 01/31/2016|0.00|1|Architecture Firm
+Collins Architectural Group, P.C. (0478AF)|Active||950 12th Ave. Suite 200|Longview|WA|98632-|02/22/2002| 01/31/2016|0.00|1|Architecture Firm
+CollinsWoerman Architecture Planning Interior Desi (0878AF)|Active||710 Second Avenue Suite 1400|Seattle|WA|98104|05/21/2008| 01/31/2016|0.00|1|Architecture Firm
+Communitecture, Inc. Architecture & Planning (0889AF)|Active||1639 SE 12th Avenue|Portland|OR|97214-4712|09/16/2008| 01/31/2016|0.00|1|Architecture Firm
+Composite Architecture, L.L.C. (0916AF)|Active||1175 McLean Blvd|Eugene|OR|97405|04/06/2009| 01/31/2016|0.00|1|Architecture Firm
+Conduff ArchitectureDesign, L.L.C. (0975AF)|Active||3870 NW 172nd Pl|Beaverton|OR|97006|03/22/2010| 01/31/2016|0.00|1|Architecture Firm
+Connect Architecture (1201AF)|Active||4072 N Williams Ave Suite A.|Portland|OR|97227|10/21/2014| 01/31/2016|0.00|1|Architecture Firm
+Constructive Form Architecture and Design, L.L.C. (0769AF)|Active||1337 SE 15th Avenue|Portland|OR|97214|08/02/2006| 01/31/2016|0.00|1|Architecture Firm
+Convergence Architecture (0940AF)|Active||7433 N Leavitt Ave|Portland|OR|97203|06/05/2014| 01/31/2016|0.00|1|Architecture Firm
+Cooper Architectural Works, Inc. (0803AF)|Active||C/O 21 Masaryk St Lake|Oswego|OR|97035|07/10/2014| 01/31/2016|0.00|1|Architecture Firm
+CRB Architects - Engineers, P.C. (1134AF)|Active||1251 NW Briarcliff Parkway Suite 500 Kansas|City|MO|64153|02/22/2013| 01/31/2016|0.00|1|Architecture Firm
+Creighton Architecture (0953AF)|Active||252  A  Ave Suite 300 Lake|Oswego|OR|97034|04/25/2012| 01/31/2016|0.00|1|Architecture Firm
+Crow/Clay & Associates Inc., Architecture & Plann (0181AF)|Active||125 West Central Suite 400 Coos|Bay|OR|97420-|03/04/1997| 01/31/2016|0.00|1|Architecture Firm
+CSHQA, A Professional Association-Architectural an (0356AF)|Active|1|200 Broad St|Boise|ID|83702|04/14/2008| 01/31/2016|0.00|1|Architecture Firm
+CSO Architects, Inc. (1156AF)|Active||8831 Keystone Crossing|Indianapolis|IN|46240|10/08/2013| 01/31/2016|0.00|1|Architecture Firm
+CTA Architects Engineers (0526AF)|Active|1|Attn: Pam Meister 13 North 23rd Street|Billings|MT|59101|12/31/2002| 01/31/2016|0.00|1|Architecture Firm
+Curry Architecture, L.L.C. (0846AF)|Active||985 SW Disk Dr Suite 110|Bend|OR|97301|08/20/2007| 01/31/2016|0.00|1|Architecture Firm
+Cushing Terrell Architects Engineers (0766AF)|Active||Attn: Pam Meister 13 North 23rd Street|Billings|MT|59101|05/05/2014| 01/31/2016|0.00|1|Architecture Firm
+Cushing Terrell Architecture & Interiors (0758AF)|Active||Attn: Pam Meister 13 North 23rd Street|Billings|MT|59101|05/05/2014| 01/31/2016|0.00|1|Architecture Firm
+Cyntergy Architecture, P.L.L.C. (0676AF)|Active||810 S Cincinnati Ave Suite 200|Tulsa|OK|74119|03/24/2005| 01/31/2016|0.00|1|Architecture Firm
+Cynthia L. Bankey Architect, Inc. (0294AF)|Active||2115 SE 46th Ave|Portland|OR|97215|09/17/1998| 01/31/2016|0.00|1|Architecture Firm
+D. Bissett Architect, P. C.   (0689AF)|Active||10940 SW Barnes Rd #101|Portland|OR|97225|01/31/2011| 01/31/2016|0.00|1|Architecture Firm
+Dalla Terra Architecture, L.L.C. (0919AF)|Active||PO Box 18202|Portland|OR|97212|04/06/2009| 01/31/2016|0.00|1|Architecture Firm
+Dangermond Keane Architecture, L.L.C. (0867AF)|Active||1921 NW Kearney St|Portland|OR|97209|03/05/2008| 01/31/2016|0.00|1|Architecture Firm
+DAO Architecture, L.L.C. (0660AF)|Active||1919 SE 43rd Avenue|Portland|OR|97215|01/26/2005| 01/31/2016|0.00|1|Architecture Firm
+Dario Designs Architecture/Design/Planning/Consult (0305AF)|Active||318 Main Street Ste. 210|Northborough|MA|01752|11/03/1998| 01/31/2016|0.00|1|Architecture Firm
+Darrell Barnes Architect, Inc. (0347AF)|Active||24191 East Hwy 20|Bend|OR|97701-|06/16/1999| 01/31/2016|0.00|1|Architecture Firm
+Darren Thomas Architecture + Planning, L.L.C. (0969AF)|Active||2450 NW Dorion Way|Bend|OR|97701|02/17/2010| 01/31/2016|0.00|1|Architecture Firm
+Daryl Sieker Architect, L.L.C. (0937AF)|Active||2030 Dillow Drive West|Linn|OR|97068|07/23/2009| 01/31/2016|0.00|1|Architecture Firm
+David P. Gellos, Architect, L.L.C. (1064AF)|Active|1|22815 SW Miami Dr|Tualatin|OR|97062|10/19/2011| 01/31/2016|0.00|1|Architecture Firm
+David R. York, Architect, Limited Liability Compa (1001AF)|Active||3933 SW Kelly Suite C|Portland|OR|97239|07/21/2010| 01/31/2016|0.00|1|Architecture Firm
+David Rodeback Architect, L.L.C. (0707AF)|Active||1711 SE 10th Ave #201|Portland|OR|97214|07/05/2005| 01/31/2016|0.00|1|Architecture Firm
+Davis Partnership Architects, P.C. (1061AF)|Active||2301 Blake St Suite 100|Denver|CO|80205|10/04/2011| 01/31/2016|0.00|1|Architecture Firm
+DBC Architecture, Inc. (1193AF)|Active||6107 SE 15th Ave|Portland|OR|97202|05/16/2014| 01/31/2016|0.00|1|Architecture Firm
+DDP Architecture, L.L.C. (1014AF)|Active||2831 NW Cornell Rd|Portland|OR|97210|09/20/2010| 01/31/2016|0.00|1|Architecture Firm
+DeBar Architecture (0636AF)|Active||82 Wheatherstone Lake|Oswego|OR|97035|11/12/2004| 01/31/2016|0.00|1|Architecture Firm
+DECA Architecture, Inc. (0400AF)|Active||935 SE Alder St.|Portland|OR|97214|04/12/2000| 01/31/2016|0.00|1|Architecture Firm
+Deffenbaugh Architecture P.C.  (0133AF)|Active||P.O Box 5132|Salem|OR|97301-|03/31/2014| 01/31/2016|0.00|1|Architecture Firm
+Delta Studios, Architecture and Planning, L.L.C. (1111AF)|Active|1|3344 NE 25th Ave|Portland|OR|97212|10/02/2012| 01/31/2016|0.00|1|Architecture Firm
+Departure: Architecture Planning Interiors, L.L.C. (0554AF)|Active||143 John Adams Street Oregon|City|OR|97214|09/04/2003| 01/31/2016|0.00|1|Architecture Firm
+DES Architect Oregon, P.C. (0166AF)|Active||399 Bradford St Redwood|City|CA|94063|06/18/2014| 01/31/2015|0.00|1|Architecture Firm
+Design Department Architecture, L.L.C.  (0866AF)|Active||208 SW Stark Street Suite 200|Portland|OR|97214|10/05/2011| 01/31/2016|0.00|1|Architecture Firm
+Design For Occupancy Architecture, L.L.C. (1085AF)|Active||1705 SE Ash St|Portland|OR|97214|04/18/2012| 01/31/2016|0.00|1|Architecture Firm
+Design Forum Architecture, P.C. (0127AF)|Active||7575 Paragon Rd|Dayton|OH|45459-|04/30/2014| 01/31/2016|0.00|1|Architecture Firm
+Design West Architects PA (0209AF)|Active||216 SW 5th Avenue Ste 100|Meridian|ID|83642-2996|09/09/1997| 01/31/2016|0.00|1|Architecture Firm
+Dewberry Architects, Inc. (1165AF)|Active||8401 Arlington Blvd|Fairfax|VA|22031|12/20/2013| 01/31/2016|0.00|1|Architecture Firm
+Dezinyo Architecture, L.L.C. (0945AF)|Active||8722 SE 41st Ave|Milwaukie|OR|97210-5580|09/04/2009| 01/31/2016|0.00|1|Architecture Firm
+DiLoreto Architecture, L.L.C. (0257AF)|Active||200 NE 20th Avenue Suite 200|Portland|OR|97232|07/09/1998| 01/31/2016|0.00|1|Architecture Firm
+DiMella Shaffer Architects (0910AF)|Active||281 Summer Street|Boston|MA|02210|01/23/2009| 01/31/2016|0.00|1|Architecture Firm
+Diversified Architectural Professionals, Inc. (1073AF)|Active||10877 Watson Rd St|Louis|MO|63127|02/03/2012| 01/31/2016|0.00|1|Architecture Firm
+DJ Architecture, P.C. (0244AF)|Active||2443 Brighton Way SE|Albany|OR|97322|06/17/1998| 01/31/2015|0.00|1|Architecture Firm
+DKA Architecture & Design, P.C. (0385AF)|Active||780 NW York Dr Suite 201|Bend|OR|97701|04/19/2012| 01/31/2016|0.00|1|Architecture Firm
+DLR Group Architecture & Planning, Inc.  (0091AF)|Active|1|421 SW Sixth Ave Suite 1212|Portland|OR|97204-1613|04/08/2003| 01/31/2016|0.00|1|Architecture Firm
+DMC Architecture, L.L.C. (1168AF)|Active||440 Charnelton St|Eugene|OR|97401|02/03/2014| 01/31/2016|0.00|1|Architecture Firm
+DMS Architects, Inc. (0331AF)|Active||2325 ne 19th ave|Portland|OR|97212|04/27/2009| 01/31/2016|0.00|1|Architecture Firm
+DMTA Architecture, P.C. (0999AF)|Active||3 Monroe Parkway Suite P-303 Lake|Oswego|OR|97035|07/21/2010| 01/31/2016|0.00|1|Architecture Firm
+Dominek Architecture, L.L.C. (0984AF)|Active||330 SE MLK Blvd #350|Portland|OR|97214|04/26/2010| 01/31/2016|0.00|1|Architecture Firm
+Douglas Snider Architect, P.C. (0445AF)|Active||45 Hawthorne Suite 1|Medford|OR|97504-|03/26/2001| 01/31/2016|0.00|1|Architecture Firm
+Dowd Architecture, Inc. (0705AF)|Active||0753 SW Miles St|Portland|OR|97219|07/05/2005| 01/31/2016|0.00|1|Architecture Firm
+DRS Architects, Inc. (1120AF)|Active||One Gateway Center 17th Floor|Pittsburgh|PA|15222|11/05/2012| 01/31/2016|0.00|1|Architecture Firm
+Drumheller Design Studios, Architecture and Interi (0977AF)|Active||33144 Stone Rd|Warren|OR|97053|04/05/2010| 01/31/2016|0.00|1|Architecture Firm
+Dull Olson Weekes - IBI Group Architects, Inc. (0348AF)|Active||907 SW Stark Street|Portland|OR|97205|12/22/2011| 01/31/2016|0.00|1|Architecture Firm
+Dustrud Architecture, P.C. (0754AF)|Active||1699 Pearl St|Eugene|OR|97401|05/31/2012| 01/31/2016|0.00|1|Architecture Firm
+DXU Architecture, L.L.C.  (1207AF)|Active||3463 W Mardan Dr Long|Grove|IL|60047|12/10/2014| 01/31/2016|0.00|1|Architecture Firm
+E A Bonelli + Associates Inc., Architecture (0371AF)|Active||8450 Edes Ave.|Oakland|CA|94621-|06/26/2012| 01/31/2016|0.00|1|Architecture Firm
+ECH Architecture, P. S.  (0361AF)|Active||1415 Western Avenue  Suite 418|Seattle|WA|98101-2051|07/28/2003| 01/31/2016|0.00|1|Architecture Firm
+EcoNest Architecture, Inc. (1032AF)|Active||1131 Paradise Ln|Ashland|OR|97520|02/03/2011| 01/31/2016|0.00|1|Architecture Firm
+EDA Architecture & Planning (0556AF)|Active||12800 SW Park Way|Portland|OR|97225|09/10/2003| 01/31/2016|0.00|1|Architecture Firm
+Edward Vaivoda Architecture, L.L.C. (0942AF)|Active||333 NW Fifth Avenue|Portland|OR|97210|09/03/2009| 01/31/2016|0.00|1|Architecture Firm
+EFDEE Mississippi Architects A Professional Associ (0184AF)|Active||c/o Patty Riggs #E3L6700 Las Colinas Boulevard 6700 Las Colinas Boulevard|Irving|TX|75039|03/06/1997| 01/31/2016|0.00|1|Architecture Firm
+EHS Architecture, Inc. (0364AF)|Active||821 2nd Ave Suite 400|Seattle|WA|98104|04/09/2003| 01/31/2016|0.00|1|Architecture Firm
+ELS Architecture and Urban Design (0314AF)|Active||2040 Addison St|Berkeley|CA|94704|06/19/2002| 01/31/2016|0.00|1|Architecture Firm
+Emerald Forest Architecture, L.L.C. (0742AF)|Active||311 NW 12th St|McMinnville|OR|97128|05/06/2011| 01/31/2015|0.00|1|Architecture Firm
+Emerick Architects, P.C. (0382AF)|Active||208 SW First Ave Ste 320|Portland|OR|97204|01/19/2000| 01/31/2016|0.00|1|Architecture Firm
+Emerson Architecture (0688AF)|Active||1945 SW Arnold St.|Portland|OR|97219|04/21/2005| 01/31/2016|0.00|1|Architecture Firm
+EMZED Architecture, L.L.C.  (1019AF)|Active||3302 SE Salmon St|Portland|OR|97214|10/25/2010| 01/31/2016|0.00|1|Architecture Firm
+Engage:Architecture (0934AF)|Active||3220 Kincaid Street|Eugene|OR|97405|01/31/2011| 01/31/2016|0.00|1|Architecture Firm
+Envelop Design | Architecture + Interiors (1066AF)|Active||1360 Tamarack St|Springfield|OR|97477|11/17/2011| 01/31/2016|0.00|1|Architecture Firm
+Erdman Architecture & Engineering Company (0494AF)|Active||One Erdman Place|Madison|WI|53717|09/16/2008| 01/31/2016|0.00|1|Architecture Firm
+Erez Russo Architect, P.C. (0780AF)|Active||215 NW Park Ave|Portland|OR|97209|09/15/2006| 01/31/2016|0.00|1|Architecture Firm
+Eric Hall Architects, Inc. (0488AF)|Active||116 Hwy 99 N. Suite 100|Eugene|OR|97402-|04/17/2002| 01/31/2016|0.00|1|Architecture Firm
+Erik Oldham Architect, L.L.C. (0895AF)|Active||2676 NW Pickett Court|Bend|OR|97701|10/01/2008| 01/31/2015|0.00|1|Architecture Firm
+Ernest R. Munch Architecture - Urban Planning, L. (0419AF)|Active||111 SW Oak St. #300|Portland|OR|97204-|01/24/2013| 01/31/2016|0.00|1|Architecture Firm
+ESa Architects (0724AF)|Active||2100 West End Avenue Suite1200|Nashville|TN|37203|08/31/2005| 01/31/2016|0.00|1|Architecture Firm
+ESI Architectural & Engineering Services, Inc. (0879AF)|Active||950 Walnut Ridge Drive|Hartland|WI|53029|05/28/2008| 01/31/2016|0.00|1|Architecture Firm
+Evan Studio Architecture Design Build L.L.C. (1105AF)|Active||427 Laurel St Lake|Oswego|OR|97034|09/10/2012| 01/31/2016|0.00|1|Architecture Firm
+Evergreen Architecture  (0456AF)|Active|1|16400 Vashon Hwy SW Vashon|Island|WA|98070|08/22/2001| 01/31/2015|0.00|1|Architecture Firm
+EXA Architects, Inc. (1198AF)|Active||4544 E Camp Lowell Dr Suite 146|Tucson|AZ|85712|08/13/2014| 01/31/2016|0.00|1|Architecture Firm
+FFA Architecture and Interiors, Inc. (0095AF)|Active||520 SW Yamhill Suite 900|Portland|OR|97204-1332|12/22/2011| 01/31/2016|0.00|1|Architecture Firm
+FFE Architecture & Engineering, Inc. (0655AF)|Active|1|201 E. Lincoln Ave Suite #200|Yakima|WA|98901|08/16/2010| 01/31/2016|0.00|1|Architecture Firm
+Field Paoli Architects, Inc. (0278AF)|Active||150 California St. 7th Floor San|Francisco|CA|94111-|02/27/2015| 01/31/2016|0.00|1|Architecture Firm
+Fieldwork Design and Architecture (1107AF)|Active||2524 SE Division St|Portland|OR|97202|09/18/2012| 01/31/2016|0.00|1|Architecture Firm
+Fifield Architecture + Urban Design (0459AF)|Active||2660 Cresta de Ruta Street|Eugene|OR|97403|09/11/2001| 01/31/2016|0.00|1|Architecture Firm
+Flad & Associates of California Architects (0786AF)|Active||PO Box 5620|Madison|WI|53705|09/19/2006| 01/31/2016|0.00|1|Architecture Firm
+Forming Architecture, L.L.C. (0744AF)|Active||3255 NE 75th St.|Portland|OR|97213|02/07/2006| 01/31/2016|0.00|1|Architecture Firm
+Formwest Architecture, Inc. (0811AF)|Active||PO Box 12174|Portland|OR|97212|03/06/2007| 01/31/2016|0.00|1|Architecture Firm
+Fosler Portland Architecture, L.L.C. (0683AF)|Active||1930 NW Lovejoy St|Portland|OR|97209|03/31/2005| 01/31/2016|0.00|1|Architecture Firm
+Framework Architecture, Inc. (1213AF)|Active||107 SE Washington St Suite 250|Portland|OR|97214|02/17/2015| 01/31/2016|0.00|1|Architecture Firm
+Francis C. Berg Architect, P.C. (0074AF)|Active||4819 San Gabriel Ct NE Salem|OR|97305||11/26/1982| 01/31/2016|0.00|1|Architecture Firm
+FRCH Architecture, Inc. (0394AF)|Active||311 Elm St. Suite 600|Cincinnati|OH|45202-|03/20/2000| 01/31/2016|0.00|1|Architecture Firm
+Fred C. Gast Jr. Architect, L.L.C. (0483AF)|Active||2818 NW Beuhla Vista Terrace|Portland|OR|97210-|03/28/2002| 01/31/2016|0.00|1|Architecture Firm
+Freiheit & Ho Architects, Inc., P.C. (0648AF)|Active||5209 Lake Washington Blvd NE Suite 200|Kirkland|WA|98033|12/23/2004| 01/31/2016|0.00|1|Architecture Firm
+G. A. Miller Architecture, P.C. (0155AF)|Active||141 Del Prado Lake|Oswego|OR|97035|10/04/1994| 01/31/2016|0.00|1|Architecture Firm
+G. Victor Madge Architect, Inc. (0386AF)|Active||514 S Water St PO Box 821|Silverton|OR|97381-|02/16/2000| 01/31/2016|0.00|1|Architecture Firm
+Gary Moye Architect, Inc. (0233AF)|Active||2437 Columbia St|Eugene|OR|97403|05/20/1998| 01/31/2016|0.00|1|Architecture Firm
+GBA Architectural, P.C. (1051AF)|Active||9801 Renner Blvd|Lenexa|KS|66219|06/17/2011| 01/31/2016|0.00|1|Architecture Firm
+GBD Architects, Inc. (0128AF)|Active||1120 NW Couch Street Suite 300|Portland|OR|97209|01/01/1992| 01/31/2016|0.00|1|Architecture Firm
+GBJ Architecture, P.C. (0082AF)|Active||815 SW 2nd Ave Suite 600|Portland|OR|97204|05/02/2012| 01/31/2016|0.00|1|Architecture Firm
+GEN Architects, Inc. (0442AF)|Active||11001 SW Riverside Dr|Portland|OR|97219|03/05/2001| 01/31/2016|0.00|1|Architecture Firm
+Gensler Architecture Design & Planning Worldwide (0388AF)|Active||Two Harrison St Suite 400 San|Francisco|CA|94105-|02/24/2000| 01/31/2016|0.00|1|Architecture Firm
+Geometrix Architecture, L.L.C. (0295AF)|Active||1907 Mapleleaf Ct. Lake|Oswego|OR|97034-|09/15/1998| 01/31/2016|0.00|1|Architecture Firm
+GGLO Architecture, Interior Design, Landscape Arc (0782AF)|Active||1301 First Avenue Suite 301|Seattle|WA|98101|09/15/2006| 01/31/2016|0.00|1|Architecture Firm
+Giulietti/Schouten AIA Architects, P.C. (0482AF)|Active||2800 NW Thurman St|Portland|OR|97210|04/16/2012| 01/31/2016|0.00|1|Architecture Firm
+GLAS Architects, L.L.C. (0309AF)|Active||115 West 8th Avenue Suite 285|Eugene|OR|97401-|01/04/1999| 01/31/2016|0.00|1|Architecture Firm
+GMA Architects (0360AF)|Active||860 West Park Street Suite 300|Eugene|OR|97401-3111|08/10/1999| 01/31/2016|0.00|1|Architecture Firm
+Gnich Architecture Studio, L.L.C. (0622AF)|Active||9 SE 3rd Ave. Suite 110|Portland|OR|97214|09/28/2004| 01/31/2016|0.00|1|Architecture Firm
+Gould Turner Group, P.C. Architecture (0784AF)|Active||4400 Harding Rd Suite 1000|Nashville|TN|37205|09/19/2006| 01/31/2016|0.00|1|Architecture Firm
+GPA Architects, L.L.C. (0489AF)|Active||2701 NW Vaughn St. Suite 764|Portland|OR|97210|05/19/2011| 01/31/2016|0.00|1|Architecture Firm
+GPD Engineering and Architecture Professional Corp (1208AF)|Active||520 S Main St Ste 2531|Akron|OH|44311|12/16/2014| 01/31/2016|0.00|1|Architecture Firm
+Graphite Design Group, L.L.C., Architects (1210AF)|Active||80 Vine St #202|Seattle|WA|98121|02/01/2015| 01/31/2016|0.00|1|Architecture Firm
+Gray Architects and Engineers, P.S.C. (1197AF)|Active||10 Quality Street|Lexington|KY|40507|08/11/2014| 01/31/2016|0.00|1|Architecture Firm
+Greenberg Farrow Architecture, Incorporated (0537AF)|Active||1430 West Peachtree St NW Suite 200|Atlanta|GA|30309|04/23/2003| 01/31/2017|0.00|1|Architecture Firm
+GREENBOX Architecture, L.L.C. (1043AF)|Active||1300 John Adams St Suite 106 Oregon|City|OR|97045|04/21/2011| 01/31/2016|0.00|1|Architecture Firm
+Greenstone Architecture, PLLC,  L.L.C. (0848AF)|Active||PO Box 288|Vancouver|WA|98666|09/10/2007| 01/31/2016|0.00|1|Architecture Firm
+Gruskin Architecture + Design, P.C. (0885AF)|Active||294 Morris Avenue|Springfield|NJ|07081|08/13/2008| 01/31/2016|0.00|1|Architecture Firm
+GSB Architecture (1216AF)|Active||15749 SE Taggart St|Portland|OR|97236|03/04/2015| 01/31/2016|0.00|1|Architecture Firm
+GSC Architects (1215AF)|Active||901 S MoPac Expressway Bldg III Suite 400|Austin|TX|78746|03/03/2015| 01/31/2016|0.00|1|Architecture Firm
+Guggenheim Architecture and Design Studio, L.L.C.  (1080AF)|Active||925 NW 19th Ave Suite F|Portland|OR|97211|01/26/2015| 01/31/2016|0.00|1|Architecture Firm
+Guide Architecture (1100AF)|Active||3331 SE Schiller St|Portland|OR|97202|07/30/2012| 01/31/2016|0.00|1|Architecture Firm
+H + M Architectural Design Services, P.C. (0521AF)|Active||50 Security Drive |Jackson|TN|38305|04/18/2012| 01/31/2016|0.00|1|Architecture Firm
+H Studio Architecture + Drafting, P.C. (0898AF)|Active||P.O. Box 2467 Batle|Ground|WA|98604|10/24/2008| 01/31/2016|0.00|1|Architecture Firm
+H.G.E. Inc., Architects Engineers Surveyors & Plan (0216AF)|Active|2|375 Park Ave. Coos|Bay|OR|97420-|01/29/1998| 01/31/2016|0.00|1|Architecture Firm
+H.I. Architecture, P.C. (0154AF)|Active||999 Peachtree St NE Suite 300|Atlanta|GA|30309|07/30/2012| 01/31/2016|0.00|1|Architecture Firm
+Harrison Design Associates Architects (0771AF)|Active||1925 Century Park East Ste 1360 Los|Angeles|CA|93101|08/15/2006| 01/31/2016|0.00|1|Architecture Firm
+Harrison French & Associates, Architects  (0710AF)|Active||1705 S. Walton Blvd Suite 3|Bentonville|AR|72712|07/20/2005| 01/31/2016|0.00|1|Architecture Firm
+Hartshorne Plunkard Architecture, Ltd. (1155AF)|Active||232 N Carpenter St|Chicago|IL|60607|10/07/2013| 01/31/2016|0.00|1|Architecture Firm
+Haskell Architects and Engineers, P.A., A Florida (0914AF)|Active||111 Riverside Avenue|Jacksonville|FL|32202|04/06/2009| 01/31/2016|0.00|1|Architecture Firm
+HC Architecture, Inc. (1200AF)|Active||1425 Dutch Valley Pl NE Studio B|Atlanta|GA|30324|10/07/2014| 01/31/2016|0.00|1|Architecture Firm
+HDR Architecture, Inc., A Corporation of Nebraska (0060AF)|Active||8404 Indian Hills Dr|Omaha|NE|68114-|11/10/1980| 01/31/2016|0.00|1|Architecture Firm
+HealthLab Planning + Architecture, L.L.C. (1103AF)|Active||2406 NE Ainsworth|Portland|OR|97211|08/14/2012| 01/31/2016|0.00|1|Architecture Firm
+Hedrick Architecture, L.L.C. (1195AF)|Active||1467 NW Davenport Ave|Bend|OR|97701|06/18/2014| 01/31/2016|0.00|1|Architecture Firm
+Hennebery Eddy Architects, Inc. (0190AF)|Active||921 SW Washington St Suite 250|Portland|OR|97205-|03/20/1997| 01/31/2016|0.00|1|Architecture Firm
+Hensley Lamkin Rachel, Inc., Architecture and Plan (0581AF)|Active||14881 Quorum Dr Suite 550|Dallas|TX|75254|02/06/2004| 01/31/2016|0.00|1|Architecture Firm
+HFR Architects & Engineers (1044AF)|Active||214 Centerview Dr Suite 300|Brentwood|TN|37027|04/21/2011| 01/31/2016|0.00|1|Architecture Firm
+HGA Architects and Engineers, L.L.C. (0571AF)|Active||420 5th Street North Suite 100|Minneapolis|MN|55401-1180|12/17/2003| 01/31/2016|0.00|1|Architecture Firm
+HGI Architecture of Oregon, L.L.C. (0513AF)|Active||300 Elliott Ave W Ste 500|Seattle|WA|98119|09/26/2002| 01/31/2016|0.00|1|Architecture Firm
+Hill Architects, P.C. (0785AF)|Active||1750 Blankenship Rd Suite 400 West|Linn|OR|97068|09/26/2006| 01/31/2016|0.00|1|Architecture Firm
+Hive Architecture Studio, L.L.C. (1173AF)|Active||135 S 8th St Saint|Helens|OR|97051|02/04/2014| 01/31/2015|0.00|1|Architecture Firm
+HKS Architects, Inc. (0564AF)|Active||350 N. Saint Paul Street Suite 100|Dallas|TX|75201-1753|10/16/2003| 01/31/2016|0.00|1|Architecture Firm
+HMD Architecture (1161AF)|Active||10556 NW 26th St Suite D-101|Doral|FL|33172|11/15/2013| 01/31/2016|0.00|1|Architecture Firm
+Hnedak Bobo Group Architects, Inc. (0626AF)|Active||104 South Front Street|Memphis|TN|38103|10/19/2004| 01/31/2016|0.00|1|Architecture Firm
+HNTB Oregon Architecture, P.C. (0149AF)|Active||PO Box 412197 Kansas|City|MO|64141-|02/28/1994| 01/31/2016|0.00|1|Architecture Firm
+Hoff Architecture, L.L.C. (1179AF)|Active||9450 SW Commerce Circle Ste 101|Wilsonville|OR|97070|03/05/2014| 01/31/2016|0.00|1|Architecture Firm
+HOK Architects, Inc. (0428AF)|Active||211 N Broadway Suite 700 St|Louis|MO|63102-|03/01/2004| 01/31/2016|0.00|1|Architecture Firm
+Holah Design + Architecture, L.L.C. (0592AF)|Active||710 NE 21st Ave. Suite 202|Portland|OR|97213|04/12/2004| 01/31/2016|0.00|1|Architecture Firm
+Holbrook Design Architecture, Inc. (0575AF)|Active||325 NW Vermont Place #109|Bend|OR|97701|01/23/2004| 01/31/2016|0.00|1|Architecture Firm
+Holland Basham Architects, Inc. (1138AF)|Active||119 S 49th Ave|Omaha|NE|68132|03/12/2013| 01/31/2016|0.00|1|Architecture Firm
+Holst Architecture, P.C. (0172AF)|Active||110 SE 8th Ave|Portland|OR|97214-|03/21/1996| 01/31/2016|0.00|1|Architecture Firm
+Horton Architecture, Inc. (1191AF)|Active||169 W Main St PO Box 682 169 W Main Eagle|Point|OR|97524|05/12/2014| 01/31/2016|0.00|1|Architecture Firm
+HSR Master Planning and Architecture, L.L.C. (0520AF)|Active||62930 Deschutes Road|Bend|OR|97701|04/18/2012| 01/31/2016|0.00|1|Architecture Firm
+Hummel Architects, P.L.L.C., L.L.C. (0284AF)|Active||2785 Bogus Basin Rd.|Boise|ID|83702-|08/26/1998| 01/31/2015|0.00|1|Architecture Firm
+Humphreys & Partners Architects, L.P. (1145AF)|Active|1|5339 Alpha Rd Suite 300|Dallas|TX|75240|05/14/2013| 01/31/2016|0.00|1|Architecture Firm
+Hutchison Smith Architects (0640AF)|Active||270 N. 27th|Boise|ID|83702|12/01/2004| 01/31/2015|0.00|1|Architecture Firm
+Hutteball & Oremus Architecture, Inc. (0512AF)|Active||4010 Lake Washington Blvd NE Suite 320|Kirkland|WA|98033|09/17/2002| 01/31/2016|0.00|1|Architecture Firm
+Icon Architecture and Planning (0239AF)|Active||16865 Boones Ferry Rd.  Suite 102 Lake|Oswego|OR|97035|06/08/1998| 01/31/2016|0.00|1|Architecture Firm
+IDC Architects, P.C. (0203AF)|Active||9191 S. Jamaica Street Attn: Sally Hill (Legal De|Englewood|CO|97201-4958|02/08/2008| 01/31/2016|0.00|1|Architecture Firm
+In Situ Architecture (0840AF)|Active||811 E Burnside #216|Portland|OR|97227|08/14/2007| 01/31/2016|0.00|1|Architecture Firm
+In-House Architecture (0300AF)|Active||3734 SE Morrison St|Portland|OR|97214-|10/01/1998| 01/31/2016|0.00|1|Architecture Firm
+Indigo Architecture, Inc. (0938AF)|Active||9480 S Eastern Ave Suite 240 Las|Vegas|NV|89123|07/30/2009| 01/31/2016|0.00|1|Architecture Firm
+Infinite Architecture (0615AF)|Active||PO Box 664|Donald|OR|97020|04/26/2010| 01/31/2016|0.00|1|Architecture Firm
+Inside Outside Architecture, Inc. (1068AF)|Active||18601 152nd Ave N|Dayton|MN|55327|12/21/2011| 01/31/2015|0.00|1|Architecture Firm
+Insight Architects, P.A., P.C.  (1020AF)|Active||2238 Broadway Ave|Boise|ID|83706|11/02/2010| 01/31/2016|0.00|1|Architecture Firm
+Integrate Architecture & Planning, P.C. (1021AF)|Active|1|1715 N Terry Street|Portland|OR|97217|11/12/2010| 01/31/2016|0.00|1|Architecture Firm
+Integrus Architecture (0307AF)|Active||10 S. Cedar St|Spokane|WA|99201|05/12/2014| 01/31/2015|0.00|1|Architecture Firm
+Interior Architects, P.C. (0495AF)|Active||500 Sansome St 8th Floor San|Francisco|CA|94111|06/12/2002| 01/31/2016|0.00|1|Architecture Firm
+International Parking Design of Oregon, Inc. P.C. (0215AF)|Active||14144 Ventura Blvd Suite 100 Sherman|Oaks|CA|91423|04/18/2014| 01/31/2016|0.00|1|Architecture Firm
+Iselin Architects, P.C. (0169AF)|Active||1307 Seventh Street Oregon|City|OR|97045-|06/22/1995| 01/31/2016|0.00|1|Architecture Firm
+Ivars Lazdins Architecture & Planning (0610AF)|Active||3004 SW Bennington Drive|Portland|OR|97205-5806|06/09/2004| 01/31/2016|0.00|1|Architecture Firm
+J L Siestreem Architecture (0663AF)|Active||P O Box 501 North|Plains|OR|97133|07/10/2014| 01/31/2016|0.00|1|Architecture Firm
+J. Barrett Architect, L.L.C. (0832AF)|Active||60374 Arnold Market Rd.|Bend|OR|97702|08/10/2007| 01/31/2016|0.00|1|Architecture Firm
+J2 Architecture & Engineering, Inc. (0992AF)|Active||17 SW Gibbs|Portland|OR|97239|04/21/2011| 01/31/2015|0.00|1|Architecture Firm
+Jack Barnes Architect, P.C. (0946AF)|Active||615 SE Alder St Suite 304|Portland|OR|97214|09/04/2009| 01/31/2016|0.00|1|Architecture Firm
+Jacobs Architectural Services (0706AF)|Active||PO Box 7084|Pasadena|CA|91109|05/09/2006| 01/31/2016|0.00|1|Architecture Firm
+James Goodman, Architecture, Architectural Corpor (0595AF)|Active||26901 Camino de Estrella Suite A Capistrano|Beach|CA|92624|04/19/2004| 01/31/2016|0.00|1|Architecture Firm
+James Matteson Architects (1087AF)|Active||724 Main St Suite 203 Klamath|Falls|OR|97601|04/26/2012| 01/31/2016|0.00|1|Architecture Firm
+JCJ Architecture, P.C.  (1209AF)|Active||38 Prospect St|Hartford|CT|06103|02/01/2015| 01/31/2016|0.00|1|Architecture Firm
+JE Architects/Engineers, P.C.  (0590AF)|Active||777 Main Street Suite B101 Fort|Worth|TX|76102|10/01/2008| 01/31/2016|0.00|1|Architecture Firm
+JE Krause Architect, P.C. (0120AF)|Active||15259 SE 82nd Dr. #202|Clackamas|OR|97015-|06/03/1991| 01/31/2016|0.00|1|Architecture Firm
+Jeffrey L. Miller Architect, P.C. (0549AF)|Active||834 SW St. Clair Ave Suite 202|Portland|OR|97205|08/11/2003| 01/31/2016|0.00|1|Architecture Firm
+Jensen Fey Architecture & Planning, P.S. (1190AF)|Active||7730 Leary Way|Redmond|WA|98052|05/05/2014| 01/31/2016|0.00|1|Architecture Firm
+Jivanjee Circosta Architecture, L.L.P. (0161AF)|Active||209 NE Lincoln St. Suite A|Hillsboro|OR|97132|02/11/2008| 01/31/2015|0.00|1|Architecture Firm
+JLC Architectural Consulting, P.C. (0913AF)|Active||29728 SW Old Well Road West|Linn|OR|97068|04/06/2009| 01/31/2016|0.00|1|Architecture Firm
+JoeArchitect, Inc. (1166AF)|Active||1422 Delgany Street Suite LL1|Denver|CO|80202|02/03/2014| 01/31/2016|0.00|1|Architecture Firm
+John Cooley Architect, L.L.C. (0623AF)|Active||1225 SE Clinton St|Portland|OR|97202|09/28/2004| 01/31/2016|0.00|1|Architecture Firm
+John Weil Architecture (1204AF)|Active||1315 SE 9th|Portland|OR|97214|11/20/2014| 01/31/2016|0.00|1|Architecture Firm
+Johnston Architects, P.L.L.C. (0682AF)|Active||100 NE Northlake Way Suite 200|Seattle|WA|98105|03/31/2005| 01/31/2016|0.00|1|Architecture Firm
+Jones & Jones Architects & Landscape Architects, L (0486AF)|Active||105 S Main St Suite 300|Seattle|WA|98104|04/18/2012| 01/31/2016|0.00|1|Architecture Firm
+Jones Architecture (1181AF)|Active||1136 NW Hoyt Suite 230|Portland|OR|97209|03/07/2014| 01/31/2016|0.00|1|Architecture Firm
+Jones, Partners: Architecture (1072AF)|Active||800 McGarry St Suite 436 Los|Angeles|CA|90021|02/03/2012| 01/31/2016|0.00|1|Architecture Firm
+JRJ Architects, L.L.C. (1122AF)|Active||15455 NW Greenbrier PKY #260|Beaverton|OR|97006|12/20/2012| 01/31/2016|0.00|1|Architecture Firm
+Julia Wood Architect, L.L.C. (0963AF)|Active||333 S State St Ste V-192 Lake|Oswego|OR|97034|02/09/2010| 01/31/2015|0.00|1|Architecture Firm
+Kahler Slater Architects, Inc. (1086AF)|Active||111 West Wisconsin Ave|Milwaukee|WI|53203|04/26/2012| 01/31/2016|0.00|1|Architecture Firm
+Kasa Architects, Inc. (0753AF)|Active||4119 NE Cesar E Chavez Blvd|Portland|OR|97211|04/12/2006| 01/31/2016|0.00|1|Architecture Firm
+KDF Architecture, Inc. (0420AF)|Active|1|1310 N 16th Ave.|Yakima|WA|98902-|10/31/2000| 01/31/2016|0.00|1|Architecture Firm
+KDW Architects, P.S., P.C. (0530AF)|Active|1|10202 Fifth Ave. NE Suite 102|Seattle|WA|98125|05/17/2005| 01/31/2016|0.00|1|Architecture Firm
+Keith Hoelscher Architect, P.C. (0129AF)|Active||8711 SW 59th Ave.|Portland|OR|97219-|01/06/1992| 01/31/2016|0.00|1|Architecture Firm
+Kerry W. VanderZanden Architect, P.C. (1057AF)|Active||2603 NW HWY 47 Forest|Grove|OR|97116|08/26/2011| 01/31/2016|0.00|1|Architecture Firm
+Keystone Architecture Planning and Project Managem (0624AF)|Active||12020 SE Idleman Road|Portland|OR|97086|09/28/2004| 01/31/2016|0.00|1|Architecture Firm
+KGA Architecture (0924AF)|Active||9075 West Diablo Drive Third Floor Las|Vegas|NV|89148|04/23/2009| 01/31/2016|0.00|1|Architecture Firm
+Kistler, Small & White Architects, L.L.C. (0877AF)|Active||66 Water St Suite 101|Ashland|OR|97520|05/20/2008| 01/31/2016|0.00|1|Architecture Firm
+KJD Architecture, P.C. (0225AF)|Active||536 SE 17th Ave.|Portland|OR|97214-|03/03/1998| 01/31/2015|0.00|1|Architecture Firm
+KLAI JUBA Architects, Ltd. (1070AF)|Active||4444 W Russell Rd Suite J Las|Vegas|NV|89118|02/03/2012| 01/31/2015|0.00|1|Architecture Firm
+KlingStubbins Architects and Engineers (1050AF)|Active||2000 L St NW Suite 215|Washington|DC|20036|06/03/2011| 01/31/2015|0.00|1|Architecture Firm
+KMB Architecture, P.C. (0160AF)|Active||828 7th Ave. SE|Olympia|WA|98501-|03/24/1995| 01/31/2016|0.00|1|Architecture Firm
+KMD Architects & Planners, A Professional Corporat (0110AF)|Active||222 Vallejo St. 4th Floor San|Francisco|CA|94111|04/10/1990| 01/31/2016|0.00|1|Architecture Firm
+Koble Creative, Architecture, L.L.C. (1217AF)|Active||3405 NE 46th Avenue|Portland|OR|97213|03/04/2015| 01/31/2016|0.00|1|Architecture Firm
+Koch Architecture, L.L.C. (1015AF)|Active||7042 NE Hoyt ST|Portland|OR|97213|09/21/2010| 01/31/2016|0.00|1|Architecture Firm
+Korbich Architects, L.L.C. (1096AF)|Active||2235 NE Klickitat St|Portland|OR|97212|06/29/2012| 01/31/2016|0.00|1|Architecture Firm
+KTGY Group, Inc. Architecture & Planning (1119AF)|Active||17922 Fitch|Irvine|CA|92614|09/12/2014| 01/31/2015|0.00|1|Architecture Firm
+L + P Architecture, L.L.C. (1125AF)|Active||2138 N Cleveland-Massillon Rd|Arkon|OH|44333|02/01/2013| 01/31/2016|0.00|1|Architecture Firm
+L.A. Kersh Architecture, Inc. (0199AF)|Active||292 W 12th Avenue #A|Eugene|OR|97401-3434|04/11/2006| 01/31/2016|0.00|1|Architecture Firm
+L.R. Architect, L.L.C. (0858AF)|Active||7907 NW Gales Ridge Ln|Portland|OR|97229|01/11/2008| 01/31/2015|0.00|1|Architecture Firm
+Lamoine Eiler Architecture Planning, L.L.C. (0431AF)|Active||720 SE 33rd Ave|Portland|OR|97214|10/22/2013| 01/31/2016|0.00|1|Architecture Firm
+Lance Mueller & Associate/Architects, P.C.  (1016AF)|Active|1|130 Lakeside Ave Suite 250|Seattle|WA|98122|10/01/2010| 01/31/2016|0.00|1|Architecture Firm
+Landry Smith Architect, L.L.C. (1175AF)|Active||2336 SW Osage St Unit 304|Portland|OR|97205|02/06/2014| 01/31/2016|0.00|1|Architecture Firm
+Larson & Darby, Inc. Architects (0932AF)|Active||4949 Harrison Avenue Suite 100|Rockford|IL|61108|07/02/2009| 01/31/2015|0.00|1|Architecture Firm
+Larson Architects, P.C. (1094AF)|Active||210 Murray St|Boise|ID|83714|06/11/2012| 01/31/2016|0.00|1|Architecture Firm
+Laurence Ferar & Associates, Inc., Architecture La (0414AF)|Active||1016 SW Clay St.|Portland|OR|97201-|10/02/2000| 01/31/2016|0.00|1|Architecture Firm
+LCA Architects, P.A., P.C. (0142AF)|Active||1221 Shoreline Lane|Boise|ID|83702-6880|05/07/1993| 01/31/2016|0.00|1|Architecture Firm
+Leatham Krohn Van Ocker, Architects (1003AF)|Active||2400 East Riverwalk Dr|Boise|ID|83706|08/09/2010| 01/31/2016|0.00|1|Architecture Firm
+Leeb Architects, Inc. (0465AF)|Active|1|71 SW Oak St.|Portland|OR|97204-|03/05/2015| 01/31/2016|0.00|1|Architecture Firm
+LEEKA Architecture and Planning (0374AF)|Active|1|2548 SE Ankeny St.|Portland|OR|97202|10/29/2009| 01/31/2016|0.00|1|Architecture Firm
+Lenity Architecture  (1083AF)|Active||3150 Kettle Ct SE|Salem|OR|97301|04/13/2012| 01/31/2016|0.00|1|Architecture Firm
+Leo A. Daly & Associates, Architects (0657AF)|Active||8600 Indian Hills Drive|Omaha|NE|68114|04/18/2006| 01/31/2015|0.00|1|Architecture Firm
+Lever Architecture, L.L.C. (1063AF)|Active||239 NW 13th Street Suite 303|Portland|OR|97209|10/10/2011| 01/31/2016|0.00|1|Architecture Firm
+Lewallen Architecture, L.L.C. (0750AF)|Active||319 NE Cedar St|Camas|Wa|97227|07/22/2009| 01/31/2016|0.00|1|Architecture Firm
+LGA Architecture (0319AF)|Active||14630 SW 139th Ave.|Tigard|OR|97224-|02/10/1999| 01/31/2016|0.00|1|Architecture Firm
+Lightfoot Architecture & Design, L.L.C. (1205AF)|Active||516 NW Riverfront St|Bend|OR|97701|02/01/2015| 01/31/2016|0.00|1|Architecture Firm
+Limitless Blue Architecture & Sustainable Design (0594AF)|Active||2865 SE Caruthers St.|Portland|OR|97214|04/16/2004| 01/31/2016|0.00|1|Architecture Firm
+Little Diversified Architectural Consulting, Inc. (0795AF)|Active||5815 Westpark Drive|Charlotte|NC|28217|11/13/2006| 01/31/2016|0.00|1|Architecture Firm
+Livermore Architecture & Engineering, Inc. (1027AF)|Active||140 SW Arthur St Suite 200|Portland|OR|97201|11/19/2010| 01/31/2016|0.00|1|Architecture Firm
+Livingstone Studios Architecture & Planning, L.L.C (1054AF)|Active||2697 SW Vista Ave|Portland|OR|97201|08/26/2011| 01/31/2016|0.00|1|Architecture Firm
+LMN Architects (0221AF)|Active||801 Second Ave Suite 501|Seattle|WA|98104-|02/17/1998| 01/31/2016|0.00|1|Architecture Firm
+LMT  Architecture, L.L.C. (0415AF)|Active||5428 NE 30TH|Portland|OR|97211|09/16/2008| 01/31/2016|0.00|1|Architecture Firm
+Lockwood Architecture (1077AF)|Active||223 NE 62nd Ave|Portland|OR|97213|02/29/2012| 01/31/2015|0.00|1|Architecture Firm
+Lorraine Guthrie Architect, Inc. (0462AF)|Active||2748 SW Patton Ct|Portland|OR|97201|09/20/2001| 01/31/2016|0.00|1|Architecture Firm
+LRS Architects, Inc. (0303AF)|Active||720 NW Davis Suite 300|Portland|OR|97209|10/26/1998| 01/31/2016|0.00|1|Architecture Firm
+LSW Architects, P.C. (0177AF)|Active||424 SW 4th Ave.|Portland|OR|97204|08/12/1996| 01/31/2016|0.00|1|Architecture Firm
+Luckett & Farley Architecture, Inc. (0193AF)|Active||737 S 3rd St.|Louisville|KY|40202-2100|09/22/2004| 01/31/2016|0.00|1|Architecture Firm
+Lundin Cole Architects, P.C. (0174AF)|Active||1313 SE Belmont St|Portland|OR|97214|04/08/1996| 01/31/2016|0.00|1|Architecture Firm
+Lungershausen Architecture, L.L.C. (1149AF)|Active||6336 SW Nevada Ct|Portland|OR|97219|07/15/2013| 01/31/2015|0.00|1|Architecture Firm
+Lyons Hunter Williams:  Architecture, L.L.C. (0838AF)|Active||32 NE 7th Ave|Portland|OR|97232|08/14/2007| 01/31/2016|0.00|1|Architecture Firm
+M & H Architecture, Inc. (0544AF)|Active||2440 Deming Way|Middleton|WI|53562|02/27/2007| 01/31/2016|0.00|1|Architecture Firm
+M+W Architects, Engineers, and Construction Manage (0514AF)|Active|1|1001 Klein Road Suite 400|Plano|TX|75074|04/25/2014| 01/31/2016|0.00|1|Architecture Firm
+M.Architecture, L.L.C. (1067AF)|Active||3813 NE Wasco St|Portland|OR|97232|12/01/2011| 01/31/2015|0.00|1|Architecture Firm
+Macgregor Associates Architects, Inc. (0978AF)|Active|1|2727 Paces Ferry Rd. SE Bldg 2 Ste 1400|Atlanta|GA|30339|04/09/2010| 01/31/2016|0.00|1|Architecture Firm
+Mackenzie Architecture, Inc. (0712AF)|Active||PO Box 2966|Portland|OR|97212|07/25/2005| 01/31/2016|0.00|1|Architecture Firm
+Mackenzie Inc. Architecture Planning & Interior De (0035AF)|Active||1515 SE Water Ave Suite 100|Portland|OR|97214|08/04/1977| 01/31/2016|0.00|1|Architecture Firm
+Magellan Architecture (0747AF)|Active||8383 - 158th Ave NE Suite 280|Redmond|WA|98052|02/22/2006| 01/31/2016|0.00|1|Architecture Firm
+Mahlum Architects, Inc. (0121AF)|Active||71 Columbia St. Suite 400|Seattle|WA|98104|04/18/2007| 01/31/2016|0.00|1|Architecture Firm
+Manfred Grabski Architect, L.L.C. (1146AF)|Active||8106 SW 10th Avenue|Portland|OR|97213|05/17/2013| 01/31/2016|0.00|1|Architecture Firm
+Manley Architects, P.C. (0907AF)|Active||PO Box 144|Vancouver|WA|98666-0144|01/15/2009| 01/31/2016|0.00|1|Architecture Firm
+Marasco & Associates, Healthcare Architects & Cons (1029AF)|Active||475 Lincoln St #150|Denver|CO|80203|01/04/2011| 01/31/2016|0.00|1|Architecture Firm
+Marcia A. Mikesh Architect, Inc. (0835AF)|Active||510 NW Ninth St|McMinnville|OR|97132|08/14/2007| 01/31/2016|0.00|1|Architecture Firm
+Matthew Johnson Architect, P. C. (0629AF)|Active||1010 SE Water Ave|Portland|OR|97214|09/12/2014| 01/31/2016|0.00|1|Architecture Firm
+Maxey Tookey Architects (0906AF)|Active||1412 W. Idaho St. Suite 200|Boise|ID|83702|04/27/2009| 01/31/2016|0.00|1|Architecture Firm
+Mayes Architecture & Planning, Inc. (1025AF)|Active||PO Box 3500-155|Sisters|OR|97759|11/19/2010| 01/31/2016|0.00|1|Architecture Firm
+MC3 Construction Consulting and Architecture, Inc (0935AF)|Active||2055 Corte del Nogal|Carlsbad|CA|92011|07/22/2009| 01/31/2015|0.00|1|Architecture Firm
+MCA Architects, P.C. (0146AF)|Active||813 SW Alder St. Suite 200|Portland|OR|97205|04/14/2003| 01/31/2016|0.00|1|Architecture Firm
+McBride Architecture, P.C. (0117AF)|Active||PO Box 13705|Portland|OR|97212|01/02/1991| 01/31/2016|0.00|1|Architecture Firm
+McCamant & Durrett Architects, A Professional Corp (1124AF)|Active||241 B Commercial St Nevada|City|CA|95959|01/17/2013| 01/31/2016|0.00|1|Architecture Firm
+MCG Architecture (0652AF)|Active||8008 E Arapahoe Court Suite 100|Centennial|CO|80112|04/12/2007| 01/31/2016|0.00|1|Architecture Firm
+McSwain & Woods Architects, L.L.P.  (0299AF)|Active||800 N Bayshore Drive Coos|Bay|OR|97420-|12/22/2010| 01/31/2016|0.00|1|Architecture Firm
+Mentrum Architecture, Inc. (0389AF)|Active|1|11860 S.E. Morrison St|Portland|OR|97225|02/24/2000| 01/31/2016|0.00|1|Architecture Firm
+Merrill Architecture (0380AF)|Active||5500 SE Belmont St.|Portland|OR|97215-|  01/31/20|16|0.00|1|Architecture Firm
+Merryman, Barnes Architects, Inc. (0183AF)|Active||1231 NW Hoyt St. Suite 403|Portland|OR|97209-|03/05/1997| 01/31/2016|0.00|1|Architecture Firm
+Metropolitan Design Studio + Architecture, L.L.C. (1056AF)|Active||5336 N Maryland Ave|Portland|OR|97217|02/21/2012| 01/31/2016|0.00|1|Architecture Firm
+Meyer, Scherer & Rockcastle Architects (0918AF)|Active||710 South 2nd Street 8th Floor|Minneapolis|MN|55401-2294|04/06/2009| 01/31/2016|0.00|1|Architecture Firm
+MGroup + Architects, Inc. (0617AF)|Active||1013 Van Buren|Houston|TX|77019|08/09/2004| 01/31/2015|0.00|1|Architecture Firm
+Michael Dant Architect, L.L.C. (1142AF)|Active||5047 SW 18th Pl|Portland|OR|97239|04/30/2013| 01/31/2016|0.00|1|Architecture Firm
+Michael Flowers Architect, Inc.  (0808AF)|Active||PO Box 5303|Portland|OR|97228|12/29/2009| 01/31/2016|0.00|1|Architecture Firm
+Michael L. Wellman, Architect, L.L.C. (0566AF)|Active|1|PO Box 1288|Silverton|OR|97381|11/05/2003| 01/31/2016|0.00|1|Architecture Firm
+Michael McCulloch Architecture, L.L.C. (0734AF)|Active||13000 NW Old Germantown Road|Portland|OR|97231|04/18/2006| 01/31/2016|0.00|1|Architecture Firm
+Milbrandt Architects, P.C. (0863AF)|Active||25 Central Way Suite 210|Kirkland|WA|98033|02/27/2008| 01/31/2016|0.00|1|Architecture Firm
+Mildren Design Group, P.C., Architecture Space Pla (0136AF)|Active||7650 SW Beveland St Suite 120|Tigard|OR|97223|09/08/1992| 01/31/2016|0.00|1|Architecture Firm
+Minarik Architecture, Inc. (1147AF)|Active||2222 NE Oregon St #217|Portland|OR|97206|06/25/2013| 01/31/2016|0.00|1|Architecture Firm
+Mindful Spaces Architecture (0757AF)|Active||103 S Laurel St|Ashland|OR|97520|02/09/2010| 01/31/2016|0.00|1|Architecture Firm
+Mitchell J. Architecture, Inc. (1023AF)|Active||4883 Ronson Court Suite N San|Diego|CA|92111|11/02/2010| 01/31/2016|0.00|1|Architecture Firm
+Mithun, Inc., Architecture Planning & Interior Des (0290AF)|Active||Pier 56  1201 Alaskan Way Suite 200|Seattle|WA|98101-2913|09/15/1998| 01/31/2016|0.00|1|Architecture Firm
+MKM Architecture, Inc. (0693AF)|Active||3304 SE 52nd Ave|Portland|OR|97206|05/16/2005| 01/31/2016|0.00|1|Architecture Firm
+MOA Architecture  (1106AF)|Active||240 N Broadway Ste 202|Portland|OR|97227|09/19/2012| 01/31/2015|0.00|1|Architecture Firm
+MOA Architecture, L.L.C. (0722AF)|Active|1|240 n Broadway Ste. 202|Portland|OR|97321|08/08/2008| 01/31/2015|0.00|1|Architecture Firm
+Modern Organic Architecture (1101AF)|Active||240 N Broadway Ste 202|Portland|OR|97227|07/31/2012| 01/31/2015|0.00|1|Architecture Firm
+Moon Mayoras Architects, Inc. (0202AF)|Active||655 G St. #A San|Diego|CA|92101-|07/01/1997| 01/31/2016|0.00|1|Architecture Firm
+Moore Architecture & Design, L.L.C. (1187AF)|Active||2327 SW Market St Dr B.|Portland|OR|97201|04/25/2014| 01/31/2016|0.00|1|Architecture Firm
+Morrison Hershfield Architects, P.A., P.C. (0873AF)|Active||1455 Lincoln Parkway Suite 500|Atlanta|GA|30346|04/22/2008| 01/31/2016|0.00|1|Architecture Firm
+Mouchka Architecture, L.L.C. (0904AF)|Active||4110 NE 31st Avenue|Portland|OR|97211|12/02/2008| 01/31/2016|0.00|1|Architecture Firm
+Mount Bachelor Design Studio Architecture & Plann (0463AF)|Active|1|3195 NW Kidd Place|Bend|OR|97701-|04/19/2006| 01/31/2016|0.00|1|Architecture Firm
+Mulvanny G2 Architecture Corporation  (0301AF)|Active||1110 112th Ave NE Suite 500|Bellevue|WA|98004|10/21/1998| 01/31/2016|0.00|1|Architecture Firm
+MWA Architects, Inc. (0441AF)|Active||70 NW Couch Street Suite 401|Portland|OR|97209|01/31/2011| 01/31/2016|0.00|1|Architecture Firm
+Myhre Group Architects, Inc. (0424AF)|Active||620 SW 5th Ave Suite 500|Portland|OR|97204|01/09/2007| 01/31/2016|0.00|1|Architecture Firm
+NACArchitecture (0359AF)|Active||1203 West Riverside Ave|Spokane|WA|99201-|10/01/2008| 01/31/2016|0.00|1|Architecture Firm
+Nagao Pacific Architecture and Planning, P.C.  (0048AF)|Active||1680 Pearl St|Eugene|OR|97401|04/21/2011| 01/31/2016|0.00|1|Architecture Firm
+Nathan Cooprider Architect, L.L.C. (1089AF)|Active||6911 SW 53rd Ave|Portland|OR|97219|05/04/2012| 01/31/2015|0.00|1|Architecture Firm
+Nathan Good Architects, P.C. (0774AF)|Active||PO Box 4520|Salem|OR|97301|04/01/2009| 01/31/2016|0.00|1|Architecture Firm
+National Engineering, Architecture & Development,  (1212AF)|Active||27 Orchard Lake|Forest|CA|92630|02/04/2015| 01/31/2016|0.00|1|Architecture Firm
+NBBJ Architecture Design Planning (0362AF)|Active||223 Yale Ave North|Seattle|WA|98109|04/25/2001| 01/31/2016|0.00|1|Architecture Firm
+Neal Huston & Associates Architects, Inc. (0407AF)|Active|1|520 SW Powerhouse Dr Suite 621|Bend|OR|97702|06/22/2000| 01/31/2016|0.00|1|Architecture Firm
+Nelco Architecture, Inc. (0827AF)|Active|1|226 Walnut Street|Philadelphia|PA|19106|11/23/2011| 01/31/2016|0.00|1|Architecture Firm
+Netforest (0000AF)|Active||585 Tower Dr NW|Salem|OR|97304| ||0.00|1|Architecture Firm
+Netforest, Inc TEST Record (999WB)|Active|||| ||0.00
+Neumann Sloat Blanco Architects, L.L.P. (0927AF)|Active||20 Touchstone Lake|Oswego|OR|97035|08/01/2011| 01/31/2016|0.00|1|Architecture Firm
+New Traditional Architecture (0987AF)|Active||208 SW Stark St Suite 505|Portland|OR|97204|05/10/2010| 01/31/2016|0.00|1|Architecture Firm
+NewStudio Architecture, L.L.C. (1127AF)|Active||4431 Lake Ave S White Bear|Lake|MN|55110|02/01/2013| 01/31/2016|0.00|1|Architecture Firm
+NGG Architecture, Ltd. (0829AF)|Active||3100 Bristol St Suite 400 Costa|Mesa|CA|92626|06/06/2007| 01/31/2016|0.00|1|Architecture Firm
+Nichols Architecture (0909AF)|Active||3829 NE Hassalo Street|Portland|OR|97232|01/15/2009| 01/31/2016|0.00|1|Architecture Firm
+Nichols, Melburg & Rossetto Architects (0763AF)|Active||300 Knollcrest Drive|Redding|CA|96002|06/26/2006| 01/31/2016|0.00|1|Architecture Firm
+Nir Pearlson Architect, Inc. (0699AF)|Active||1460 E 21st Ave|Eugene|OR|97403|06/16/2005| 01/31/2016|0.00|1|Architecture Firm
+Nordby Design Studio Architecture & Interiors, L.L (0506AF)|Active||16148 Boones Ferry Rd Lake|Oswego|OR|97034|04/16/2003| 01/31/2016|0.00|1|Architecture Firm
+NORR Architects and Engineers Professional Corpora (1203AF)|Active||150 West Jefferson Ave Suite 1300|Detroit|MI|48228|11/12/2014| 01/31/2016|0.00|1|Architecture Firm
+Northwest Architectural, L.L.C.   (0890AF)|Active|1|19705 SW 65th Ave|Tualatin|OR|97062|10/03/2008| 01/31/2016|0.00|1|Architecture Firm
+Northwest Architecture & Design, P.C. (0553AF)|Active||515 NW Saltzman Rd No. 722|Portland|OR|97229|11/08/2005| 01/31/2016|0.00|1|Architecture Firm
+Novak Architecture, Inc. (0770AF)|Active||6975 SW Sandburg Street Suite 320|Portland|OR|97239|02/11/2009| 01/31/2015|0.00|1|Architecture Firm
+Nye Architecture, L.L.C. (0911AF)|Active||5846 SW Thomas Court|Portland|OR|97210|03/17/2009| 01/31/2016|0.00|1|Architecture Firm
+Obsidian Architecture, L.L.C. (1144AF)|Active||21165 Gift Rd|Bend|OR|97701|05/10/2013| 01/31/2016|0.00|1|Architecture Firm
+Oculus Inc., Architecture (1049AF)|Active||1 S Memorial Dr Ste 1500 St.|Louis|MO|63102|05/19/2011| 01/31/2016|0.00|1|Architecture Firm
+Office 52 Architecture Planning Design, L.L.C. (1024AF)|Active||107 SE Washington St. Suite 450|Portland|OR|97215|11/12/2010| 01/31/2015|0.00|1|Architecture Firm
+Office For Architecture + Design (1139AF)|Active||5116 NE 30th Ave|Portland|OR|97211|10/04/2013| 01/31/2016|0.00|1|Architecture Firm
+Ogawa Fisher Architects (0807AF)|Active||5541 SE Belmont|Portland|OR|97215|02/28/2011| 01/31/2016|0.00|1|Architecture Firm
+Ogden Roemer Wilkerson Architecture, Inc. (0249AF)|Active||2950 E Barnett Rd|Medford|OR|97504-|06/25/1998| 01/31/2015|0.00|1|Architecture Firm
+Oh Planning + Design, Architecture, L.L.C. (0697AF)|Active|2|115 NW First Ave Ste 300|Portland|OR|97209|04/15/2009| 01/31/2016|0.00|1|Architecture Firm
+Olin Architecture, L.L.C. (1133AF)|Active||19581 Salmonberry Ct|Bend|OR|97702|02/20/2013| 01/31/2016|0.00|1|Architecture Firm
+Olson Group Architects AIA, L.L.C. (0651AF)|Active||17150 SW Upper Boones Ferry Road|Durham|OR|97224-7004|01/04/2005| 01/31/2016|0.00|1|Architecture Firm
+Olympic Architecture Company (0930AF)|Active||701 Dexter Ave N Suite 301|Seattle|WA|98109|06/22/2009| 01/31/2016|0.00|1|Architecture Firm
+Omniplan Architects (0565AF)|Active||1845 Woodall Rodgers Fwy Suite 1500|Dallas|TX|75201|09/27/2013| 01/31/2016|0.00|1|Architecture Firm
+OPSIS Architecture, L.L.P. (0350AF)|Active|1|920 NW 17th Ave.|Portland|OR|97209-|07/06/1999| 01/31/2016|0.00|1|Architecture Firm
+Opus Architecture & Engineering Group, P.C. (1174AF)|Active||10350 Bren Road West|Minnetonka|MN|55343|02/06/2014| 01/31/2016|0.00|1|Architecture Firm
+OrangeWall Studios Architecture and Planning (1038AF)|Active||240 N Broadway Suite 202|Portland|OR|97227|03/10/2011| 01/31/2016|0.00|1|Architecture Firm
+Oregon Architecture, Inc. (0802AF)|Active||221 W 10th Street|Medford|OR|97501|01/03/2007| 01/31/2016|0.00|1|Architecture Firm
+Oregon Business Architecture, P.C. (0113AF)|Active||PO Box 80301|Portland|OR|97280|07/26/1990| 01/31/2016|0.00|1|Architecture Firm
+Otak Architects, Inc. (0584AF)|Active|1|808 SW Third #300|Portland|OR|97204|04/13/2007| 01/31/2016|0.00|1|Architecture Firm
+Owen Richards Architects, P.L.L.C. (1188AF)|Active||1205 East Pike St Suite 2B|Seattle|WA|98122|05/01/2014| 01/31/2015|0.00|1|Architecture Firm
+OZ Architecture, Inc. (0598AF)|Active||3003 Larimer St|Denver|CO|80205|01/16/2014| 01/31/2016|0.00|1|Architecture Firm
+Pacific Edge Architecture, Inc. (0781AF)|Active||PO Box 991521|Redding|CA|96099|09/15/2006| 01/31/2015|0.00|1|Architecture Firm
+PAEP Architecture Engineering, P.C. (0452AF)|Active||1811 Four Mile Rd. NE Grand|Rapids|MI|49525-|06/29/2001| 01/31/2016|0.00|1|Architecture Firm
+Page Southerland Page Architecture/Engineering (0399AF)|Active||400 West Cesar Chavez Ste 500|Austin|TX|78701|04/11/2000| 01/31/2016|0.00|1|Architecture Firm
+Partin and Hill Architects, L.L.C. (0042AF)|Active||209 NE Lincoln St. Suite A|Hillsboro|OR|97281|06/22/2009| 01/31/2015|0.00|1|Architecture Firm
+Path Architecture, Inc. (0674AF)|Active||5229 NE MLK Jr Blvd Suite 101|Portland|OR|97211|10/04/2010| 01/31/2015|0.00|1|Architecture Firm
+Paul Franks Architecture (0444AF)|Active||14711 NE 29th Place Suite 118|Bellevue|WA|98007|03/19/2001| 01/31/2016|0.00|1|Architecture Firm
+Paul L. Bentley Architect AIA, P.C. (0132AF)|Active||615 SE Jackson St.|Roseburg|OR|97470-|01/22/1992| 01/31/2016|0.00|1|Architecture Firm
+Paul M. Falsetto Architect L.L.C. (1160AF)|Active||1605 NE Buffalo St|Portland|OR|97211|10/30/2013| 01/31/2016|0.00|1|Architecture Firm
+Paul McKean Architecture, L.L.C. (0731AF)|Active||4039 N Mississippi Ave #306|Portland|OR|97227|10/12/2005| 01/31/2016|0.00|1|Architecture Firm
+PBII Architecture & Engineering, L.L.C. (0791AF)|Active||PO Box 2076|Rogers|AR|72756|11/13/2006| 01/31/2016|0.00|1|Architecture Firm
+Peck Smiley Ettlin Architects, Inc. (0593AF)|Active|1|4412 SW Corbett Ave.|Portland|OR|97239|04/13/2004| 01/31/2016|0.00|1|Architecture Firm
+Pelli Clarke Pelli Architects, L.L.P. (1176AF)|Active||322 Eighth Ave 11th Floor New|York|NY|10001|02/10/2014| 01/31/2016|0.00|1|Architecture Firm
+Perkins & Will Architects, Inc. (0561AF)|Active||330 N Wasbash #3600|Chicago|IL|60611|10/16/2003| 01/31/2016|0.00|1|Architecture Firm
+Perkowitz + Ruth Architects (0139AF)|Active||111 W Ocean Blvd 21st Floor Long|Beach|CA|90802|04/18/2012| 01/31/2016|0.00|1|Architecture Firm
+Peter Magaro Architecture A Professional Corporati (0178AF)|Active||10570 SW Citation Dr|Beaverton|OR|97008|08/12/1996| 01/31/2016|0.00|1|Architecture Firm
+Peter Meijer Architect, P.C. (0585AF)|Active||710 NE 21st Avenue Suite 200|Portland|OR|97232|06/30/2009| 01/31/2016|0.00|1|Architecture Firm
+Petersen Kolberg & Associates, P.C., A.I.A., Archi (0058AF)|Active||6969 SW Hampton St.|Portland|OR|97223-|09/15/1980| 01/31/2016|0.00|1|Architecture Firm
+Philip R. McCurdy Architecture, P.C. (0144AF)|Active||PO Box 941|Warrenton|OR|97146|04/15/2008| 01/31/2016|0.00|1|Architecture Firm
+Phillips Architecture & Planning, Inc. (0545AF)|Active||309 Wisconsin Avenue|Whitefish|MT|59937|06/29/2009| 01/31/2016|0.00|1|Architecture Firm
+Phoenix Architecture, L.L.C. (0859AF)|Active||1569 NW Galveston Ave.|Bend|OR|97701|01/15/2008| 01/31/2016|0.00|1|Architecture Firm
+Pickard Chilton Architects, Inc. (0551AF)|Active||980 Chapel Street New|Haven|CT|06510|09/03/2003| 01/31/2016|0.00|1|Architecture Firm
+Pike Architecture (0335AF)|Active||937 NW Glisan St Unit 1631|Portland|OR|97209|04/15/1999| 01/31/2015|0.00|1|Architecture Firm
+Pinnacle Architecture, Inc. (0510AF)|Active|1|960 SW Disk Dr Suite 101|Bend|OR|97702|05/02/2005| 01/31/2016|0.00|1|Architecture Firm
+Pinnell Mockford Architecture & Engineering, Inc. (1005AF)|Active||6420 SW Macadam Ave Suite 330|Portland|OR|97239|08/16/2010| 01/31/2016|0.00|1|Architecture Firm
+Pivot Architecture, P.C. (0057AF)|Active||44 West Broadway Suite 300|Eugene|OR|97401-3038|07/21/1980| 01/31/2016|0.00|1|Architecture Firm
+Planning Solutions Architecture, Inc. (0723AF)|Active||PO Box 61406|Vancouver|WA|98666|08/31/2005| 01/31/2016|0.00|1|Architecture Firm
+PLDP Architecture (1121AF)|Active||3134 SE Main St|Portland|OR|97214|11/05/2012| 01/31/2016|0.00|1|Architecture Firm
+Plug-In Creations Architecture, L.L.C. (0497AF)|Active||9450 SW Gemini Dr #77734|Beaverton|OR|97005-2343|06/19/2002| 01/31/2016|0.00|1|Architecture Firm
+Polymath Studio Architecture, L.L.C. (1130AF)|Active||2818 SE 48th Ave|Portland|OR|97206|02/05/2013| 01/31/2016|0.00|1|Architecture Firm
+Polyphon Architecture and Design, L.L.C. (1140AF)|Active||412 NW Couch St #309|Portland|OR|97209|04/11/2013| 01/31/2016|0.00|1|Architecture Firm
+Populous Architects, P.C. (0631AF)|Active||300 Wyandotte Suite 300 Kansas|City|MO|64105|09/21/2010| 01/31/2015|0.00|1|Architecture Firm
+Poticha Architects (0292AF)|Active||1820 Kona St|Eugene|OR|97403|09/15/1998| 01/31/2016|0.00|1|Architecture Firm
+Propel Studio Architecture, L.L.C. (1129AF)|Active||417 SE 11th Ave|Portland|OR|97213|02/05/2013| 01/31/2016|0.00|1|Architecture Firm
+Pyatok Architects, Inc. (0532AF)|Active||1611 Telegraph Avenue Suite 200|Oakland|CA|94612|04/21/2011| 01/31/2015|0.00|1|Architecture Firm
+Qualia Architecture, L.L.C. (1126AF)|Active||3360 SW Ridgewood Ave|Portland|OR|97225|02/01/2013| 01/31/2015|0.00|1|Architecture Firm
+R&A Architecture + Design, Inc. (1167AF)|Active||Templeton Building Suite 100 9 SE 3rd Ave|Portland|OR|97214|02/03/2014| 01/31/2015|0.00|1|Architecture Firm
+R. L. Engebretson Architects OR, L.L.C. (0882AF)|Active||PO Box 2564|Fargo|ND|58108-2564|07/17/2008| 01/31/2016|0.00|1|Architecture Firm
+Randolph Design Architecture & Interiors (0393AF)|Active||2360 NW Kearney St.|Portland|OR|97210-|03/16/2000| 01/31/2016|0.00|1|Architecture Firm
+RDG Architecture, P.C. (1109AF)|Active||301 Grand Ave Des|Moines|IA|50309|09/27/2012| 01/31/2016|0.00|1|Architecture Firm
+Reiter Design Group Architects, Inc. (0487AF)|Active||7965 SW Cirrus Drive|Beaverton|OR|97008|04/12/2002| 01/31/2016|0.00|1|Architecture Firm
+REL Design, Inc., Architects and Engineers (1088AF)|Active||939 Jefferson Ave|Norristown|PA|19403|04/26/2012| 01/31/2016|0.00|1|Architecture Firm
+Reprise Design Incorporated Architecture  (1097AF)|Active||12400 Portland Ave S #100|Burnsville|MN|55337|07/18/2012| 01/31/2016|0.00|1|Architecture Firm
+Resolve Architecture + Planning, L.L.C. (1171AF)|Active||3742 SE Mill St|Portland|OR|97214|01/24/2014| 01/31/2016|0.00|1|Architecture Firm
+res|D architecture (1041AF)|Active||11130 NW Rainmont Rd|Portland|OR|97229|04/13/2011| 01/31/2015|0.00|1|Architecture Firm
+Reveal Architecture + Interiors Inc. (0562AF)|Active||1600 SE Bybee Blvd. Suite 206|Portland|OR|97202|12/30/2013| 01/31/2016|0.00|1|Architecture Firm
+Rhiza Architecture + Design  (0865AF)|Active||2127 N Albina Avenue #203|Portland|OR|97227|02/28/2008| 01/31/2016|0.00|1|Architecture Firm
+Rice Fergus Miller Architecture & Planning (0687AF)|Active||275 5th Street Suite 100|Bremerton|WA|98337|03/26/2012| 01/31/2016|0.00|1|Architecture Firm
+Richard Brown Architect, AIA (0370AF)|Active||239 NW 13th Ave. Room 305|Portland|OR|97209-|10/18/1999| 01/31/2016|0.00|1|Architecture Firm
+Risa Boyer Architecture, Inc. (1078AF)|Active||3444 NE 35th Ave|Portland|OR|97212|03/26/2012| 01/31/2016|0.00|1|Architecture Firm
+RJ Johnson Architecture (1090AF)|Active||1059 NW Saginaw Ave Suite 102|Bend|OR|97701|05/09/2012| 01/31/2016|0.00|1|Architecture Firm
+RJ-2 Architecture, Inc. (0260AF)|Active||22115 NW Imbrie Dr. Suite #330|Hillsboro|OR|97006-|01/28/2013| 01/31/2016|0.00|1|Architecture Firm
+RLPS Architects, L.L.P. (1113AF)|Active||250 Valleybrook Drive|Lancaster|PA|17601|10/16/2012| 01/31/2016|0.00|1|Architecture Firm
+RMC Architecture, L.L.C. (0365AF)|Active||1223 Railroad Avenue|Bellingham|WA|98225|09/16/1999| 01/31/2016|0.00|1|Architecture Firm
+Robert Brown Architects (1163AF)|Active||549 S 48th St #108|Tempe|AZ|85281|11/20/2013| 01/31/2016|0.00|1|Architecture Firm
+Robert Evenson, Architect (0684AF)|Active||6249 SW Canyon Court|Portland|OR|97221|03/31/2005| 01/31/2016|0.00|1|Architecture Firm
+Robert Simpson Architect, P.C. (0448AF)|Active||31177 SW Simpson Rd.|Cornelius|OR|97113-6201|05/22/2001| 01/31/2016|0.00|1|Architecture Firm
+Robertson Architecture, Inc. (0903AF)|Active||1525 SW 14th Ave #6|Portland|OR|97201|12/02/2008| 01/31/2015|0.00|1|Architecture Firm
+Robertson/Sherwood/Architects, P.C. (0049AF)|Active||132 E Broadway Suite 540|Eugene|OR|97401-|10/01/1979| 01/31/2016|0.00|1|Architecture Firm
+Robin E. Blair, Architect, L.L.C. (0947AF)|Active||8070 SW Laurel St|Portland|OR|97225|09/18/2009| 01/31/2016|0.00|1|Architecture Firm
+Robinson Hill Architecture, Inc. (0922AF)|Active||3195 B Airport Loop Drive Costa|Mesa|CA|92626|05/19/2011| 01/31/2015|0.00|1|Architecture Firm
+Rodd Hansen, Architect, L.L.C.  (0948AF)|Active||1551 Oak Street Suite A|Eugene|OR|97401|05/03/2011| 01/31/2016|0.00|1|Architecture Firm
+Ronald James Ped Architect, P.C. (0358AF)|Active||3455 Biegler Lane S|Salem|OR|97302|08/09/1999| 01/31/2016|0.00|1|Architecture Firm
+Ronald L. Grimes Architects, P.C. (0805AF)|Active||14 North Central Suite 106|Medford|OR|97501|03/03/2009| 01/31/2016|0.00|1|Architecture Firm
+Rowell Brokaw Architects, P.C. (0509AF)|Active||1 East Broadway Suite 300|Eugene|OR|97401|09/05/2002| 01/31/2016|0.00|1|Architecture Firm
+Roy F. Kroll, Architect, P.C. (0955AF)|Active|1|22330 White Peaks Dr|Bend|OR|97702|10/16/2009| 01/31/2016|0.00|1|Architecture Firm
+RRMM Architects, P.C. (0576AF)|Active||1317 Executive Blvd #200|Chesapeake|VA|23320|08/08/2008| 01/31/2016|0.00|1|Architecture Firm
+RS&H Oregon, Architects-Engineers-Planners, P.C. (0871AF)|Active||10748 Deerwood Park Blvd South|Jacksonville|FL|32256|04/10/2008| 01/31/2016|0.00|1|Architecture Firm
+RSP Architects, Ltd. (1060AF)|Active||1220 Marshall St NE|Minneapolis|MN|55413|09/23/2011| 01/31/2016|0.00|1|Architecture Firm
+RSS Architecture, P.C. (0125AF)|Active||2225 Country Club Rd.|Woodburn|OR|97071-|10/31/1991| 01/31/2016|0.00|1|Architecture Firm
+RTKL Architects, Oregon, P.C. (0680AF)|Active||901 S Bond St.|Baltimore|MD|21231|03/28/2005| 01/31/2016|0.00|1|Architecture Firm
+Rudeen Architects (1099AF)|Active||199 N Capitol Blvd Suite 602|Boise|ID|83702|07/30/2012| 01/31/2016|0.00|1|Architecture Firm
+Sankofa Architecture, L.L.C. (1189AF)|Active||9416 N Syracuse St|Portland|OR|97203|05/01/2014| 01/31/2016|0.00|1|Architecture Firm
+Sargent Designworks/Architecture +Interiors, L.L. (0765AF)|Active||4103 NE Tillamook Street|Portland|OR|97212|07/11/2006| 01/31/2016|0.00|1|Architecture Firm
+SBRA, Inc., Architects (0994AF)|Active||2 Seaport Lane|Boston|MA|02210|06/16/2010| 01/31/2016|0.00|1|Architecture Firm
+Schechter Architect, L.L.C. (1206AF)|Active||2962 NE Red Oak Dr|Bend|OR|97701|12/01/2014| 01/31/2016|0.00|1|Architecture Firm
+Schemata Workshop Architects (0793AF)|Active||112 5th Ave N Floor 2-South|Seattle|WA|98122|04/18/2012| 01/31/2016|0.00|1|Architecture Firm
+Schertzinger & Party Architect, L.L.C. (0417AF)|Active|1|657 SW Glacier Ave Suite 306|Redmond|OR|97756|04/26/2010| 01/31/2016|0.00|1|Architecture Firm
+Sclater Architects, P.C. (0100AF)|Active||414 Olive Way Suite 300|Seattle|WA|98101|01/07/2014| 01/31/2016|0.00|1|Architecture Firm
+Scott/Edwards Architecture, L.L.P. (0357AF)|Active||2525 E. Burnside St|Portland|OR|97214|08/03/1999| 01/31/2015|0.00|1|Architecture Firm
+SERA Architects, Inc. (0046AF)|Active||338 NW 5th Ave|Portland|OR|97209|01/15/1979| 01/31/2016|0.00|1|Architecture Firm
+SERA Design and Architecture, Inc. (1202AF)|Active||338 NW 5th Ave|Portland|OR|97209|10/27/2014| 01/31/2016|0.00|1|Architecture Firm
+Seraform Architecture, L.L.C.  (1132AF)|Active||3104 NE Dunckley St|Portland|OR|97209|02/20/2013| 01/31/2016|0.00|1|Architecture Firm
+Sexton Design, L.L.C., Architecture & Graphic Desi (0457AF)|Active||301 NW Greyhawk Ave.|Bend|OR|97701|08/22/2001| 01/31/2016|0.00|1|Architecture Firm
+SGA Architecture, P.C.  (0896AF)|Active||1437 S Boulder Avenue Suite 550|Tulsa|OK|74119|10/01/2008| 01/31/2016|0.00|1|Architecture Firm
+Shive-Hattery Architects/Engineers, P.C. (0790AF)|Active||316 Second St SE Suite 500 Cedar|Rapids|IA|52401|11/13/2006| 01/31/2016|0.00|1|Architecture Firm
+Shur Architects, L.L.C. (0469AF)|Active||PO Box 2428|Portland|OR|97208|01/17/2002| 01/31/2016|0.00|1|Architecture Firm
+Sink Combs Dethlefs, A Professional Corporation fo (0776AF)|Active|1|475 Lincoln St. Suite 100|Denver|CO|80203|08/16/2006| 01/31/2016|0.00|1|Architecture Firm
+Skidmore, Owings & Merrill Architects, L.L.P.  (0874AF)|Active||14 Wall Street New|York|NY|10005|07/09/2009| 01/31/2016|0.00|1|Architecture Firm
+Skylab Architecture  (0717AF)|Active||413 SW 13th Ave Suite 200|Portland|OR|97205|04/10/2008| 01/31/2016|0.00|1|Architecture Firm
+Slater Architecture (0363AF)|Active||8900 NE Livingston Mtn. Rd.|Camas|WA|98607|09/01/1999| 01/31/2016|0.00|1|Architecture Firm
+Slaybaugh Architecture & Consulting, L.L.C. (0970AF)|Active||134 NW Adams Pl|Bend|OR|97701|02/25/2010| 01/31/2016|0.00|1|Architecture Firm
+SmithGroupJJR Architects, Inc. (0971AF)|Active||500 Griswold St Suite 1700|Detroit|MI|48226|10/17/2012| 01/31/2016|0.00|1|Architecture Firm
+Soderstrom Architects, Ltd. (0124AF)|Active||1200 NW Naito Parkway Suite 410|Portland|OR|97209|03/07/2011| 01/31/2016|0.00|1|Architecture Firm
+Solarc Architecture & Engineering, Inc. (0343AF)|Active|1|223 W 12th Ave.|Eugene|OR|97401|06/07/1999| 01/31/2016|0.00|1|Architecture Firm
+Solarc Engineering and Energy+Architectural Consul (1112AF)|Active||223 W 12th Ave|Eugene|OR|97401|10/02/2012| 01/31/2016|0.00|1|Architecture Firm
+Spinnaker Architect, L.L.C.  (0569AF)|Active||4420 NE 30th Ave.|Portland|OR|97211|11/24/2003| 01/31/2016|0.00|1|Architecture Firm
+SRG Partnership, Inc., Architecture Planning Inter (0016AF)|Active||621 SW Morrison #200|Portland|OR|97205|10/24/1973| 01/31/2016|0.00|1|Architecture Firm
+SRM Architecture & Marketing, Inc. (0567AF)|Active||221 SE Main Street|Portland|OR|97214|11/14/2003| 01/31/2016|0.00|1|Architecture Firm
+SSOE Architects, L.L.C. (0804AF)|Active||1001 Madison Avenue|Toledo|OH|43604|12/22/2010| 01/31/2016|0.00|1|Architecture Firm
+Stack Architecture (0983AF)|Active||32 NE 7th Avenue|Portland|OR|97232|04/26/2010| 01/31/2016|0.00|1|Architecture Firm
+Stantec Architecture Inc. (0839AF)|Active||1383 North McDowell Blvd Suite 250|Petaluma|CA|94954|02/22/2013| 01/31/2016|0.00|1|Architecture Firm
+Starck Architecture + Planning (0200AF)|Active||2045 Kettner Blvd. Suite 100 San|Diego|CA|92101-|06/18/1997| 01/31/2016|0.00|1|Architecture Firm
+Stastny: Architect, L.L.C. (1026AF)|Active||2309 SW 1st Ave #1145|Portland|OR|97201|11/19/2010| 01/31/2016|0.00|1|Architecture Firm
+Stecker Design & Consulting Architect (0267AF)|Active||122 Warren Acres Rd.|Yakima|WA|98901-|08/05/1998| 01/31/2016|0.00|1|Architecture Firm
+Steele & Associates Architecture, L.L.C. (1196AF)|Active||4026 N Sweet Bay|Wichita|KS|67226|07/11/2014| 01/31/2016|0.00|1|Architecture Firm
+Steele Associates Architects, L.L.C. (0315AF)|Active|2|760 NW York Dr Suite 200|Bend|OR|97701|01/27/1999| 01/31/2016|0.00|1|Architecture Firm
+Steelhead Architecture, L.L.C. (1034AF)|Active||107 SE Washington Street Suite 234|Portland|OR|97202|02/17/2011| 01/31/2015|0.00|1|Architecture Firm
+Stem Architecture, Inc. (0792AF)|Active||PO Box 2124|Portland|OR|97208|11/13/2006| 01/31/2016|0.00|1|Architecture Firm
+Stemach Design & Architecture, L.L.C. (1185AF)|Active||919 NW Bond St #214|Bend|OR|97701|04/02/2014| 01/31/2016|0.00|1|Architecture Firm
+Steven D. Pults, AIA & Associates, L.L.P., Archite (0773AF)|Active||3592 Sacramento Drive Suite 140 San Luis|Obispo|CA|93401|08/16/2006| 01/31/2016|0.00|1|Architecture Firm
+Steven Routon Architect, L.L.C. (0748AF)|Active||PO Box 1229|Clatskanie|OR|97016|02/22/2006| 01/31/2016|0.00|1|Architecture Firm
+Stewart Gordon Straus Architect, P.C. (1169AF)|Active||6775 SW 111th Ave Suite 20|Beaverton|OR|97008|02/03/2014| 01/31/2016|0.00|1|Architecture Firm
+Straightline Architecture (1128AF)|Active||4521 S. Cloverdale Rd Suite 102|Boise|ID|83709|02/05/2013| 01/31/2016|0.00|1|Architecture Firm
+Straus & Seibert, Architects, L.L.P. (0236AF)|Active|1|1175 East Main St Suite 2E|Medford|OR|97504|09/01/2010| 01/31/2016|0.00|1|Architecture Firm
+Strongwork Architecture, L.L.C. (0958AF)|Active||3309 SE Sherrett|Portland|OR|97211|11/19/2009| 01/31/2016|0.00|1|Architecture Firm
+Structurepoint  Architecture (0886AF)|Active||7260 Shadeland Station Suite 375|Indianapolis|IN|46256|08/13/2008| 01/31/2016|0.00|1|Architecture Firm
+Studio 3 Architecture, Inc. (0508AF)|Active||222 Commercial St NE|Salem|OR|97301|08/20/2002| 01/31/2016|0.00|1|Architecture Firm
+Studio C Architecture, L.L.C. (0830AF)|Active||3105 NE Weidler St|Portland|OR|97232|12/23/2014| 01/31/2016|0.00|1|Architecture Firm
+Studio Coop Architecture, L.L.C. (0800AF)|Active||5901 N Borthwick Ave|Portland|OR|97217|12/05/2006| 01/31/2016|0.00|1|Architecture Firm
+Studio Cropp Architecture (1033AF)|Active||3556 SE Woodward St|Portland|OR|97202|04/04/2014| 01/31/2016|0.00|1|Architecture Firm
+Studio E Architecture, P.C. (0836AF)|Active||2749  Friendly St Suite E|Eugene|OR|97405|08/14/2007| 01/31/2015|0.00|1|Architecture Firm
+Studio Haykin Architecture and Planning, L.L.C. (0634AF)|Active||5727 NE Hassalo Street|Portland|OR|97213-3641|06/22/2009| 01/31/2016|0.00|1|Architecture Firm
+Studio Meng Strazzara Architects (0679AF)|Active||2001 Western Ave Suite 200|Seattle|WA|98121|02/29/2012| 01/31/2016|0.00|1|Architecture Firm
+Sullivan Architecture, L.L.C. (0647AF)|Active||210 SW Morrison Street Suite 600|Portland|OR|97204|12/20/2004| 01/31/2016|0.00|1|Architecture Firm
+Sum Design Studio + Architecture (1098AF)|Active||2505 SE 11th Ave Suite 268|Portland|OR|97202|10/09/2012| 01/31/2016|0.00|1|Architecture Firm
+Surround Architecture, Inc. (0756AF)|Active||150 SW Harrison Suite 100|Portland|OR|97201|05/09/2006| 01/31/2016|0.00|1|Architecture Firm
+Susan L. Licht, AIA, Architect (0739AF)|Active||2030 Landau St. SE|Salem|OR|97306|11/23/2005| 01/31/2016|0.00|1|Architecture Firm
+Suzanne Zuniga Architect, L.L.C. (0560AF)|Active||301 NE 65th Avenue|Portland|OR|97213|10/16/2003| 01/31/2016|0.00|1|Architecture Firm
+Swaim Associates Architecture & Planning (0479AF)|Active||7350 E Speedway Blvd Suite 210|Tucson|AZ|85710|03/07/2002| 01/31/2016|0.00|1|Architecture Firm
+Tahran Architecture & Planning, L.L.C. (0703AF)|Active||13741 Knaus Road Lake|Oswego|OR|97219|07/23/2009| 01/31/2016|0.00|1|Architecture Firm
+Talent Architectural Studio (0740AF)|Active||PO Box 130|Talent|OR|97540|04/27/2009| 01/31/2016|0.00|1|Architecture Firm
+Tate Hill Jacobs Architects, Inc. (0738AF)|Active||346 East Main St.|Lexington|KY|40507|11/22/2005| 01/31/2016|0.00|1|Architecture Firm
+TBG Architects & Planners, Inc. (0094AF)|Active||132 E Broadway Suite 200|Eugene|OR|97401-|06/01/1987| 01/31/2016|0.00|1|Architecture Firm
+TCA Architecture Planning Inc., P.C. (1055AF)|Active||6211 Roosevelt Way NE|Seattle|WA|98115|08/26/2011| 01/31/2016|0.00|1|Architecture Firm
+TCF Architecture, P.L.L.C. (0228AF)|Active||902 N. 2nd St.|Tacoma|WA|98403-|03/17/1998| 01/31/2016|0.00|1|Architecture Firm
+Tekneek Architecture, P.C.  (0968AF)|Active||PO Box 8404|Bend|OR|97708|02/29/2012| 01/31/2016|0.00|1|Architecture Firm
+Tektoniks Corp - Architecture Division (0538AF)|Active||306 West Moore St. Walla|Walla|WA|99362|08/10/2007| 01/31/2015|0.00|1|Architecture Firm
+Terraforma Planning Architecture & Interiors, P.C. (0250AF)|Active||645 SW Viewmont Dr|Portland|OR|97225|06/25/1998| 01/31/2016|0.00|1|Architecture Firm
+Tesseract Design & Architecture, L.L.C. (1162AF)|Active||1529 SE Hawthorne Blvd Suite 1|Portland|OR|97214|11/20/2013| 01/31/2016|0.00|1|Architecture Firm
+THA Architecture, Inc. (0090AF)|Active||733 SW Oak St Suite 100|Portland|OR|97205|04/07/2008| 01/31/2015|0.00|1|Architecture Firm
+Thalden Boyd Architects, L.L.C. (0981AF)|Active||1133 Olivette Executive Parkway St|Louis|MO|63132|04/26/2010| 01/31/2016|0.00|1|Architecture Firm
+Thallon Architecture (0727AF)|Active||2303 McMorran St.|Eugene|OR|97403|09/08/2005| 01/31/2016|0.00|1|Architecture Firm
+The Abell Architectural Group, Inc. (0195AF)|Active||2 East Main Street Suite 300|Medford|OR|97501-6011|04/29/1997| 01/31/2016|0.00|1|Architecture Firm
+The Facade Group Architecture, L.L.C. (1065AF)|Active||707 SW Washington St Ste 1000|Portland|OR|97205|11/15/2011| 01/31/2016|0.00|1|Architecture Firm
+The Figure Ground Studio Architecture, L.L.C. (1076AF)|Active||2615 SE 15th Ave|Portland|OR|97242|02/10/2012| 01/31/2015|0.00|1|Architecture Firm
+The HR Group Architects (1075AF)|Active||2277 Fair Oaks Blvd Suite 220|Sacramento|CA|95825|02/10/2012| 01/31/2015|0.00|1|Architecture Firm
+The Johnson Partnership, Architecture & Planning (1011AF)|Active||1212 NE 65th St|Seattle|WA|98115|09/20/2010| 01/31/2016|0.00|1|Architecture Firm
+The Miller/Hull Partnership Architecture & Plannin (0398AF)|Active||Polson Bldg. 71 Columbia - 6th Floor|Seattle|WA|98104|04/15/2003| 01/31/2016|0.00|1|Architecture Firm
+The Ratcliff Architects (0085AF)|Active||5856 Doyle Street|Emeryville|CA|94608|11/22/2005| 01/31/2016|0.00|1|Architecture Firm
+The Rommel Architectural Partnership, L.L.P. (0326AF)|Active||1200 NW Naito Pkwy. Suite 550|Portland|OR|97209-|02/24/1999| 01/31/2016|0.00|1|Architecture Firm
+The Stellar Architectural and Engineering Group, I (1164AF)|Active||2900 Hartley Rd|Jacksonville|FL|32257|12/06/2013| 01/31/2016|0.00|1|Architecture Firm
+The Urban Collaborative, L.L.C: Master Planning, U (1184AF)|Active||800 Willamette St Suite 790|Eugene|OR|97401|03/31/2014| 01/31/2015|0.00|1|Architecture Firm
+Tiland/Schmidt Architects, P.C. (0240AF)|Active||3611 SW Hood Ave Suite 200|Portland|OR|97239|06/09/1998| 01/31/2016|0.00|1|Architecture Firm
+Tina Ely Architect, L.L.C. (1095AF)|Active||2915 Wingate St|Eugene|OR|97408|06/27/2012| 01/31/2016|0.00|1|Architecture Firm
+Tobin Weaver, Architect, P.C. (0541AF)|Active||1983 NW Flanders St #501|Portland|OR|97209|05/06/2003| 01/31/2016|0.00|1|Architecture Firm
+Todd Architecture & Planning, Inc. (0140AF)|Active||4019 N 44th St.|Phoenix|AZ|85018-|02/16/1993| 01/31/2016|0.00|1|Architecture Firm
+Todd Lasher Architect, L.L.C.  (1074AF)|Active||5632 N Atlantic Ave|Portland|OR|97217|02/09/2015| 01/31/2016|0.00|1|Architecture Firm
+Tolovana Architect, L.L.C. (1039AF)|Active||PO Box 648 Tolovana|Park|OR|97145|03/18/2011| 01/31/2016|0.00|1|Architecture Firm
+Tom Gregg Architecture, L.L.C. (0606AF)|Active||1647 SE Rex Street|Portland|OR|97202|03/09/2010| 01/31/2016|0.00|1|Architecture Firm
+Tom Louris Architect, L.L.C. (1022AF)|Active||5145 SW Tualata Ln Lake|Oswego|OR|97035|11/02/2010| 01/31/2016|0.00|1|Architecture Firm
+Tom Shaw Architecture, L.L.C. (1071AF)|Active||2810 SW West Point Ave|Portland|OR|97225|02/03/2012| 01/31/2016|0.00|1|Architecture Firm
+Tormod Hellwig Architecture, L.L.C. (0819AF)|Active||1734 Lost Mountain Road|Sequim|WA|98382|04/12/2007| 01/31/2016|0.00|1|Architecture Firm
+Torre Design Architecture (1062AF)|Active||5005 Magazine St New|Orleans|LA|70115|10/05/2011| 01/31/2016|0.00|1|Architecture Firm
+Travois Architecture, P.C. (1153AF)|Active||310 W 19th Terrace Kansas|City|MO|64108|08/29/2013| 01/31/2015|0.00|1|Architecture Firm
+Tricarico Architecture and Design, P.C. (0654AF)|Active||502 Valley Road|Wayne|NJ|07470|01/06/2005| 01/31/2016|0.00|1|Architecture Firm
+TSArchitects, Inc. (1157AF)|Active||2050 S Bundy Dr Suite 225 Los|Angeles|CA|90025|10/08/2013| 01/31/2016|0.00|1|Architecture Firm
+TVA Architects, Inc. (0324AF)|Active|1|920 SW Sixth Ave Suite 1500|Portland|OR|97204|04/09/2010| 01/31/2016|0.00|1|Architecture Firm
+URS Architects, L.L.C. (0573AF)|Active||C/O Shawna Ward PO Box 73|Boise|ID|83729|02/03/2012| 01/31/2016|0.00|1|Architecture Firm
+URS Architecture - Oregon, Inc. (0563AF)|Active||1501 4th Avenue Suite 1400|Seattle|WA|94111-2727|02/10/2004| 01/31/2016|0.00|1|Architecture Firm
+V3 Studio Architecture, L.L.C. (0923AF)|Active||1001 SE Water Ave Ste 440 |Portland|OR|97214|05/04/2011| 01/31/2016|0.00|1|Architecture Firm
+Valeant Architecture, L.L.C. (0667AF)|Active||2318 SW Market St. Drive|Portland|OR|97201|02/08/2005| 01/31/2016|0.00|1|Architecture Firm
+Vallaster Corl Architects, P.C. (0639AF)|Active||711 SW Alder St - Penthouse|Portland|OR|97205|11/17/2004| 01/31/2016|0.00|1|Architecture Firm
+Vega Architecture, L.L.C. (1104AF)|Active||1335 Elati St Unit A|Denver|CO|80204|09/10/2012| 01/31/2016|0.00|1|Architecture Firm
+Via Architecture + Planning, L.L.C. (0902AF)|Active||1457 W 10th Avenue|Eugene|OR|97402|12/02/2008| 01/31/2016|0.00|1|Architecture Firm
+VIA Architecture, Incorporated (0964AF)|Active||1809 7th Ave #800|Seattle|WA|98101|02/09/2010| 01/31/2016|0.00|1|Architecture Firm
+Vidas Architecture, L.L.C. (1042AF)|Active||18675 Tumalo Reservoir Rd|Bend|OR|97701|04/21/2011| 01/31/2016|0.00|1|Architecture Firm
+Visioneering Studios Architecture, Inc. (0952AF)|Active||2050 Main Street Ste. 400|Irvine|CA|92614|09/30/2009| 01/31/2016|0.00|1|Architecture Firm
+Waddle Design/Planning/Architecture, L.L.C. (0279AF)|Active||14583 NW Larson Road|Portland|OR|97231|10/05/2011| 01/31/2015|0.00|1|Architecture Firm
+Walla Architectural Services, P.L.L.C. (1154AF)|Active||10000 NE 7th Avenue Suite 100-G|Vancouver|WA|98685|08/29/2013| 01/31/2016|0.00|1|Architecture Firm
+Walnut an Architectural Design Studio, L.L.C. (1048AF)|Active||4133 SE Tibbetts|Portland|OR|97202|05/20/2011| 01/31/2016|0.00|1|Architecture Firm
+Walter T. Moon Architect, L.L.C. (0954AF)|Active||24 Juarez St Lake|Oswego|OR|97035|10/29/2009| 01/31/2016|0.00|1|Architecture Firm
+WareMalcomb Architecture Planning Interior Design (0458AF)|Active||10 Edelman|Irvine|CA|92618-|08/22/2001| 01/31/2016|0.00|1|Architecture Firm
+Waterleaf Architecture, L.L.C. (0217AF)|Active||419 SW 11th Ave Suite 200|Portland|OR|97205|04/11/2003| 01/31/2016|0.00|1|Architecture Firm
+Watry Design Architects and Engineers, Inc. (0516AF)|Active||100 Century Center Ct Ste 600 San|Jose|CA|95112|12/08/2011| 01/31/2016|0.00|1|Architecture Firm
+Wattenbarger Architecture (0245AF)|Active||2100 112th Ave NE Suite 100|Bellevue|WA|98004|10/30/2013| 01/31/2016|0.00|1|Architecture Firm
+WD Partners, Inc., Engineering and Architecture (0815AF)|Active||7007 Discovery Blvd|Dublin|OH|43017|04/12/2007| 01/31/2016|0.00|1|Architecture Firm
+Weaver Architecture (0721AF)|Active||1411 4th Avenue Suite810|Seattle|WA|98101|08/23/2005| 01/31/2016|0.00|1|Architecture Firm
+Webb Architecture, L.L.C. (1199AF)|Active||PO Box 13145|Portland|OR|97213|09/12/2014| 01/31/2016|0.00|1|Architecture Firm
+Wedgwood Architectural Services (0670AF)|Active||7600 NE 41st St. #330|Vancouver|WA|98662|03/01/2005| 01/31/2016|0.00|1|Architecture Firm
+West 6 Design and Architecture, L.L.C. (1194AF)|Active||2737 SW Mitchell Ct|Portland|OR|97239|06/18/2014| 01/31/2015|0.00|1|Architecture Firm
+Whelton Architecture (0949AF)|Active|1|5310 N Concord Ave|Portland|OR|97217|09/18/2009| 01/31/2016|0.00|1|Architecture Firm
+WHR Architects, Inc. (1010AF)|Active||1111 Louisiana Floor 26|Houston|TX|77002|09/20/2010| 01/31/2016|0.00|1|Architecture Firm
+Wilkus Architects, P.A., P.C. (0635AF)|Active||11487 Valley View Road Eden|Prairie|MN|55344|02/21/2012| 01/31/2016|0.00|1|Architecture Firm
+Willamette Architecture, 360 (0996AF)|Active||66 Club Rd #360|Eugene|OR|97401|06/16/2010| 01/31/2016|0.00|1|Architecture Firm
+Willard C. Dixon Architect, L.L.C. (0960AF)|Active||300 Blair Blvd|Eugene|OR|97402|02/09/2010| 01/31/2016|0.00|1|Architecture Firm
+William Foster, Architect & Planner, L.L.C. (1046AF)|Active|1|PO Box 5426|Salem|OR|97304|05/09/2011| 01/31/2016|0.00|1|Architecture Firm
+William Kaven Architecture (0837AF)|Active||4080 N Williams Ave  Suite 100|Portland|O9|97227|08/14/2007| 01/31/2016|0.00|1|Architecture Firm
+William Wilson Architects, P.C. (0158AF)|Active||1022 SW Salmon Street Suite 350|Portland|OR|97205|02/14/1995| 01/31/2016|0.00|1|Architecture Firm
+Wilson Architecture, Inc. (0613AF)|Active||609 15 Street|Modesto|CA|95354|07/01/2004| 01/31/2016|0.00|1|Architecture Firm
+Wimberly Allison Tong & Goo Architects NA, Inc. (0794AF)|Active||300 Spectrum Center Drive Suite 500|Irvine|CA|92618|11/13/2006| 01/31/2016|0.00|1|Architecture Firm
+Winn Architecture, L.L.C. (0980AF)|Active||29179 SW Charlotte Lane|Wilsonville|OR|97079|04/09/2010| 01/31/2016|0.00|1|Architecture Firm
+WJE Engineers & Architects, P.C. (0522AF)|Active||330 Pfingsten Road|Northbrook|IL|60062|11/18/2002| 01/31/2016|0.00|1|Architecture Firm
+Wolcott Architecture Interiors (1047AF)|Active||3859 Cardiff Ave Culver|City|CA|90232|05/10/2011| 01/31/2016|0.00|1|Architecture Firm
+Woofter Architecture, P.C. (1118AF)|Active||107 SE Washington St Suite 440|Portland|OR|97214|10/30/2012| 01/31/2016|0.00|1|Architecture Firm
+Workley Architects, Inc. (0692AF)|Active||3142 Prospect Avenue|Cleveland|OH|44115-2612|05/10/2005| 01/31/2016|0.00|1|Architecture Firm
+Works Partnership Architecture, L.L.C. (0673AF)|Active||524 E Burnside #320|Portland|OR|97214|03/15/2005| 01/31/2016|0.00|1|Architecture Firm
+Wright Architecture (0925AF)|Active||7200 SW Trillium Ave|Beaverton|OR|97008|04/28/2009| 01/31/2015|0.00|1|Architecture Firm
+WTF Architecture, L.L.C. (1117AF)|Active||2505 SE 11th Ave Suite 268|Portland|OR|97202|10/30/2012| 01/31/2016|0.00|1|Architecture Firm
+WTY Architecture, L.L.C. (1182AF)|Active||2850 SW Cedar Hills Blvd #224|Beaverton|OR|97005|03/07/2014| 01/31/2016|0.00|1|Architecture Firm
+YBA Architects, P.C. (1172AF)|Active||123 NW 2nd Ave Suite 204|Portland|OR|97214|01/24/2014| 01/31/2015|0.00|1|Architecture Firm
+Yianni Doulis Architecture Studio, L.L.C. (0812AF)|Active||112 SW 1st Avenue|Portland|OR|97204|03/07/2007| 01/31/2016|0.00|1|Architecture Firm
+Yost Grube Hall Architecture, Inc. (0024AF)|Active||707 SW Washington St Suite 1200|Portland|OR|97204-|04/10/2006| 01/31/2016|0.00|1|Architecture Firm
+Young Design Studio, L.L.C., Architecture and Inte (1093AF)|Active||2126 N Skidmore Ct|Portland|OR|97217|06/07/2012| 01/31/2016|0.00|1|Architecture Firm
+Zaik Associates Architects & Planners (0675AF)|Active||2340 NW Thurman Street Suite 201|Portland|OR|97210|03/24/2005| 01/31/2016|0.00|1|Architecture Firm
+ZBA Architecture, P.S., P.C. (0437AF)|Active||West 421 Riverside Suite 860|Spokane|WA|99201|08/28/2013| 01/31/2015|0.00|1|Architecture Firm
+ZGA Architects & Planners, Chartered (0477AF)|Active||408 E Parkcenter Blvd Suite 205|Boise|ID|83706|02/13/2002| 01/31/2016|0.00|1|Architecture Firm
+Zimmer Gunsul Frasca Architects, L.L.P. (0375AF)|Active||1223 SW Washington St Suite 200|Portland|OR|97205|11/15/1999| 01/31/2016|0.00|1|Architecture Firm
+Richard D. Aanderud (1925) |Active||419 SW 11th Avenue Suite 200|Portland|OR|97205|02/25/1978| 12/31/2015|0.00
+Jamin L. Aasum (6180) |Active||2865 NW Cornell Rd|Portland|OR|97210|12/07/2012| 12/31/2016|0.00
+William E. Abbot (4095) |Active||130 E. Chestnut St. Suite 302|Columbus|OH|43215-|11/20/1998| 12/31/2015|0.00
+Michael S. Abbott (5371) |Active||20115 129th Ave SE|Snohomish|WA|98296|02/15/2008| 12/31/2015|-6.00
+Gene J. Abell (2468) |Active||2 East Main Street Suite 300|Medford|OR|97501-6011|02/25/1983| 12/31/2016|0.00
+Larry Wayne Abell (2094) |Active||2005 Washington Ave Baker|City|OR|97814|07/26/1979| 12/31/2016|0.00
+Bruce H. Abeloe (2419) |Active||5 Valley View Dr|Medford|OR|97501|04/23/1982| 12/31/2015|1.00
+Lawrence C. Abrahamson (4286) |Active||80-82 St Marks Ave 5B|Brooklyn|NY|11217|10/20/2000| 12/31/2016|0.00
+Robert J. Acciarri (5087) |Active||17710 Detroit Ave|Lakewood|OH|44107|05/15/2006| 12/31/2015|0.00
+Gregory W. Acker (1616) |Active||2805 NW Westover Rd|Portland|OR|97210|02/23/1975| 12/31/2016|0.00
+Gary M. Adams (5934) |Active||2301 Blake St Suite 100|Denver|CO|80205|05/19/2011| 12/31/2016|0.00
+Isaac T. Adams (6336) |Active||1803 SE Washington St Apt 1|Portland|OR|97214|08/09/2013| 12/31/2016|-14.00
+C. Richard Adelmann (2550) |Active||815 SW 2nd Ave. Suite 600|Portland|OR|97204-|10/27/1983| 12/31/2016|0.00
+Kenton F. Affolter (1479) |Active||263 Silver Lane|Eugene|OR|97404-|09/14/1973| 12/31/2015|0.00

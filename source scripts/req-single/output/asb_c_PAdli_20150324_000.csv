@@ -1,0 +1,1256 @@
+license_number|entity_name|phone|address1|city|state|zip|expiration_date|number_type|company_flag
+}||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+PTInclu|er.imageServerURL = 'htt|://www.porta|.state.pa.us/imageserver/';|||||Certification Number|1
+PTInclu|er.basePath = 'plumtree/|ommon/privat|/js/';|||||Certification Number|1
+PTInclu|er.lang = 'en';|||||||Certification Number|1
+PTInclu|er.country = 'US';|||||||Certification Number|1
+PTInclu|er.debug = false;|||||||Certification Number|1
+PTInclu|er.loadComponent('jsport|et');||||||Certification Number|1
+// Defi|e PTPortalContext for CS|PI||||||Certification Number|1
+||||||||Certification Number|1
+PTPorta|Context = new Object();|||||||Certification Number|1
+PTPorta|Context.GET_SESSION_PREF|_URL = 'http|//www.portal.state.pa.us/portal/server.pt?space=SessionPrefs&con|rol=SessionPrefs|act|ion=getpref|s';|Certification Number|1
+PTPorta|Context.SET_SESSION_PREF|_URL = 'http|//www.portal.state.pa.us/portal/server.pt?space=SessionPrefs&con|rol=SessionPrefs|act|ion=setpref|s';|Certification Number|1
+||||||||Certification Number|1
+PTPorta|Context.USER_LOCALE = 'e|-us';||||||Certification Number|1
+PTPorta|Context.USER_LOGIN_NAME | 'Guest';||||||Certification Number|1
+||||||||Certification Number|1
+PTPorta|Context.PAGE_TYPE = PTPo|talPage.TYPE|COMMUNITY_PAGE;|||||Certification Number|1
+||||||||Certification Number|1
+functio| OpenPortletPrefsWindow(|trURL) { win|ow.open(strURL,'PortletPrefsWindow','width=700,height=500,resiza|le=1,status=0,to|lba|r=0,menubar|=0,scrollba|Certification Number|1
+||||||||Certification Number|1
+var MSG|REMOVE_PAGE_CONF = "Are |ou sure you |ant to delete this page?";|||||Certification Number|1
+functio| DeletePage(url) {|||||||Certification Number|1
+   if (|onfirm(MSG_REMOVE_PAGE_C|NF)) {||||||Certification Number|1
+      w|ndow.location = url;|||||||Certification Number|1
+   }||||||||Certification Number|1
+}||||||||Certification Number|1
+||||||||Certification Number|1
+var MSG|REMOVE_PORTLET_CONF = "A|e you sure y|u want to remove this portlet?";|||||Certification Number|1
+functio| RemovePortlet(url, id) |||||||Certification Number|1
+   if (|onfirm(MSG_REMOVE_PORTLE|_CONF)) {||||||Certification Number|1
+      i| (typeof handleRemovePor|letResponse |= 'function') {|||||Certification Number|1
+       |    window.location = ur|;||||||Certification Number|1
+      }|else {|||||||Certification Number|1
+       |    url = url + '&page=M|PortalPartia|Portlets';|||||Certification Number|1
+       |    var request = new PT|TTPGETReques|(url, handleRemovePortletResponse);|||||Certification Number|1
+       |    request.invoke();|||||||Certification Number|1
+       |    swapPortlet(id);    | }||||||Certification Number|1
+   }||||||||Certification Number|1
+}||||||||Certification Number|1
+PTPorta|Context.commId = 10510; |||||||Certification Number|1
+PTPorta|Context.pageId = 553489;|||||||Certification Number|1
+PTPorta|Context.pageName = 'Hide|-+Asbestos+O|cupations%3A+Certification+and+Other+Requirements'; |||||Certification Number|1
+var g_P|ImgSvrImgsURL = "http://|ww.portal.st|te.pa.us/imageserver/plumtree/portal/private/img/";|||||Certification Number|1
+var g_S|aredImgSvrImgsURL = "htt|://www.porta|.state.pa.us/imageserver/plumtree/portal/public/img/";var g_Help|vrBaseURL = "htt|://|www.portal.|state.pa.us|Certification Number|1
+||||||||Certification Number|1
+if (!do|ument.getElementById('PT|ncluder-js')| {|||||Certification Number|1
+documen|.write('<script id="PTIn|luder-js" ty|e="text/javascript" src="http://www.portal.state.pa.us/imageserv|r/plumtree/commo|/pr|ivate/js/js|includer/LA|Certification Number|1
+}||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+PTInclu|er.imageServerURL = 'htt|://www.porta|.state.pa.us/imageserver/';|||||Certification Number|1
+PTInclu|er.basePath = 'plumtree/|ommon/privat|/js/';|||||Certification Number|1
+PTInclu|er.lang = 'en';|||||||Certification Number|1
+PTInclu|er.country = 'US';|||||||Certification Number|1
+PTInclu|er.debug = false;|||||||Certification Number|1
+PTInclu|er.loadComponent('jsrobo|elp');||||||Certification Number|1
+||||||||Certification Number|1
+functio| OpenerAS_GetApplication|aseURL()||||||Certification Number|1
+{||||||||Certification Number|1
+	return|"http://www.portal.state|pa.us/portal|server.pt?";|||||Certification Number|1
+}||||||||Certification Number|1
+functio| OpenerAS_GetCurrentUser|D()||||||Certification Number|1
+{||||||||Certification Number|1
+	return|"2";|||||||Certification Number|1
+}||||||||Certification Number|1
+functio| OpenerAS_GetParentSpace|ame()||||||Certification Number|1
+{||||||||Certification Number|1
+	return|"";|||||||Certification Number|1
+}||||||||Certification Number|1
+functio| OpenerAS_GetParentSpace|D()||||||Certification Number|1
+{||||||||Certification Number|1
+	return|"";|||||||Certification Number|1
+}||||||||Certification Number|1
+functio| getJSUtilVersionObject(| { return 'w|ndow';}/** The object that holds the safe variables. Store the v|rs as properties|on |the object,| like a has|Certification Number|1
+var gSa|eJSVarContainer = new Ob|ect();||||||Certification Number|1
+/** Def|ne a new safe variable, |ass the in t|e name and the value.Returns true if successful, method call wil| fail if the val|e i|s invalid. |**/|Certification Number|1
+functio| addSafeVar(strName, oVa|ue) {||||||Certification Number|1
+	gSafeJ|VarContainer[strName] = |Value;||||||Certification Number|1
+	return|true;|||||||Certification Number|1
+}||||||||Certification Number|1
+/** Ret|ieve a safe var. Returns|false if the|variable is undefined  or if the value is actually false, but sa|e vars shouldn't|be |usedto stor|e simple bo|Certification Number|1
+functio| getSafeVar(strName) {|||||||Certification Number|1
+	var te|p = gSafeJSVarContainer[|trName];||||||Certification Number|1
+	if (te|p) { return temp; }|||||||Certification Number|1
+	else {|return false;}|||||||Certification Number|1
+}||||||||Certification Number|1
+/** Ret|ieve a safe var, if the |ariable is u|defined an alert will showwith the name of the variable. Use thi| method to retri|ve |criticalvar|iables. **/|Certification Number|1
+functio| getSafeVarWarn(strName)|{||||||Certification Number|1
+	var te|p = gSafeJSVarContainer[|trName];||||||Certification Number|1
+	if (te|p) { return temp; }|||||||Certification Number|1
+	else {|alert('Safe Variable: '+|trName+' is |ot defined!'); }|||||Certification Number|1
+}||||||||Certification Number|1
+var win|owOnloadFunction = (wind|w.onload) ? |indow.onload : new Function;|||||Certification Number|1
+documen|.PCC.RegisterForWindowEv|nt("onload",|windowOnloadFunction);|||||Certification Number|1
+var win|owOnBlurFunction = (wind|w.onblur) ? |indow.onblur : new Function;|||||Certification Number|1
+documen|.PCC.RegisterForWindowEv|nt("onblur",|windowOnBlurFunction);|||||Certification Number|1
+var win|owOnFocusFunction = (win|ow.onfocus) | window.onfocus : new Function;|||||Certification Number|1
+documen|.PCC.RegisterForWindowEv|nt("onfocus"| windowOnFocusFunction);|||||Certification Number|1
+functio| getJSXMLVersionObject()|{ return 'wi|dow';}|||||Certification Number|1
+pt_4175| = new PTPortlet('41751'| '{C0A30C1D-|4AB-4C9E-8417-B2B54BACF2B8}', 'L&I LANDI Header', 'pt-portlet-co|tent-41751', 'ht|p:/|/pubcontent|.state.pa.u|Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+pt_8329| = new PTPortlet('83293'| '{D12081D7-|239-48AA-BFA8-772A3D9F0C01}', 'LANDI Footer', 'pt-portlet-conten|-83293', 'http:/|pub|content.sta|te.pa.us:70|Certification Number|1
+||||||||Certification Number|1
+pt_8126| = new PTPortlet('81263'| '{F46F229B-|BEA-4426-8B07-B640B0AD0AB9}', 'LANDI Left Base Vertical Nav', 'p|-portlet-content|812|63', 'http:|//pubconten|Certification Number|1
+||||||||Certification Number|1
+pt_7894| = new PTPortlet('78949'| '{2980BD28-|B23-4679-81CB-06E6D258EE21}', 'LANDI - Safety and Labor Manageme|t - Left Nav', '|t-p|ortlet-cont|ent-78949',|Certification Number|1
+||||||||Certification Number|1
+pt_997 | new PTPortlet('997', '{|F09112F-EF28|42FE-AEB7-6E297342D42D}', 'Bread Crumb - Content Canvas', 'pt-po|tlet-content-997|, '|http://pubc|ontent.stat|Certification Number|1
+||||||||Certification Number|1
+pt_7405| = new PTPortlet('74053'| '{32084207-|57A-499B-8FB6-71CDA23A3B50}', 'Asbestos Occupations: Certificati|n and Other Requ|rem|ents Conten|t Portlet',|Certification Number|1
+||||||||Certification Number|1
+if (!do|ument.getElementById('PT|ncluder-js')| {|||||Certification Number|1
+documen|.write('<script id="PTIn|luder-js" ty|e="text/javascript" src="http://www.portal.state.pa.us/imageserv|r/plumtree/commo|/pr|ivate/js/js|includer/LA|Certification Number|1
+}||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+PTInclu|er.imageServerURL = 'htt|://www.porta|.state.pa.us/imageserver/';|||||Certification Number|1
+PTInclu|er.basePath = 'plumtree/|ommon/privat|/js/';|||||Certification Number|1
+PTInclu|er.lang = 'en';|||||||Certification Number|1
+PTInclu|er.country = 'US';|||||||Certification Number|1
+PTInclu|er.debug = false;|||||||Certification Number|1
+PTInclu|er.loadComponent('jsport|lmenus');||||||Certification Number|1
+	functi|n buildURLFromTemplate(s|rID)||||||Certification Number|1
+	{||||||||Certification Number|1
+		var a|Args = strID.split(',');|||||||Certification Number|1
+	if(!ar|rgs){|||||||Certification Number|1
+	  aler|('Invalid menu ID');|||||||Certification Number|1
+	  retu|n null; }|||||||Certification Number|1
+	if(arA|gs[0] == 'C'){|||||||Certification Number|1
+	 var s|rCommURL = PTCommonOpene|.getOpenerUR|OpenObjID(512, arArgs[1], '&PageID='+arArgs[2]+'', 2)|||||Certification Number|1
+	 if ( |rArgs.length > 3) { strC|mmURL += '&P|ofileID='+arArgs[3]; }|||||Certification Number|1
+	  retu|n strCommURL;|||||||Certification Number|1
+	} else|if (arArgs[0] == 'M') {|||||||Certification Number|1
+	 retur| PTCommonOpener.getOpene|URLOpenObjID|518, 2, '&PageID='+arArgs[1]+'', 2)|||||Certification Number|1
+	} else|if (arArgs[0] == 'SM') {|||||||Certification Number|1
+	  retu|n 'http://www.portal.sta|e.pa.us/port|l/server.pt?open=space&name=SiteMap&psname=CommunityPage&psid=1&|ached=true&in_hi|use|rid=2&contr|ol=SetSiteM|Certification Number|1
+	} else|if (arArgs[0] == 'S') {|||||||Certification Number|1
+	  retu|n null;|||||||Certification Number|1
+	} else|if (arArgs[0] == 'E') {|||||||Certification Number|1
+	    va| params = '';|||||||Certification Number|1
+	    if|( arArgs.length > 1 ) {|||||||Certification Number|1
+	      |or ( var i = 2; i < arAr|s.length; i+| ) {|||||Certification Number|1
+	      | params += '&' + arArgs[|];||||||Certification Number|1
+	      | }|||||||Certification Number|1
+	  retu|n 'http://www.portal.sta|e.pa.us/port|l/server.pt?open=space&name='+arArgs[1]+'&psname=CommunityPage&p|id=1&cached=true|in_|hi_userid=2|' + params;|Certification Number|1
+	} else|if (arArgs[0] == 'D') {|||||||Certification Number|1
+	 retur| PTCommonOpener.getOpene|URLOpenObjID|17, arArgs[2], '&DirMode='+arArgs[1]+'', 2)|||||Certification Number|1
+	} else|if (arArgs[0] == 'G1') {|||||||Certification Number|1
+	    va| params = '';|||||||Certification Number|1
+	    if|( arArgs.length > 1 ) {|||||||Certification Number|1
+	      |or ( var i = 2; i < arAr|s.length; i+| ) {|||||Certification Number|1
+	      | params += '&' + arArgs[|];||||||Certification Number|1
+	      | }|||||||Certification Number|1
+	  retu|n 'http://www.portal.sta|e.pa.us/port|l/server.pt?open=space&name='+arArgs[1]+'&psname=CommunityPage&p|id=1&cached=true|in_|hi_userid=2|' + params;|Certification Number|1
+	} else|if (arArgs[0] == 'IF') {|||||||Certification Number|1
+	  retu|n arArgs[1];|||||||Certification Number|1
+	} else|{|||||||Certification Number|1
+	    al|rt('URL Type is not defi|ed');||||||Certification Number|1
+	    re|urn null; }|||||||Certification Number|1
+	}||||||||Certification Number|1
+	functi|n templateURLRedirect(te|plateURL) {||||||Certification Number|1
+	  if (|emplateURL == null) { re|urn null; }||||||Certification Number|1
+	  var |rArgs = templateURL.spli|(',');||||||Certification Number|1
+	 if (a|Args[0] == 'UP') {|||||||Certification Number|1
+	PTComm|nOpener.openInSameWindow|PTCommonOpen|r.getOpenerURLOpenObjID(1, arArgs[1], '', 2));|||||Certification Number|1
+	} else|if (arArgs[0] == 'DO') {|||||||Certification Number|1
+	PTComm|nOpener.openInSameWindow|PTCommonOpen|r.getOpenerURLOpenObjID(18, arArgs[1], '', 2));|||||Certification Number|1
+	} else|if (arArgs[0] == 'F') {|||||||Certification Number|1
+	  wind|w.location = arArgs[1];|||||||Certification Number|1
+	 } els| {|||||||Certification Number|1
+	   win|ow.location = buildURLFr|mTemplate(te|plateURL);|||||Certification Number|1
+	 }||||||||Certification Number|1
+	 ||||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+#banner|ell {background-image:ur|(http://www.|ortal.state.pa.us/portal/server.pt/gateway/PTARGS_0_2_41751_1051|_553489_43/http%|B/p|ubcontent.s|tate.pa.us/|Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+PA STAT| AGENCIES |||||||Certification Number|1
+||||||||Certification Number|1
+Educati|n|||||||Certification Number|1
+Emergen|y Management|||||||Certification Number|1
+Environ|ental Protection|||||||Certification Number|1
+Game Co|mission|||||||Certification Number|1
+Labor &|Industry|||||||Certification Number|1
+Lottery||||||||Certification Number|1
+Public |elfare|||||||Certification Number|1
+Revenue||||||||Certification Number|1
+State||||||||Certification Number|1
+Transpo|tation|||||||Certification Number|1
+more ag|ncies...|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+ONLINE |ERVICES |||||||Certification Number|1
+||||||||Certification Number|1
+COMPASS| Access to Health & Huma| Services||||||Certification Number|1
+Driver | Vehicle Services|||||||Certification Number|1
+Find a |ob|||||||Certification Number|1
+Fishing|Licenses|||||||Certification Number|1
+Homelan| Security Tip Submission|||||||Certification Number|1
+Hunting|Licenses|||||||Certification Number|1
+Persona| Income Taxes|||||||Certification Number|1
+Turnpik| E-ZPass|||||||Certification Number|1
+Unemplo|ment Compensation|||||||Certification Number|1
+more se|vices...|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+	<!-- L|ad Dropdown navigation -|>||||||Certification Number|1
+	<!-- ||||||||Certification Number|1
+	if (wi|dow.attachEvent) window.|ttachEvent("|nload", sfHover);|||||Certification Number|1
+	if (wi|dow.attachEvent) window.|ttachEvent("|nload", servHover);|||||Certification Number|1
+||||||||Certification Number|1
+	||||||||Certification Number|1
+	//-->||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+	.colum|OneDLI3 {|||||||Certification Number|1
+		backg|ound-color: #beccd7;|||||||Certification Number|1
+	}||||||||Certification Number|1
+	||||||||Certification Number|1
+	#navig|tionDLI3 {|||||||Certification Number|1
+		font-|amily: verdana;|||||||Certification Number|1
+		font-|ize: 10px;|||||||Certification Number|1
+		color| #000000;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 ul {|||||||Certification Number|1
+		list-|tyle: none;|||||||Certification Number|1
+		paddi|g: 0px;|||||||Certification Number|1
+		margi|: 0px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+	||||||||Certification Number|1
+	#navig|tionDLI3 li {|||||||Certification Number|1
+		borde|-bottom: 1px solid #FFFF|F;||||||Certification Number|1
+		font:|Verdana;|||||||Certification Number|1
+		font-|ize: 12;|||||||Certification Number|1
+		color| #012b58;|||||||Certification Number|1
+		width| 100%;|||||||Certification Number|1
+		heigh|: 100%;|||||||Certification Number|1
+		list-|tyle: none;|||||||Certification Number|1
+		list-|tyle-image: none;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 a {|||||||Certification Number|1
+		text-|ecoration: none;|||||||Certification Number|1
+		font-|eight: bold;|||||||Certification Number|1
+		width| 100%;|||||||Certification Number|1
+		heigh|: 100%;|||||||Certification Number|1
+		displ|y: block;|||||||Certification Number|1
+		/*col|r: #012b58;*/|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 a:hover {|||||||Certification Number|1
+		backg|ound: #a6bcd3;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 a.L1 {|||||||Certification Number|1
+		color| #012b58;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 a.L1:hover {|||||||Certification Number|1
+		color| #012b58;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 li.L1 {|||||||Certification Number|1
+		backg|ound: #beccd7;	|||||||Certification Number|1
+		list-|tyle: none;|||||||Certification Number|1
+		list-|tyle-image: none;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 li.L2, li.L3, l|.L4, li.L5, |i.L6, li.L7 {|||||Certification Number|1
+		backg|ound: #beccd7;|||||||Certification Number|1
+		list-|tyle: none;|||||||Certification Number|1
+		list-|tyle-image: none;|||||||Certification Number|1
+	}||||||||Certification Number|1
+	||||||||Certification Number|1
+	#navig|tionDLI3 li.L2 a, li.L3 |, li.L4 a, l|.L5 a, li.L6 a, li.L7 a {|||||Certification Number|1
+		color| #012b58;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 li.admin {|||||||Certification Number|1
+		backg|ound: #beccd7;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 li.currentitem |||||||Certification Number|1
+		backg|ound: #beccd7;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 li:hover, li:ho|er.L1 {||||||Certification Number|1
+		backg|ound: ;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 span.image {|||||||Certification Number|1
+		margi|-left: 2px;|||||||Certification Number|1
+		displ|y: inline-block;|||||||Certification Number|1
+		curso|: hand;|||||||Certification Number|1
+		width| 90%;|||||||Certification Number|1
+		color| #FFFFFF;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 li:hover, li:ho|er.L2, li:ho|er.L3, li:hover.L4, li:hover.L5, li:hover.L6, li:hover.L7 {|||||Certification Number|1
+		backg|ound: #beccd7;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 span.current_it|m {||||||Certification Number|1
+		color| #beccd7;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 div {|||||||Certification Number|1
+		paddi|g: 10px 14px 10px 14px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 div.L1 {|||||||Certification Number|1
+		paddi|g: 10px 14px 10px 14px;|||||||Certification Number|1
+		font:|Verdana;|||||||Certification Number|1
+		font-|ize: 12px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 div.L2 {|||||||Certification Number|1
+		margi|-left: 12px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 div.L3 {|||||||Certification Number|1
+		margi|-left: 22px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 div.L4 {|||||||Certification Number|1
+		margi|-left: 32px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 div.L5 {|||||||Certification Number|1
+		margi|-left: 42px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 div.L6 {|||||||Certification Number|1
+		margi|-left: 52px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 div.L7 {|||||||Certification Number|1
+		margi|-left: 62px;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	#navig|tionDLI3 a.admin {|||||||Certification Number|1
+		color| #012b58;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#navig|tionDLI3 a.page {|||||||Certification Number|1
+		font-|eight: normal;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+	#login|inkDLI3 a {|||||||Certification Number|1
+		color| #012b58;|||||||Certification Number|1
+	}||||||||Certification Number|1
+		||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+				L&I|Home|||||||Certification Number|1
+			||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+		.colu|nOne{|||||||Certification Number|1
+			back|round-color: #beccd7;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 {|||||||Certification Number|1
+			font|family: verdana;|||||||Certification Number|1
+			font|size: 10px;|||||||Certification Number|1
+			colo|: #000000;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 ul {|||||||Certification Number|1
+			list|style: none;|||||||Certification Number|1
+			padd|ng: 0px;|||||||Certification Number|1
+			marg|n: 0px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li {|||||||Certification Number|1
+			bord|r-bottom: 1px solid #FFF|FF;||||||Certification Number|1
+			font| Verdana;|||||||Certification Number|1
+			font|size: 12;|||||||Certification Number|1
+			colo|: #ffffff;|||||||Certification Number|1
+			widt|: 100%;|||||||Certification Number|1
+			heig|t: 100%;|||||||Certification Number|1
+			list|style: none;|||||||Certification Number|1
+			list|style-image: none;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 a {|||||||Certification Number|1
+			text|decoration: none;|||||||Certification Number|1
+			font|weight: bold;|||||||Certification Number|1
+			widt|: 100%;|||||||Certification Number|1
+			heig|t: 100%;|||||||Certification Number|1
+			disp|ay: block;|||||||Certification Number|1
+			/*co|or: #012b58;*/|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 a:hover {|||||||Certification Number|1
+			back|round: #a6bcd3;|||||||Certification Number|1
+||||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 a.L1 {|||||||Certification Number|1
+			colo|: #012b58;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 a.L1:hover {|||||||Certification Number|1
+			colo|: #012b58;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li.L1 {|||||||Certification Number|1
+			back|round: #beccd7;	|||||||Certification Number|1
+			list|style: none;|||||||Certification Number|1
+			list|style-image: none;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 li.L2, li.L3,|li.L4, li.L5| li.L6, li.L7{|||||Certification Number|1
+			back|round: #beccd7;|||||||Certification Number|1
+			list|style: none;|||||||Certification Number|1
+			list|style-image: none;|||||||Certification Number|1
+		}	||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li.L2 a, li.L| a, li.L4 a,|li.L5 a, li.L6 a, li.L7 a{|||||Certification Number|1
+			colo|: #012b58;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li.admin {|||||||Certification Number|1
+			back|round: #beccd7;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 li.currentite| {||||||Certification Number|1
+			back|round: #a6bcd3;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li:hover.L1 {|||||||Certification Number|1
+			back|round: #012b58;	|||||||Certification Number|1
+			colo|: #012b58;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 span.image {|||||||Certification Number|1
+			marg|n-left: 2px;|||||||Certification Number|1
+			disp|ay: inline-block;|||||||Certification Number|1
+			curs|r: hand;|||||||Certification Number|1
+			widt|: 90%;|||||||Certification Number|1
+			colo|: #012b58;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li:hover, li:|over.L2, li:|over.L3, li:hover.L4, li:hover.L5, li:hover.L6, li:hover.L7 {|||||Certification Number|1
+			back|round: #a6bcd3;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 span.current_|tem {||||||Certification Number|1
+			colo|: #012b58;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 div {|||||||Certification Number|1
+			padd|ng: 10px 14px 10px 14px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 div.L1 {|||||||Certification Number|1
+			padd|ng: 10px 14px 10px 14px;|||||||Certification Number|1
+			font| Verdana;|||||||Certification Number|1
+			font|size: 12px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 div.L2 {|||||||Certification Number|1
+			marg|n-left: 12px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 div.L3 {|||||||Certification Number|1
+			marg|n-left: 22px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 div.L4 {|||||||Certification Number|1
+			marg|n-left: 32px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 div.L5 {|||||||Certification Number|1
+			marg|n-left: 42px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 div.L6 {|||||||Certification Number|1
+			marg|n-left: 52px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 div.L7 {|||||||Certification Number|1
+			marg|n-left: 62px;|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		||||||||Certification Number|1
+		/* BE|IN -- Rollover Color (Le|el 1/2/3/4) |P(9/18/09)*/|||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li.currentite| a.L1 span.c|rrent_item:hover {|||||Certification Number|1
+			colo|: #012b58;			|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li.L1 a:hover|{||||||Certification Number|1
+			colo|: #012b58;			|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li.L2 a:hover|{||||||Certification Number|1
+			colo|: #012b58;			|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li.L3 a:hover|{||||||Certification Number|1
+			colo|: #012b58;			|||||||Certification Number|1
+		}||||||||Certification Number|1
+||||||||Certification Number|1
+		#navi|ation78949 li.L4 a:hover|{||||||Certification Number|1
+			colo|: #012b58;			|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		/* EN| -- Rollover Color (Leve| 1/2/3/4) SP|9/18/09)*/|||||Certification Number|1
+||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 a.admin {|||||||Certification Number|1
+			colo|: #012b58;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#navi|ation78949 a.page {|||||||Certification Number|1
+			font|weight: normal;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+		#logi|link78949 a {|||||||Certification Number|1
+			colo|: #012b58;|||||||Certification Number|1
+		}||||||||Certification Number|1
+		||||||||Certification Number|1
+	||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|					Safety and Labor-Ma|agement Rela|ions|||||Certification Number|1
+							|				|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|							Industrial Board|||||||Certification Number|1
+							|						|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|							Labor Law Complia|ce||||||Certification Number|1
+							|						|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|							Labor-Management |ooperation||||||Certification Number|1
+							|						|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|							Mediation Service|||||||Certification Number|1
+							|						|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|							Occupational and |ndustrial Sa|ety|||||Certification Number|1
+							|						|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|							Pennsylvania Labo| Relations B|ard|||||Certification Number|1
+							|						|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+ ||||||||Certification Number|1
+Log In||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+Safety |nd Labor-Management Rela|ions > ||||||Certification Number|1
+					||||||||Certification Number|1
+				||||||||Certification Number|1
+				||||||||Certification Number|1
+				||||||||Certification Number|1
+					||||||||Certification Number|1
+					||||||||Certification Number|1
+					Oc|upational and Industrial|Safety||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+		Asbes|os Occupations:|||||||Certification Number|1
+		Certi|ication and Other Requir|ments||||||Certification Number|1
+||||||||Certification Number|1
+A. Asbe|tos Abatement Notificati|n||||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+B. Asbe|tos Occupations Certific|tion: Initia| and Renewal|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+C. Asbe|tos Training Accreditati|n and Relate| Requirements|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+D. Ques|ions|||||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+E. Accr|dited Trainers and Certi|ied Contract|ng Firms|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+F. Indi|iduals Certified to Perf|rm Asbestos |emediation Work |||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+G. Form| (All Asbestos Occupatio|s Forms)||||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+H. Asbe|tos Occupations Accredit|tion and Cer|ification Act|||||Certification Number|1
+||||||||Certification Number|1
+A. Asbe|tos Abatement Notificati|n||||||Certification Number|1
+||||||||Certification Number|1
+		The P|nnsylvania Department of|Environmenta| Protection (PA DEP) regulates the removal of asbestos containin| material (ACM).||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+Click h|re to access information|on the PA DE|'s notification requirements when ACM will be removed from build|ngs and structur|s i|n the Commo|nwealth.|Certification Number|1
+||||||||Certification Number|1
+B. Asbe|tos Occupations Certific|tion: Initia| and Renewal|||||Certification Number|1
+||||||||Certification Number|1
+		Pleas| read and follow the dir|ctions for e|ch category listed below.|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+		All b|t the contractor certifi|ation applic|tion forms require the applicant to include her/his latest train|ng information a|d t|he certific|ate for thi|Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+		Appli|ants must also provide i|formation pe|taining to any enforcement actions taken against him/her.|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+		All a|plicants must pay the sp|cified certi|ication fees, unless they are federal or state government employ|es or work for a|not|-for-profit| agency.|Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+		For C|ntractor Certification:|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Comp|ete a copy of Asbestos C|ntractor Cer|ification Application (LIBI-613). Click here to obtain a copy.|||||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Prov|de payment of $50.00 via|check or mon|y order made payable to the Commonwealth of Pennsylvania. (Same |ee applies to in|tia|l or a rene|wal certifi|Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Mail|these items to:|||||||Certification Number|1
+||||||||Certification Number|1
+			PA D|partment of Labor & Indu|try||||||Certification Number|1
+			Cert|fication, Accreditation | Licensing D|vision|||||Certification Number|1
+			Room|1623, L&I Building|||||||Certification Number|1
+			651 |oas Street|||||||Certification Number|1
+			Harr|sburg, PA 17121|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+		Note:|This application must co|tain (on pag| 2) the certification number and name of an individual in this c|mpany that has b|en |certified i|n the categ|Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+	Follow|the directions below for|all other ca|egories of certification, initial or renewal, including:|||||Certification Number|1
+	||||||||Certification Number|1
+		Build|ng Inspector|||||||Certification Number|1
+		Contr|ctor (individual)|||||||Certification Number|1
+		Manag|ment Planner|||||||Certification Number|1
+		Proje|t Designer|||||||Certification Number|1
+		Super|isor|||||||Certification Number|1
+		Worke||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Comp|ete pages 1 and 2 of App|ication For |sbestos Occupation Certification (LIBI-607). Click here to obtai| a copy.||||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Prov|de a copy of the certifi|ate for your|most recent EPA or PA approved training course.|||||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Prov|de information regarding|any enforcem|nt actions taken against you, following directions on page 2 of |orm LIBI-607.||||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Prov|de payment required, fol|owing the di|ections on page 3 of form LIBI-607, via check or money order mad| payable to the |omm|onwealth of| Pennsylvan|Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Mail|these items to:|||||||Certification Number|1
+||||||||Certification Number|1
+			PA D|partment of Labor & Indu|try||||||Certification Number|1
+			Cert|fication, Accreditation | Licensing D|vision|||||Certification Number|1
+			Room|623, L&I Building|||||||Certification Number|1
+			651 |oas Street|||||||Certification Number|1
+			Harr|sburg, PA 17121|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+C. Asbe|tos Training Accreditati|n And Other |equirements|||||Certification Number|1
+||||||||Certification Number|1
+		Train|ng providers have a numb|r of respons|bilities that must be met, to offer courses related to asbestos |batement. These |ncl|ude:||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Obta|ning Department of Labor|& Industry a|creditation.|||||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Noti|ying the Department when|a training c|urse will be offered.|||||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Ensu|ing that all training pa|ticipants ha|e signed in on the Department’s form, and submission of this for| to the Departme|t.|||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			Comp|eting an evaluation of e|ch training |articipant and submitting this to the Department (within 5 days |f completion of |he |training).||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+		Detai|ed information about com|lying with e|ch of these requirements follows.|||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+OBTAINI|G ACCREDITATION:|||||||Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			Befo|e offering any asbestos |batement tra|ning courses, providers must obtain Department of Labor & Indust|y accreditation.||||Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			To o|tain accreditation, the |ollowing mus| be submitted:|||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+				Pag|s 1 and 2 of the Departm|nt’s Asbesto| Training Course Accreditation Application (LIBI-603), with all |equested informa|ion| filled in.| Click here|Certification Number|1
+				||||||||Certification Number|1
+					 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+				Pay|ent of the required fees|($1000.00 pe| course, initial or refresher) via check or money order made pay|ble to the Commo|wea|lth of Penn|sylvania.|Certification Number|1
+				||||||||Certification Number|1
+					 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+				Cop|es of supporting documen|ation for ea|h course previously accredited by the U.S. Environmental Protect|on Agency or ano|her| state.||Certification Number|1
+				||||||||Certification Number|1
+					 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+				Com|lete information on the |ontent of ea|h course for which you are seeking Pennsylvania accreditation. T|e following must|be |included (i|n addition |Certification Number|1
+				||||||||Certification Number|1
+||||||||Certification Number|1
+						T|e curriculum, including:|||||||Certification Number|1
+						||||||||Certification Number|1
+||||||||Certification Number|1
+							|Length of training (in d|ys).||||||Certification Number|1
+||||||||Certification Number|1
+							|Topics covered.|||||||Certification Number|1
+||||||||Certification Number|1
+							|Amount and type of hands|on training.||||||Certification Number|1
+||||||||Certification Number|1
+							|Length, format and passi|g score for |xamination(s).|||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						C|pies of all course mater|als includin| student manuals, instructor handbooks, handouts and examination|.||||Certification Number|1
+						||||||||Certification Number|1
+							||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						D|scription of how the exa|ination was |eveloped.|||||Certification Number|1
+						||||||||Certification Number|1
+							||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						S|mple of the certificate |ssued to tra|nees upon the successful completion of the course.|||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			All |f these items should be |ailed to:||||||Certification Number|1
+||||||||Certification Number|1
+			PA D|partment of Labor & Indu|try||||||Certification Number|1
+			Cert|fication, Accreditation | Licensing D|vision|||||Certification Number|1
+			Room|1623, L&I Building|||||||Certification Number|1
+			651 |oas Street|||||||Certification Number|1
+			Harr|sburg, PA 17121|||||||Certification Number|1
+||||||||Certification Number|1
+			The |epartment of Labor & Ind|stry will pr|cess accreditation applications within 30 days of their receipt.|If the package i| ac|ceptable, t|he applican|Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+NOTIFIC|TION OF COURSES TO BE OF|ERED:||||||Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			When|ver an accredited traini|g provider i|tends to offer a course, it must submit a completed copy of the |sbestos Training|Cou|rse Notific|ation Form |Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			This|form should be faxed to |17-705-0196.||||||Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+SIGN-IN|SHEET FOR TRAINING PARTI|IPANTS:||||||Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			On e|ch day of a scheduled tr|ining, the p|ovider must have all participants sign in (for both morning and |fter sessions, a| ap|plicable) o|n the Depar|Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			Imme|iately following the tra|ning, the si|n-in sheet should be faxed to the Department of Labor & Industry|at 717-705-0196.||||Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+TRAINEE|EVALUATIONS:|||||||Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			With|n five (5) days of compl|tion of the |raining, the provider must submit an evaluation of each particip|nt using the Dep|rtm|ent of Labo|r & Industr|Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+Note: T|ainees must fill in info|mation and p|ovide their signatures at the top of this form, so providers mus| distribute and |oll|ect these f|orms before|Certification Number|1
+||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			Thes| evaluation forms can be|mailed or fa|ed to:|||||Certification Number|1
+||||||||Certification Number|1
+			PA D|partment of Labor & Indu|try||||||Certification Number|1
+			Cert|fication, Accreditation | Licensing D|vision|||||Certification Number|1
+			Room|1623, L&I Building|||||||Certification Number|1
+			651 |oas Street|||||||Certification Number|1
+			Harr|sburg, PA 17121|||||||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+				FAX| 717-705-0196|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+D. Ques|ions|||||||Certification Number|1
+||||||||Certification Number|1
+		If yo| have questions about th| Department |f Labor & Industry’s certification requirements that are not ans|ered on these we| pa|ges, write |or call:|Certification Number|1
+||||||||Certification Number|1
+		PA De|artment of Labor & Indus|ry||||||Certification Number|1
+		Certi|ication, Accreditation A|d Licensing |ivision|||||Certification Number|1
+		Room |623, L&I Building|||||||Certification Number|1
+		651 B|as Street|||||||Certification Number|1
+		Harri|burg, PA 17121|||||||Certification Number|1
+		||||||||Certification Number|1
+			 ||||||||Certification Number|1
+||||||||Certification Number|1
+			717-|72-3396|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+E. Accr|dited Trainers and Certi|ied Contract|ng Firms|||||Certification Number|1
+||||||||Certification Number|1
+		Click|on the links below to ac|ess listings|of accredited trainers and contractors.|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+Accredi|ed Asbestos Abatement Tr|ining Provid|rs|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+Certifi|d Asbestos Abatement Con|ractors||||||Certification Number|1
+||||||||Certification Number|1
+F. Indi|iduals Certified to Perf|rm Asbestos |emediation Work|||||Certification Number|1
+||||||||Certification Number|1
+Click h|re and you will be direc|ed to a list|ng of persons that the Department has certified to perform asbes|os remediation w|rk.|||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+		This |isting will be updated d|ily (Monday |hrough Friday).|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+		Users|should note the followin| regarding t|is listing.|||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			The |umbers listed under “Cod| A, B, C, D,|E and F” represent all the categories of work that an individual|is certified to |erf|orm.||Certification Number|1
+			||||||||Certification Number|1
+				 ||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+			The |ey to these numbers is:|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+NUMBER||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+CERTIFI|ATION CATEGORY|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|1|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						W|rker|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|2|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						S|pervisor|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|3|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						P|oject Designer|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|4|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						B|ilding Inspector|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|5|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						M|nagement Planner|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+							|6|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+						C|ntractor (Individual)|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+G. Form| (All Asbestos Occupatio|s Forms)||||||Certification Number|1
+||||||||Certification Number|1
+Asbesto| Training Course Accredi|ation Applic|tion (LIBI-603)|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+Asbesto| Training Course Notific|tion Form (L|BI-605)|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+Asbesto| Trainee Evaluation Form|(LIBI-606)||||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+Applica|ion For Asbestos Occupat|on Certifica|ion (LIBI-607)|||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+Asbesto| Trainee Sign-In Form (L|BI-610)||||||Certification Number|1
+||||||||Certification Number|1
+		 ||||||||Certification Number|1
+||||||||Certification Number|1
+Asbesto| Contractor Certificatio| Application|(LIBI-613)|||||Certification Number|1
+||||||||Certification Number|1
+H. Stat|te: Asbestos Occupations|Accreditatio| and Certification Act|||||Certification Number|1
+||||||||Certification Number|1
+Click h|re to obtain a copy of t|is law.||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+try { P|PMMenu.defaultCssFile = |http://www.p|rtal.state.pa.us/imageserver/plumtree/common/private/js/jsportal|enus/LATEST/styl|s/c|ss/PTPMMenu|.css"; } ca|Certification Number|1
+functio| createPrefsDropDownMenu|linksArray, |trDivID)|||||Certification Number|1
+{ ||||||||Certification Number|1
+	var me|u;|||||||Certification Number|1
+   try |  menu = new PTPMMenuCon|ainer(); } c|tch (err) { return; }  |||||Certification Number|1
+	// Add|each entry to the PTPMMe|uContainer||||||Certification Number|1
+	for ( | = 0; j < linksArray.len|th; j++ )||||||Certification Number|1
+ 	{||||||||Certification Number|1
+		var s|rImgSrc = linksArray[j][|];||||||Certification Number|1
+		var s|rImgWidth = linksArray[j|[1];||||||Certification Number|1
+		var s|rTitle = linksArray[j][2|;||||||Certification Number|1
+		var s|rURL   = linksArray[j][3|;||||||Certification Number|1
+		var s|rSuppressPopup   = links|rray[j][4];||||||Certification Number|1
+		menu.|enuItems[j] = new PTPMSi|pleMenuItem(|;|||||Certification Number|1
+		// Se| title|||||||Certification Number|1
+		menu.|enuItems[j].text = strTi|le;||||||Certification Number|1
+		// Se| Image|||||||Certification Number|1
+		menu.|enuItems[j].image	= new |TPMImage();||||||Certification Number|1
+		menu.|enuItems[j].image.imgSrc|= strImgSrc;||||||Certification Number|1
+		menu.|enuItems[j].image.imgWid|h = strImgWi|th;|||||Certification Number|1
+		// Se| action|||||||Certification Number|1
+		menu.|enuItems[j].action = new|PTPMJavaScri|tAction();|||||Certification Number|1
+       |f ( strSuppressPopup == |'0' ) {||||||Certification Number|1
+		  men|.menuItems[j].action.js | 'OpenPortle|PrefsWindow( "'+strURL+'")';|||||Certification Number|1
+       | else {|||||||Certification Number|1
+		  men|.menuItems[j].action.js | 'window.loc|tion = "'+strURL+'"'; } |||||Certification Number|1
+	}||||||||Certification Number|1
+	var bu|tonText	="<img src='http|//www.portal|state.pa.us/imageserver/plumtree/portal/public/img/action_portle|_menu.gif' align|'ab|smiddle' he|ight='13' w|Certification Number|1
+	PTPMSe|ectMenu.init(menu, strDi|ID, buttonTe|t);|||||Certification Number|1
+}	||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+	.white|GfootText		{color: #1740|E; font: x-s|all arial,helvetica,"sans-serif"; text-decoration: none;}|||||Certification Number|1
+	.custo|footText		{color: #FFFFF|; font: x-sm|ll arial,helvetica,"sans-serif"; text-decoration: none;}|||||Certification Number|1
+	.custo|footText A		{color: #FFF|FF; font: x-|mall arial,helvetica,"sans-serif"; text-decoration: none;}|||||Certification Number|1
+	.custo|footText A:hover	{text-d|coration: un|erline;}|||||Certification Number|1
+||||||||Certification Number|1
+	a.agen|ylink_83293 {|||||||Certification Number|1
+		font:|x-small arial,helvetica,|sans-serif";||||||Certification Number|1
+		text-|ecoration: none;|||||||Certification Number|1
+		color| #ffffff;|||||||Certification Number|1
+	}||||||||Certification Number|1
+||||||||Certification Number|1
+	a.agen|ylink_83293:hover {|||||||Certification Number|1
+		font:|x-small arial,helvetica,|sans-serif";||||||Certification Number|1
+		text-|ecoration: underline;|||||||Certification Number|1
+		color| #ffffff;|||||||Certification Number|1
+	}	||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+Contact|Us|||||||Certification Number|1
+			||||||||Certification Number|1
+			||||||||Certification Number|1
+				| C|mmonwealth Portal|||||||Certification Number|1
+			||||||||Certification Number|1
+			||||||||Certification Number|1
+				| C|ntact the Web Team|||||||Certification Number|1
+			||||||||Certification Number|1
+			||||||||Certification Number|1
+			||||||||Certification Number|1
+			||||||||Certification Number|1
+			||||||||Certification Number|1
+				|||||||||Certification Number|1
+			||||||||Certification Number|1
+			Priv|cy Policy|||||||Certification Number|1
+			| Di|claimer|||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+Copyrig|t ©  Commonwealth of Pen|sylvania||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+||||||||Certification Number|1
+DATE/TI|E:Mar 24, 2015 8:01:06 P|||||||Certification Number|1
+||||||||Certification Number|1
+	functi|n getYear_83293()|||||||Certification Number|1
+	{||||||||Certification Number|1
+		var d|= new Date();|||||||Certification Number|1
+		var y|ar = d.getYear();|||||||Certification Number|1
+		var c|rrectYear  = year % 100;|||||||Certification Number|1
+		corre|tYear += (correctYear < |8) ? 2000 : |900;|||||Certification Number|1
+		retur| correctYear;|||||||Certification Number|1
+	}||||||||Certification Number|1
+	||||||||Certification Number|1
+	var ft|ateSpan = document.getEl|mentById("ft|ateSpan");|||||Certification Number|1
+||||||||Certification Number|1
+	ftDate|pan.innerHTML = getYear_|3293();||||||Certification Number|1
+	||||||||Certification Number|1

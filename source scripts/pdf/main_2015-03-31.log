@@ -1,0 +1,21 @@
+2015/03/31 10:03:34 - asb_c_MDdoe - CRITICAL - [Error 2] The system cannot find the file specified
+2015/03/31 10:05:32 - asb_c_MDdoe - CRITICAL - [Error 2] The system cannot find the file specified
+2015/03/31 10:07:32 - asb_c_MDdoe - CRITICAL - [Error 2] The system cannot find the file specified
+2015/03/31 10:18:15 - asb_c_TXdhs - CRITICAL - name 'main' is not defined
+2015/03/31 10:45:16 - bui_b_SD.SFcsf - CRITICAL - [Errno 2] No such file or directory: '.txt'
+2015/03/31 10:46:22 - bui_b_SD.SFcsf - CRITICAL - [Errno 2] No such file or directory: '.txt'
+2015/03/31 11:03:08 - fir.b_c_IAdps - CRITICAL - [Errno 2] No such file or directory: 'fir.b_c_IAdps.txt'
+2015/03/31 11:03:17 - fir.b_c_IAdps - CRITICAL - [Errno 2] No such file or directory: 'fir.b_c_IAdps.txt'
+2015/03/31 11:03:26 - fir.b_c_IAdps - CRITICAL - [Errno 2] No such file or directory: 'fir.b_c_IAdps.txt'
+2015/03/31 11:15:48 - bui_b_SD.SFcsf - CRITICAL - [Errno 2] No such file or directory: 'bui_b_SD.SFcsf.txt'
+2015/03/31 11:16:55 - fir.a_c_IAdps - CRITICAL - list index out of range
+2015/03/31 11:17:55 - fir.a_c_IAdps - CRITICAL - list index out of range
+2015/03/31 11:18:39 - fir.a_c_IAdps - CRITICAL - list index out of range
+2015/03/31 12:25:12 - fir_c_ILsfm - CRITICAL - list index out of range
+2015/03/31 12:27:48 - fir_c_ILsfm - CRITICAL - list index out of range
+2015/03/31 12:28:31 - fir_c_ILsfm - CRITICAL - list index out of range
+2015/03/31 13:37:20 - fir_c_ILsfm - CRITICAL - [Errno 2] No such file or directory: 'fir_c_ILsfm'
+2015/03/31 13:37:51 - fir_c_ILsfm - CRITICAL - 'list' object has no attribute 'split'
+2015/03/31 15:13:11 - led_c_MAdls - CRITICAL - name 'main' is not defined
+2015/03/31 16:04:29 - wel_c_WIdnr - CRITICAL - ('Connection aborted.', error(10054, 'An existing connection was forcibly closed by the remote host'))
+2015/03/31 17:09:34 - gen.res.a_c_CO.FCcfc - CRITICAL - 'Response' object has no attribute 'con0tent'
