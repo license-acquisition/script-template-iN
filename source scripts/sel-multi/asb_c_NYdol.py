@@ -24,23 +24,27 @@ def main():
     #creating a beautiful soup object.
     soup = BeautifulSoup(driver.page_source)
     table_items = soup.find_all('span',{'class':'textItem'})
+    print len(table_items)
     for i in range(0,1000):
-        info = []
-        license_number          = table_items[17 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        old_license_number      = table_items[18 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        expiration_date         = table_items[19 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        entity_name             = table_items[20 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        address1                = table_items[21 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        city                    = table_items[22 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        state                   = table_items[23 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        zip_code                = table_items[24 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        phone                   = table_items[25 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        abatement               = table_items[27 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        management_planning     = table_items[29 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        monitoring              = table_items[31 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        project_design          = table_items[33 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        inspection              = table_items[35 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
-        air_monitoring          = table_items[37 + i *22].text.replace(u',',' ').replace(u'\xa0',' ')
+        try:
+            info = []
+            license_number          = table_items[17 + i *22].text.replace(u'\xa0',' ')
+            old_license_number      = table_items[18 + i *22].text.replace(u'\xa0',' ')
+            expiration_date         = table_items[19 + i *22].text.replace(u'\xa0',' ')
+            entity_name             = table_items[20 + i *22].text.replace(u'\xa0',' ')
+            address1                = table_items[21 + i *22].text.replace(u'\xa0',' ')
+            city                    = table_items[22 + i *22].text.replace(u'\xa0',' ')
+            state                   = table_items[23 + i *22].text.replace(u'\xa0',' ')
+            zip_code                = table_items[24 + i *22].text.replace(u'\xa0',' ')
+            phone                   = table_items[25 + i *22].text.replace(u'\xa0',' ')
+            abatement               = table_items[27 + i *22].text.replace(u'\xa0',' ')
+            management_planning     = table_items[29 + i *22].text.replace(u'\xa0',' ')
+            monitoring              = table_items[31 + i *22].text.replace(u'\xa0',' ')
+            project_design          = table_items[33 + i *22].text.replace(u'\xa0',' ')
+            inspection              = table_items[35 + i *22].text.replace(u'\xa0',' ')
+            air_monitoring          = table_items[37 + i *22].text.replace(u'\xa0',' ')
+        except Exception as e:
+            l.error(str(e))
 
         for i in [license_number, old_license_number, expiration_date, entity_name, address1, city, state, zip_code, phone]:
             info.append(i)
