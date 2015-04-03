@@ -19,7 +19,7 @@ def main():
     driver.find_elements_by_tag_name("option")[3].click()
     driver.find_elements_by_tag_name("button")[0].click()
     l.debug("loading page, waiting 25 seconds.")
-    #time.sleep(25)
+    time.sleep(25)
 
     #creating a beautiful soup object.
     soup = BeautifulSoup(driver.page_source)

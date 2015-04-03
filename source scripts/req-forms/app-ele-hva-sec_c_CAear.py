@@ -19,7 +19,7 @@ def main():
     l.info(counties)
 
     # loop through counties till dead
-    tally, count = 0, 0
+    tally = 0
     short_url = 'http://www2.dca.ca.gov/pls/wllpub/'
     url = 'http://www2.dca.ca.gov/pls/wllpub/WLLQRYNA$LCEV2.QueryList'
     for county in counties:
@@ -49,9 +49,11 @@ def main():
                 if len(soup.find_all('table')[0].find_all('tr')) == 1:
                     check = False
                 else:
+                    count = 1
                     # scrape all the info from data table
+                    trs = soup.find_all('table')[0].find_all('tr')[1:]
                     for tr in soup.find_all('table')[0].find_all('tr')[1:]:
-                        l.debug( ' - - - - - %s of %s - - - - -' %(count, tally))
+                        l.debug( ' - - - - - %s of %s - - - - -' %(count, len(trs)))
                         info1 = []
                         for td in tr.find_all('td'):
                             info1.append(td.text.strip())
